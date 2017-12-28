@@ -15,6 +15,7 @@
  */
 class Configuracion {
     // Variables de configuración de la aplicación
+    public $informador = 'JOSE MIGUEL ARQUELLADAS RUIZ';
     public $nombreEmpresa = 'EMPRESA DE EJEMPLO I';
     public $nifCif = '12345678A';
     public $host = 'localhost';
