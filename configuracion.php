@@ -15,7 +15,13 @@
  */
 class Configuracion {
     // Variables de configuración de la aplicación
-    public $informador = 'JOSE MIGUEL ARQUELLADAS RUIZ';
+    public $nom_app = 'DAW-Presencia';
+    public $version = '1.0';
+    public $build = '2018.01.01.1931';
+    public $ini_app = '2017';
+    public $desarrolla = 'JOSE MIGUEL ARQUELLADAS RUIZ';
+    public $nom_twitter = '@JMArquelladas';
+    public $web_desarrolla = 'www.huetic.es';
     public $nombreEmpresa = 'EMPRESA DE EJEMPLO I';
     public $nifCif = '12345678A';
     public $host = 'localhost';

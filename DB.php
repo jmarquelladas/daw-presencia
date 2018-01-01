@@ -28,24 +28,30 @@ class DB {
         
         // Configuramos las opciones de conexión a la BD
         $opc = array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8");
-        $dsn = "mysql:host=".$config->host.";dbmane=".$config->nombreBD;
+        $dsn = "mysql:host=".$config->host.";dbname=".$config->nombreBD;
         
         try {
-            $conexion = new PDO($dsn, $config->usuBDatos, $config->passwd, $opc);
+            $conex = new PDO($dsn, $config->usuBDatos, $config->passwd, $opc);
         } catch (PDOException $ex) {
             echo "<p><strong>Estimado usuario:</strong></p>";
             echo "<p>Error en conexión a la base de datos <strong>".$config->nombreBD."</strong>.</p>";
             echo "<p>Mensaje de error: ".$ex->getMessage().".</p>";
-            echo "<p>Envíe un correo electrónico al administrador de la aplicación informando del problema. ¡ Gracias !</p>";
+            echo "<p>Comunique al servicio de soporte de la aplicación esta incidencia. ¡ Gracias !</p>";
             die();
         }
         /** Atributos del objeto de la conexión de la base de datos. Comentar cuando no haga falta.
         echo '<p>' .$conexion->getAttribute(PDO::ATTR_CLIENT_VERSION). '</p>';
         echo '<p>' .$conexion->getAttribute(PDO::ATTR_CONNECTION_STATUS). '</p>';
          */
-        return $conexion; // Envia el objeto PDO al que se ha conectado
+        return $conex; // Envia el objeto PDO al que se ha conectado
     }
 
+    /**********************************************
+     * Método que realiza la desconexión a la BD 
+     *********************************************/
+    public static function desconectaDB() {
+        $conex = null;
+    }
     
     /************************************************
      * Método que realiza una consulta a una BD y 
