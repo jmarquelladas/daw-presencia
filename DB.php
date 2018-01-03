@@ -208,20 +208,19 @@ class DB {
     
     /**
      * Verifica si el usuario existe en la BBDD
-     * @param type $login
+     * @param type $usuario
      * @param type $contrasena
      * @return boolean
      */
-    public static function verificaUsuario($login, $contrasena) {
-        $sql = "SELECT login, password FROM usuarios ";
-        $sql .= "WHERE login = '$login'";
+    public static function verificaUsuario($usuario, $contrasena) {
+        $sql = "SELECT login, password FROM empleado ";
+        $sql .= "WHERE login = '$usuario'";
         $resultado = self::ejecutaConsulta($sql);
         $verificado = FALSE;
         
         if(isset($resultado)) {
             $fila = $resultado->fetch();
-            //if(($fila !== FALSE) && $fila['password']==$contrasena) $verificado = TRUE;
-            if(($fila !== FALSE) && password_verify($contrasena, $fila['password'])) $verificado = TRUE;
+            if(($fila !== FALSE) && password_verify($contrasena, $fila['contras'])) $verificado = TRUE;
         }
         return $verificado;
     }
