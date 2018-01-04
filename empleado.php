@@ -79,24 +79,24 @@ class Empleado {
     /***
      * Métodos que dan valor a los atributos de la clase Empleado
      */
-    public function setDni($dni)                { $this->dni = $dni; }
-    public function setNombre($nombre)          { $this->nombre = $nombre; }
-    public function setApellidos($apellidos)    { $this->apellidos = $apellidos; }
-    public function setEmail($email)            { $this->email = $email; }
-    public function setTelefonos($telefonos)    { $this->telefonos = $telefonos; }
-    public function setDomicilio($domicilio)    { $this->domicilio = $domicilio; }
-    public function setPoblacion($poblacion)    { $this->poblacion = $poblacion; }
-    public function setCodpostal($codpostal)    { $this->codpostal = $codpostal; }
-    public function setProvincia($provincia)    { $this->provincia = $provincia; }
-    public function setTipocontrato($tipocontrato)     { $this->tipocontrato = $tipocontrato; }
-    public function setTiempocontrato($tiempocontrato) { $this->tiempocontrato = $tiempocontrato; }
-    public function setHorasemanales($tipocontrato)    { $this->tipocontrato = $tipocontrato; }
+    public function setDni($dni)                           { $this->dni = $dni; }
+    public function setNombre($nombre)                     { $this->nombre = $nombre; }
+    public function setApellidos($apellidos)               { $this->apellidos = $apellidos; }
+    public function setEmail($email)                       { $this->email = $email; }
+    public function setTelefonos($telefonos)               { $this->telefonos = $telefonos; }
+    public function setDomicilio($domicilio)               { $this->domicilio = $domicilio; }
+    public function setPoblacion($poblacion)               { $this->poblacion = $poblacion; }
+    public function setCodpostal($codpostal)               { $this->codpostal = $codpostal; }
+    public function setProvincia($provincia)               { $this->provincia = $provincia; }
+    public function setTipocontrato($tipocontrato)         { $this->tipocontrato = $tipocontrato; }
+    public function setTiempocontrato($tiempocontrato)     { $this->tiempocontrato = $tiempocontrato; }
+    public function setHorasemanales($tipocontrato)        { $this->tipocontrato = $tipocontrato; }
     public function setFechainicontrato($fechainicontrato) { $this->fechainicontrato = $fechainicontrato; }
     public function setFechafincontrato($fechafincontrato) { $this->fechafincontrato = $fechafincontrato; }
     public function setPuestotrabajo($puestotrabajo)       { $this->puestotrabajo = $puestotrabajo; }
-    public function setEsgestor($esgestor) { $this->esgestor = $esgestor; }
+    public function setEsgestor($esgestor)                 { $this->esgestor = $esgestor; }
     public function setObservaciones($observaciones)       { $this->observaciones = $observaciones; }
-    public function setArea($area) { $this->area = $area; }
+    public function setArea($area)                         { $this->area = $area; }
 
 }
 ?>
