@@ -10,12 +10,18 @@
 
 header('Content-Type: text/html; charset=UTF-8');
 
-require_once('configuracion.php');
+require_once 'configuracion.php';
 
-class DB {  
-    /*******************************************************************
-     * Método que realiza la conexión a la BD y realiza comprobaciones
-     ******************************************************************/
+class DB {
+    /**************************************************************************************************
+     * Realiza conexión a BD con los datos configurados en la Clase Configuracion
+     * Realiza la conexión a la BD y devuelve el objeto de la conexión
+     * Si no se establece o da error el intento de conexión a la BD la aplicación finaliza con die()
+     * @author José Miguel Arquelladas
+     * @version v1.0 01/01/2018
+     * @var $config Objeto con los datos de configuración de la aplicación
+     * @return Objeto PDO para utilizarlo para operaciones con la BD
+     **************************************************************************************************/
     public static function conectaDB() {
         // Creamos objeto para rescatar valores de configuración general de la aplicación.
         $config = new Configuracion();
@@ -42,10 +48,16 @@ class DB {
         return $conex; // Envia el objeto PDO al que se ha conectado
     }
     
-    /************************************************
-     * Método que realiza una consulta a la BD y 
-     * devuelve el resultado
-     ************************************************/
+    /***************************************************************************
+     * Método que realiza una consulta a la BD y devuelve el resultado
+     * Llama al método conectaDB()
+     * @see conectaDB()
+     * @author José Miguel Arquelladas
+     * @version v1.0 06/01/2018
+     * @param consulta es la cadena SQL con la que se realiza la consulta
+     * @var conex Objeto PDO con la que se realiza la conexión a la BD
+     * @return resultado es el resultado de la consulta realizada
+     **************************************************************************/
     public static function consultaSQL($consulta) {
         // Conectamos a la BD
         $conex = DB::conectaDB();
@@ -56,27 +68,58 @@ class DB {
         return $resultado;
     }
     
-    /**
-     * Verifica si el usuario existe en la BBDD
-     * @param type $usuario
-     * @param type $contrasena
-     * @return boolean
-     */
+    /***************************************************************************
+     * Método que comprueba si el usuario existe en la BD y si es correctamente
+     * validado devuelve datos del empleado. Si no es validado correctamente devuelve FALSE.
+     * Llama al método conectaDB()
+     * @see conectaDB()
+     * @author José Miguel Arquelladas
+     * @version v1.0 06/01/2018
+     * @param usuario El nombre de usuario
+     * @param contrasena La contraseña del usuario
+     * @return array Datos del usuario si se realiza la validación correctamente
+     * @return FALSE si no es correcta la validación
+     **************************************************************************/
     public static function verificaUsuario($usuario, $contrasena) {
-        $sql = "SELECT login, password FROM empleado ";
-        $sql .= "WHERE login = '$usuario'";
+        $sql = "SELECT dni, contras, nombre, apellidos, esgestor FROM empleado ";
+        $sql .= "WHERE dni = '$usuario'";
         $resultado = self::consultaSQL($sql);
-        $verificado = FALSE;
-        $fila = $resultado->fetch();
-        if(($fila !== FALSE) && password_verify($contrasena, $fila['contras'])) {
-            $verificado = TRUE;
-            // [TODO]: Recoger el tipo de usuario (Gestor o Empleado)
-            $tipoUsuario = NULL; 
-            $resultado = array($verificado, $tipoUsuario);
+        $fila = $resultado->fetch(); // Sólo puede haber un resultado
+        if(($fila !== FALSE) && password_verify($contrasena, $fila['contras'])) { // El usuario y contraseña es correcto
+            $datos = array(
+                dni=>$fila['dni'],
+                nombre=>$fila['nombre'],
+                apellidos=>$fila['apellidos'],
+                esgestor=>$fila['esgestor'],
+            );
+            return $datos;
+        } else {
+            return FALSE;
         }
-        return $resultado;
     }
     
+    /***************************************************************************
+     * Método que comprueba qué tipo de usuario es
+     * Llama al método conectaDB()
+     * @see conectaDB()
+     * @author José Miguel Arquelladas
+     * @version v1.0 06/01/2018
+     * @param usuario El nombre de usuario
+     * @return boolean TRUE  si es del Tipo Gestor
+     *                 FALSE si es del Tipo Empleado
+     **************************************************************************/
+    public static function esTipogestor($usuario) {
+        $sql = "SELECT dni, esgestor FROM empleado ";
+        $sql .= "WHERE dni = '$usuario'";
+        $resultado = self::consultaSQL($sql);
+        $fila = $resultado->fetch(); // Sólo puede haber un resultado
+        if($fila['esgestor'] == 1) { // Si es del tipo Gestor
+            return TRUE;
+        } else {
+            return FALSE;
+        }
+    }
+
     /**
      * Alta de usuarios
      */

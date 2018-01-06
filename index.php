@@ -30,27 +30,22 @@ if(isset($_REQUEST['aceptar']) && (¡empty($_REQUEST['usuario']))) { // Se ha pu
     $usuario = $_REQUEST['usuario'];
     $contras = $_REQUEST['contras'];
     // Comprobación de credenciales en la BD
-    if(DB::verificaUsuario($usuario, $contras)) {
-        // El resultado de la comprobación es correcto.
-        // Comprobamos también que tipo de usuario habrá entrado a la aplicación
-        
-        // Si es usuario Gestor General
-        $smarty->assign('mensaje','');
-        $smarty->assign('opcion','');
-        $smarty->display('gestor.tpl');
-        
-        // Si es usuario es Empleado
-        $smarty->assign('mensaje','');
-        $smarty->assign('opcion','');
-        $smarty->display('empleado.tpl');
-    } else {
-        // Las credenciales no son correctas, volvemos a realizar petición.
-    $smarty->assign('mensaje','');
-    $smarty->assign('opcion','entrada');
-    $smarty->display('index.tpl');
+    $datosAutenticacion = DB::verificaUsuario($usuario, $contrasena);
+    if(is_array($datosAutenticacion)) { // El resultado de la comprobación es correcto.
+        session_start(); // Iniciamos la sesion de usuario
+        $_SESSION['usuarios']['usuario'] = $_REQUEST['usuario'];
+        $_SESSION['usuarios']['inicio'] = time();
+        // Comprobamos también qué tipo de usuario habrá entrado a la aplicación
+        if($datosAutenticacion['esgestor'] == 1) { // El usuario es Gestor General
+            $smarty->display('gestor.tpl');
+        } else { // El usuario es del tipo Empleado
+            $smarty->display('empleado.tpl');            
+        }
+    } else if(!($datosAutenticacion)){ // Las credenciales no son correctas, volvemos a realizar petición.
+        $smarty->assign('opcion','entrada');
+        $smarty->display('index.tpl');
     }
 } else { // No se ha pulsado aún ninguna opción, mostramos página inicial.
-    $smarty->assign('mensaje','');
     $smarty->assign('opcion','entrada');
     $smarty->display('index.tpl');
 }
