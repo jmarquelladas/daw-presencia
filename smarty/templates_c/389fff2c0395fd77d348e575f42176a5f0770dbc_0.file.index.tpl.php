@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2018-01-02 23:37:04
+/* Smarty version 3.1.29, created on 2018-01-07 16:49:24
   from "C:\xampp\htdocs\pry\daw-presencia\smarty\templates\index.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5a4c0990079619_54035335',
+  'unifunc' => 'content_5a524184d2c182_06716317',
   'file_dependency' => 
   array (
     '389fff2c0395fd77d348e575f42176a5f0770dbc' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pry\\daw-presencia\\smarty\\templates\\index.tpl',
-      1 => 1514932618,
+      1 => 1515340161,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5a4c0990079619_54035335 ($_smarty_tpl) {
+function content_5a524184d2c182_06716317 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <!--

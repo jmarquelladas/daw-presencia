@@ -68,7 +68,7 @@ INSERT INTO `pertenecer`(`areahija`,`areapadre`) VALUES
 
 CREATE TABLE IF NOT EXISTS empleado (
 dni VARCHAR(9) NOT NULL COMMENT 'Clave primaria para tabla EMPLEADO',
-contras VARCHAR(100) NOT NULL COMMENT 'Contraseña para EMPLEADO',
+contras VARCHAR(255) NOT NULL COMMENT 'Contraseña para EMPLEADO',
 nombre VARCHAR(20),
 apellidos VARCHAR(40),
 email VARCHAR(255),
@@ -96,8 +96,8 @@ CONSTRAINT emp_are_FK FOREIGN KEY (area) REFERENCES area(nombre) ON DELETE CASCA
 --
 
 INSERT INTO `empleado` (`dni`,`contras`,`nombre`,`apellidos`,`email`,`telefonos`,`domicilio`,`poblacion`,`codpostal`,`provincia`,`tipocontrato`,`tiempocontrato`,`horasemanales`,`fechainicontrato`,`fechafincontrato`,`puestotrabajo`,`esgestor`,`observaciones`,`area`) VALUES
-('12345678Z','0000','ANTONIO','GARCIA FERNANDEZ','AGF@EMAIL.NET','958123456 958654321 654321000','C/ PRINCIPAL Nº 1','MADRID','28001','MADRID','TEMPORAL','COMPLETO',37.50,'2004/05/24',NULL,'TECNICO INFORMATICA',0,'Observaciones .....','INFORMÁTICA'),
-('01234567Y','0000','BENITO','FERNANDEZ JIMENEZ','bfj@email.net','958456123 958321654 654321001','C/ ULTIMA Nº 1','MADRID','28001','MADRID','TEMPORAL','COMPLETO',37.50,'2001/04/27',NULL,'TECNICO CONTABLE',1,'Observaciones .....','CONTABILIDAD');
+('12345678Z','$2y$10$RGIGpobMSg8VgSiPA1qDhe73HnlVXmgZJqfTmhuaXvKCj0aHH/8Dq','ANTONIO','GARCIA FERNANDEZ','AGF@EMAIL.NET','958123456 958654321 654321000','C/ PRINCIPAL Nº 1','MADRID','28001','MADRID','TEMPORAL','COMPLETO',37.50,'2004/05/24',NULL,'TECNICO INFORMATICA',0,'Observaciones .....','INFORMÁTICA'),
+('01234567Y','$2y$10$RGIGpobMSg8VgSiPA1qDhe73HnlVXmgZJqfTmhuaXvKCj0aHH/8Dq','BENITO','FERNANDEZ JIMENEZ','bfj@email.net','958456123 958321654 654321001','C/ ULTIMA Nº 1','MADRID','28001','MADRID','TEMPORAL','COMPLETO',37.50,'2001/04/27',NULL,'TECNICO CONTABLE',1,'Observaciones .....','CONTABILIDAD');
 
 -- -----------------------------------------------------------------------------
 
