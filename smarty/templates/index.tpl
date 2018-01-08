@@ -52,7 +52,7 @@ Twitter: @jmarquelladas
                     <input type="checkbox" name="no_cerrar_sesion" class="w3-check" checked="checked">
                     <label>No cerrar la sesión</label></p>
                 <p>
-                    <button type="button" name="aceptar" class="w3-button w3-section w3-metro-dark-blue w3-ripple"> Aceptar </button><br/>
+                    <input type="submit" name="aceptar" value=" Aceptar " class="w3-button w3-section w3-metro-dark-blue w3-ripple"><br/>
                     <a class="help-block" href="#">¿ Olvidó la contraseña ?</a></p> <!-- Falta redireccionar para resetear contraseña -->
             </form>
         </div>

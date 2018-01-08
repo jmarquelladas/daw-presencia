@@ -87,10 +87,10 @@ class DB {
         $fila = $resultado->fetch(); // Sólo puede haber un resultado
         if(($fila !== FALSE) && password_verify($contrasena, $fila['contras'])) { // El usuario y contraseña es correcto
             $datos = array(
-                dni=>$fila['dni'],
-                nombre=>$fila['nombre'],
-                apellidos=>$fila['apellidos'],
-                esgestor=>$fila['esgestor'],
+                'dni'=>$fila['dni'],
+                'nombre'=>$fila['nombre'],
+                'apellidos'=>$fila['apellidos'],
+                'esgestor'=>$fila['esgestor']
             );
             return $datos;
         } else {

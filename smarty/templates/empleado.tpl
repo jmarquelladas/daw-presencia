@@ -1,31 +1,8 @@
-<?php
-/* Smarty version 3.1.29, created on 2018-01-08 17:07:45
-  from "C:\xampp\htdocs\pry\daw-presencia\smarty\templates\index.tpl" */
-
-if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
-  'has_nocache_code' => false,
-  'version' => '3.1.29',
-  'unifunc' => 'content_5a53975126ab58_07448426',
-  'file_dependency' => 
-  array (
-    '389fff2c0395fd77d348e575f42176a5f0770dbc' => 
-    array (
-      0 => 'C:\\xampp\\htdocs\\pry\\daw-presencia\\smarty\\templates\\index.tpl',
-      1 => 1515427657,
-      2 => 'file',
-    ),
-  ),
-  'includes' => 
-  array (
-  ),
-),false)) {
-function content_5a53975126ab58_07448426 ($_smarty_tpl) {
-?>
 <!DOCTYPE html>
 <!--
-Descripción: Inicio de aplicación - Registro entrada de usuario y otras opciones
+Descripción: Opciones de usuario Empleado
 Versión: 1.0
-Fecha inicio: 03/10/2017
+Fecha inicio: 08/01/2018
 Fecha final: 
 Autor: José Miguel Arquelladas
 Email: jmaruiz@gmail.com
@@ -46,7 +23,6 @@ Twitter: @jmarquelladas
         <h2>DAW - Presencia</h2>
     </header>
     
-    <?php if ($_smarty_tpl->tpl_vars['opcion']->value == "entrada") {?>
     <!-- Formulario de entrada -->
     <div class="w3-row">
         <div class="w3-quarter w3-container"></div>
@@ -81,12 +57,10 @@ Twitter: @jmarquelladas
         </div>
         <div class="w3-quarter w3-container"></div>
     </div>
-    <?php }?>
     <!-- Pié de página -->
     <footer class="w3-container w3-center">
         <hr>
         <p class="w3-opacity w3-tiny">2017-2018 José Miguel Arquelladas Ruiz. Proyecto DAW.</p>
     </footer>
 </body>
-</html><?php }
-}
+</html>
