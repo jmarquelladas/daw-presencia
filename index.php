@@ -39,14 +39,12 @@ if(isset($_REQUEST['aceptar']) && !(empty($_REQUEST['usuario']))) { // Se ha pul
         if($datosAutenticacion['esgestor'] == 1) { // El usuario es Gestor General
             $smarty->display('gestor.tpl');
         } else { // El usuario es del tipo Empleado
-            $smarty->display('empleado.tpl');            
+            $smarty->display('empleado.tpl');
         }
     } else if(!($datosAutenticacion)){ // Las credenciales no son correctas, volvemos a realizar petición.
-        $smarty->assign('opcion','entrada');
         $smarty->display('index.tpl');
     }
 } else { // No se ha pulsado aún ninguna opción, mostramos página inicial.
-    $smarty->assign('opcion','entrada');
     $smarty->display('index.tpl');
 }
 ?>

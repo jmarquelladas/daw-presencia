@@ -22,8 +22,6 @@ Twitter: @jmarquelladas
     <header class="w3-container w3-metro-dark-blue">
         <h2>DAW - Presencia</h2>
     </header>
-    
-    {if $opcion=="entrada"}
     <!-- Formulario de entrada -->
     <div class="w3-row">
         <div class="w3-quarter w3-container"></div>
@@ -58,7 +56,6 @@ Twitter: @jmarquelladas
         </div>
         <div class="w3-quarter w3-container"></div>
     </div>
-    {/if}
     <!-- Pié de página -->
     <footer class="w3-container w3-center">
         <hr>

@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2018-01-08 17:07:45
+/* Smarty version 3.1.29, created on 2018-01-09 16:20:08
   from "C:\xampp\htdocs\pry\daw-presencia\smarty\templates\index.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5a53975126ab58_07448426',
+  'unifunc' => 'content_5a54dda89e97b3_84041572',
   'file_dependency' => 
   array (
     '389fff2c0395fd77d348e575f42176a5f0770dbc' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pry\\daw-presencia\\smarty\\templates\\index.tpl',
-      1 => 1515427657,
+      1 => 1515511194,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5a53975126ab58_07448426 ($_smarty_tpl) {
+function content_5a54dda89e97b3_84041572 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <!--
@@ -45,8 +45,6 @@ Twitter: @jmarquelladas
     <header class="w3-container w3-metro-dark-blue">
         <h2>DAW - Presencia</h2>
     </header>
-    
-    <?php if ($_smarty_tpl->tpl_vars['opcion']->value == "entrada") {?>
     <!-- Formulario de entrada -->
     <div class="w3-row">
         <div class="w3-quarter w3-container"></div>
@@ -81,7 +79,6 @@ Twitter: @jmarquelladas
         </div>
         <div class="w3-quarter w3-container"></div>
     </div>
-    <?php }?>
     <!-- Pié de página -->
     <footer class="w3-container w3-center">
         <hr>
