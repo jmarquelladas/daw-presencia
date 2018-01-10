@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2018-01-08 18:19:31
+/* Smarty version 3.1.29, created on 2018-01-10 17:11:30
   from "C:\xampp\htdocs\pry\daw-presencia\smarty\templates\empleado.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5a53a823ea69a3_06786811',
+  'unifunc' => 'content_5a563b324ff295_79957161',
   'file_dependency' => 
   array (
     'd01edc7e631316a52f812ec7a34168e81c5a7a24' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pry\\daw-presencia\\smarty\\templates\\empleado.tpl',
-      1 => 1515431897,
+      1 => 1515600661,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5a53a823ea69a3_06786811 ($_smarty_tpl) {
+function content_5a563b324ff295_79957161 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <!--
@@ -43,39 +43,17 @@ Twitter: @jmarquelladas
 <body>
     <!-- Cabecera -->
     <header class="w3-container w3-metro-dark-blue">
-        <h2>DAW - Presencia</h2>
+        <h2>DAW - Presencia - Opciones de Empleado</h2>
     </header>
     
     <!-- Formulario de entrada -->
     <div class="w3-row">
         <div class="w3-quarter w3-container"></div>
         <div class="w3-container w3-half">
-            <div class="w3-center">
-                <img src="./img/logo100.png" alt="Logo Empresa" class="w3-image w3-padding-16">
-            </div>
-            <div class="w3-container w3-metro-dark-blue">
-                <div class="w3-row">
-                    <div class="w3-col" style="width:60px">
-                        <i class="fa fa-user fa-4x" aria-hidden="true"></i>
-                    </div>
-                    <div class="w3-rest w3-container">
-                        <h3>Inicie sesión para acceder</h3>
-                    </div>
-                </div>
-            </div>
-            <form id="entrapp" name="entrapp" action="index.php" method="post" class="w3-container w3-card-4">
+            <form id="selperfil" name="otroselperfil" action="./noseque.php" method="post" class="w3-container w3-card-4">
                 <p>
-                    <input type="text" name="usuario" class="w3-input" required>
-                    <label>Nombre de usuario</label></p>
-                <p>
-                    <input type="password" name="contras" class="w3-input" required>
-                    <label>Contraseña</label></p>
-                <p>
-                    <input type="checkbox" name="no_cerrar_sesion" class="w3-check" checked="checked">
-                    <label>No cerrar la sesión</label></p>
-                <p>
-                    <input type="submit" name="aceptar" value=" Aceptar " class="w3-button w3-section w3-metro-dark-blue w3-ripple"><br/>
-                    <a class="help-block" href="#">¿ Olvidó la contraseña ?</a></p> <!-- Falta redireccionar para resetear contraseña -->
+                    <input type="submit" name="aceptar" value=" Aceptar " class="w3-button w3-section w3-metro-dark-blue w3-ripple">
+                </p>
             </form>
         </div>
         <div class="w3-quarter w3-container"></div>

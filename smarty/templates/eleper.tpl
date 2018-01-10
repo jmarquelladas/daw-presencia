@@ -20,14 +20,14 @@ Twitter: @jmarquelladas
 <body>
     <!-- Cabecera -->
     <header class="w3-container w3-metro-dark-blue">
-        <h2>DAW - Presencia - Opciones de Empleado</h2>
+        <h2>DAW - Presencia - Elegir Perfil de usuario</h2>
     </header>
     
-    <!-- Formulario de entrada -->
+    <!-- Formulario de para seleccionar el perfil a elegir ( Gestor o Empleado) -->
     <div class="w3-row">
         <div class="w3-quarter w3-container"></div>
         <div class="w3-container w3-half">
-            <form id="selperfil" name="otroselperfil" action="./noseque.php" method="post" class="w3-container w3-card-4">
+            <form id="selperfil" name="selperfil" action="./eleper.php" method="post" class="w3-container w3-card-4">
                 <p>
                     <input type="submit" name="aceptar" value=" Aceptar " class="w3-button w3-section w3-metro-dark-blue w3-ripple">
                 </p>

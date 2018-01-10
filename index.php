@@ -37,7 +37,7 @@ if(isset($_REQUEST['aceptar']) && !(empty($_REQUEST['usuario']))) { // Se ha pul
         $_SESSION['usuarios']['inicio'] = time();
         // Comprobamos también qué tipo de usuario habrá entrado a la aplicación
         if($datosAutenticacion['esgestor'] == 1) { // El usuario es Gestor General
-            $smarty->display('gestor.tpl');
+            $smarty->display('eleper.tpl'); // Plantilla de elección de perfil
         } else { // El usuario es del tipo Empleado
             $smarty->display('empleado.tpl');
         }

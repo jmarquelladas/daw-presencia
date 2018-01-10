@@ -4,8 +4,9 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group name="examenJunio"/>
         <group>
-            <file>file:/C:/xampp/htdocs/pry/daw-presencia/configuracion.php</file>
-            <file>file:/C:/xampp/htdocs/pry/daw-presencia/smarty/templates/index.tpl</file>
+            <file>file:/C:/xampp/htdocs/pry/daw-presencia/eleper.php</file>
+            <file>file:/C:/xampp/htdocs/pry/daw-presencia/smarty/templates/empleado.tpl</file>
+            <file>file:/C:/xampp/htdocs/pry/daw-presencia/smarty/templates/eleper.tpl</file>
             <file>file:/C:/xampp/htdocs/pry/daw-presencia/index.php</file>
             <file>file:/C:/xampp/htdocs/pry/daw-presencia/DB.php</file>
         </group>

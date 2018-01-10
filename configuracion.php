@@ -27,5 +27,5 @@ class Configuracion {
     public $host = 'localhost';
     public $nombreBD = 'dawpresencia';
     public $usuBDatos = 'root';
-    public $passwd = '';
+    public $passwd = 'gr8814am';
 }
