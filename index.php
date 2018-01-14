@@ -45,6 +45,10 @@ if(isset($_REQUEST['aceptar']) && !(empty($_REQUEST['usuario']))) { // Se ha pul
         $smarty->display('index.tpl');
     }
 } else { // No se ha pulsado aún ninguna opción, mostramos página inicial.
+    session_start();
+    unset($_SESSION['usuarios']['usuario']);
+    unset($_SESSION['usuarios']['inicio']);
+    session_destroy();
     $smarty->display('index.tpl');
 }
 ?>

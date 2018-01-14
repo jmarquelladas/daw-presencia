@@ -19,13 +19,15 @@ class Configuracion {
     public $version = '1.0';
     public $build = '2018.01.01.1931';
     public $ini_app = '2017';
-    public $desarrolla = 'JOSE MIGUEL ARQUELLADAS RUIZ';
+    public $desarrolla = 'José Miguel Arquelladas Ruiz';
     public $nom_twitter = '@JMArquelladas';
     public $web_desarrolla = 'www.huetic.es';
+    public $tel_soporte = "900654321";
     public $nombreEmpresa = 'EMPRESA DE EJEMPLO I';
     public $nifCif = '12345678A';
     public $host = 'localhost';
     public $nombreBD = 'dawpresencia';
     public $usuBDatos = 'root';
     public $passwd = 'gr8814am';
+    public $rutaLogo = './img/logo100.png';
 }

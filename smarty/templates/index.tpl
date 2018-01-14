@@ -20,12 +20,12 @@ Twitter: @jmarquelladas
 <body>
     <!-- Cabecera -->
     <header class="w3-container w3-metro-dark-blue">
-        <h2>DAW - Presencia</h2>
+        <h3 class="w3-center">DAW - Presencia</h3>
     </header>
     <!-- Formulario de entrada -->
     <div class="w3-row">
-        <div class="w3-quarter w3-container"></div>
-        <div class="w3-container w3-half">
+        <div class="w3-third w3-container"></div>
+        <div class="w3-third w3-container">
             <div class="w3-center">
                 <img src="./img/logo100.png" alt="Logo Empresa" class="w3-image w3-padding-16">
             </div>
@@ -54,12 +54,12 @@ Twitter: @jmarquelladas
                     <a class="help-block" href="#">¿ Olvidó la contraseña ?</a></p> <!-- Falta redireccionar para resetear contraseña -->
             </form>
         </div>
-        <div class="w3-quarter w3-container"></div>
+        <div class="w3-third w3-container"></div>
     </div>
     <!-- Pié de página -->
     <footer class="w3-container w3-center">
         <hr>
-        <p class="w3-opacity w3-tiny">2017-2018 José Miguel Arquelladas Ruiz. Proyecto DAW.</p>
+        <p class="w3-opacity w3-tiny">2017-2018 José Miguel Arquelladas Ruiz.<br/>Proyecto DAW.</p>
     </footer>
 </body>
 </html>

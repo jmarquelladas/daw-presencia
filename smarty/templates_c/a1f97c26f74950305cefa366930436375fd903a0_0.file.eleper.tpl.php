@@ -1,3 +1,26 @@
+<?php
+/* Smarty version 3.1.29, created on 2018-01-14 10:58:48
+  from "C:\xampp\htdocs\pry\daw-presencia\smarty\templates\eleper.tpl" */
+
+if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
+  'has_nocache_code' => false,
+  'version' => '3.1.29',
+  'unifunc' => 'content_5a5b29d836a0c2_08349471',
+  'file_dependency' => 
+  array (
+    'a1f97c26f74950305cefa366930436375fd903a0' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\pry\\daw-presencia\\smarty\\templates\\eleper.tpl',
+      1 => 1515871204,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5a5b29d836a0c2_08349471 ($_smarty_tpl) {
+?>
 <!DOCTYPE html>
 <!--
 Descripción: Opciones de usuario Empleado
@@ -65,4 +88,5 @@ Twitter: @jmarquelladas
         <p class="w3-opacity w3-tiny">2017-2018 José Miguel Arquelladas Ruiz.<br/>Proyecto DAW.</p>
     </footer>
 </body>
-</html>
+</html><?php }
+}
