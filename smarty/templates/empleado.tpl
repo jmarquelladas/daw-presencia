@@ -140,6 +140,12 @@ Twitter: @jmarquelladas
                                     <option value="otros">Otros...</option>
                                 </select>
                             </div>
+                            <div class="w3-panel">
+                                <textarea class="w3-input w3-border w3-round" rows="4" cols="37">Observaciones...</textarea>
+                            </div>
+                            <div class="w3-panel">
+                                <button class="w3-button w3-block w3-padding-24 w3-metro-dark-blue w3-round">Registrar</button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -149,14 +155,6 @@ Twitter: @jmarquelladas
             <!-- Pestaña contenido Calendario -->
             <div class="w3-row" style="height: 580px;">
                 <p>Calendario</p>
-                
-                
-                
-                
-                
-                
-                
-                
             </div>
         </div>
     </div>

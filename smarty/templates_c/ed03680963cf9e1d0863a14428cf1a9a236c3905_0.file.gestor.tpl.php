@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2018-01-14 18:04:26
+/* Smarty version 3.1.29, created on 2018-01-16 21:44:25
   from "C:\xampp\htdocs\pry\daw-presencia\smarty\templates\gestor.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5a5b8d9a220a44_39882811',
+  'unifunc' => 'content_5a5e6429e165c8_31165813',
   'file_dependency' => 
   array (
     'ed03680963cf9e1d0863a14428cf1a9a236c3905' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pry\\daw-presencia\\smarty\\templates\\gestor.tpl',
-      1 => 1515949464,
+      1 => 1516135463,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5a5b8d9a220a44_39882811 ($_smarty_tpl) {
+function content_5a5e6429e165c8_31165813 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <!--
@@ -82,7 +82,7 @@ Twitter: @jmarquelladas
                 <!-- Últimas Solicitudes -->
                 <div class="w3-half">
                     <div class="w3-panel">
-                        <h4 class="w3-center w3-metro-dark-blue">Solicitudes</h4>
+                        <h4 class="w3-center w3-metro-dark-blue">Últimas solicitudes</h4>
                         <div class="w3-responsive">
                             <table class="w3-table-all w3-hoverable w3-small">
                                 <thead>
@@ -166,7 +166,7 @@ Twitter: @jmarquelladas
                 <!-- Últimas Ausencias -->
                 <div class="w3-half">
                     <div class="w3-panel">
-                        <h4 class="w3-center w3-metro-dark-blue">Ausencias</h4>
+                        <h4 class="w3-center w3-metro-dark-blue">Últimas ausencias</h4>
                         <div class="w3-responsive">
                             <table class="w3-table-all w3-hoverable w3-small">
                                 <thead>
@@ -176,7 +176,7 @@ Twitter: @jmarquelladas
                                         <th>Empleado</th>
                                     </tr>
                                 </thead>
-                                <tbody
+                                <tbody>
                                     <tr>
                                         <td>14/01/2018</td>
                                         <td>17:11</td>

@@ -59,7 +59,7 @@ Twitter: @jmarquelladas
                 <!-- Últimas Solicitudes -->
                 <div class="w3-half">
                     <div class="w3-panel">
-                        <h4 class="w3-center w3-metro-dark-blue">Solicitudes</h4>
+                        <h4 class="w3-center w3-metro-dark-blue">Últimas solicitudes</h4>
                         <div class="w3-responsive">
                             <table class="w3-table-all w3-hoverable w3-small">
                                 <thead>
@@ -143,7 +143,7 @@ Twitter: @jmarquelladas
                 <!-- Últimas Ausencias -->
                 <div class="w3-half">
                     <div class="w3-panel">
-                        <h4 class="w3-center w3-metro-dark-blue">Ausencias</h4>
+                        <h4 class="w3-center w3-metro-dark-blue">Últimas ausencias</h4>
                         <div class="w3-responsive">
                             <table class="w3-table-all w3-hoverable w3-small">
                                 <thead>

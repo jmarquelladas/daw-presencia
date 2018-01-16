@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2018-01-15 17:09:46
+/* Smarty version 3.1.29, created on 2018-01-16 21:41:49
   from "C:\xampp\htdocs\pry\daw-presencia\smarty\templates\empleado.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5a5cd24aa3e6a1_02237728',
+  'unifunc' => 'content_5a5e638d40a212_11533075',
   'file_dependency' => 
   array (
     'd01edc7e631316a52f812ec7a34168e81c5a7a24' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pry\\daw-presencia\\smarty\\templates\\empleado.tpl',
-      1 => 1516032584,
+      1 => 1516135307,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5a5cd24aa3e6a1_02237728 ($_smarty_tpl) {
+function content_5a5e638d40a212_11533075 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <!--
@@ -167,6 +167,12 @@ Twitter: @jmarquelladas
                                     <option value="otros">Otros...</option>
                                 </select>
                             </div>
+                            <div class="w3-panel">
+                                <textarea class="w3-input w3-border w3-round" rows="4" cols="37">Observaciones...</textarea>
+                            </div>
+                            <div class="w3-panel">
+                                <button class="w3-button w3-block w3-padding-24 w3-metro-dark-blue w3-round">Registrar</button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -176,14 +182,6 @@ Twitter: @jmarquelladas
             <!-- Pestaña contenido Calendario -->
             <div class="w3-row" style="height: 580px;">
                 <p>Calendario</p>
-                
-                
-                
-                
-                
-                
-                
-                
             </div>
         </div>
     </div>
