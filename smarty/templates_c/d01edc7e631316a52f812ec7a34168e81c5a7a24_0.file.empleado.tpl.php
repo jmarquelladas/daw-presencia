@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2018-01-14 23:33:29
+/* Smarty version 3.1.29, created on 2018-01-15 17:09:46
   from "C:\xampp\htdocs\pry\daw-presencia\smarty\templates\empleado.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5a5bdab9c7bfd5_18944607',
+  'unifunc' => 'content_5a5cd24aa3e6a1_02237728',
   'file_dependency' => 
   array (
     'd01edc7e631316a52f812ec7a34168e81c5a7a24' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pry\\daw-presencia\\smarty\\templates\\empleado.tpl',
-      1 => 1515969206,
+      1 => 1516032584,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5a5bdab9c7bfd5_18944607 ($_smarty_tpl) {
+function content_5a5cd24aa3e6a1_02237728 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <!--
@@ -93,7 +93,7 @@ Twitter: @jmarquelladas
         <div id="pes_ini" class="w3-container" style="display: block;">
             <!-- Pestaña contenido Inicio -->
             <div class="w3-row" style="height: 600px;">
-                <div class="w3-twothird">
+                <div class="w3-threequarter">
                     <div class="w3-panel">
                         <button class="w3-button w3-padding-24 w3-metro-dark-blue w3-round" style="width: 200px;">Nueva solicitud</button>
                         <div class="w3-dropdown-hover">
@@ -108,9 +108,9 @@ Twitter: @jmarquelladas
                     <div class="w3-panel">
                         <div class="w3-row">
                             <div class="w3-twothird">
-                                <div class="w3-row">
+                                <div class="w3-row-padding ">
                                     <div class="w3-quarter">
-                                        <select class="w3-select w3-border w3-small" name="tipoSolic">
+                                        <select class="w3-select w3-border w3-round w3-small" name="tipoSolic">
                                             <option value="" disabled selected>Tipo</option>
                                             <option value="vacac">Vacaciones</option>
                                             <option value="medic">Médico</option>
@@ -118,7 +118,7 @@ Twitter: @jmarquelladas
                                         </select>
                                     </div>
                                     <div class="w3-quarter">
-                                        <select class="w3-select w3-border w3-small" name="estSolic">
+                                        <select class="w3-select w3-border w3-round w3-small" name="estSolic">
                                             <option value="" disabled selected>Estado</option>
                                             <option value="entramite">En trámite</option>
                                             <option value="aprobada">Aprobada</option>
@@ -126,34 +126,55 @@ Twitter: @jmarquelladas
                                         </select>
                                     </div>
                                     <div class="w3-quarter">
-                                        <select class="w3-select w3-border w3-small" name="compara">
+                                        <select class="w3-select w3-border w3-round w3-small" name="compara">
                                             <option value="entramite">Con fecha...</option>
                                             <option value="aprobada">Antes de la fecha...</option>
                                             <option value="denegada">Después de la fecha...</option>
                                         </select>
                                     </div>
                                     <div class="w3-quarter">
-                                        <input type="date" class="w3-input w3-border w3-small">
+                                        <input type="date" class="w3-input w3-border w3-round w3-small">
                                     </div>
                                 </div>
                             </div>
                             <div class="w3-third">
                                 <div class="w3-row">
-                                    <input type="text" class="w3-input w3-border w3-small" placeholder="Descripción...">
+                                    <input type="text" class="w3-input w3-border w3-round-large w3-small" placeholder="Descripción...">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="w3-third">
-                    <div class="w3-panel">
+                <div class="w3-quarter">
+                    <div class="w3-panel w3-border-left" style="height: 586px;">
+                        <form class="w3-container w3-card-4" action="" method="post" name="formRegPresencia">
+                            <div class="w3-panel w3-metro-dark-blue w3-round w3-center">
+                                <h3>Registro de Presencia</h3>
+                            </div>
+                            <div class="w3-panel w3-border w3-center">
+                                <label class="w3-label">Fecha</label>
+                                <h2><b>04/03/2017</b></h2>
+                            </div>
+                            <div class="w3-panel w3-border w3-center">
+                                <label class="w3-label">Hora</label>
+                                <h2><b>09:58:36</b></h2>
+                            </div>
+                            <div class="w3-panel">
+                                <select class="w3-select w3-border w3-round" name="tipoSolic">
+                                    <option value="" disabled selected>Tipo</option>
+                                    <option value="vacac">Vacaciones</option>
+                                    <option value="medic">Médico</option>
+                                    <option value="otros">Otros...</option>
+                                </select>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
         <div id="pes_cal" class="w3-container" style="display: none;">
             <!-- Pestaña contenido Calendario -->
-            <div class="w3-row" style="height: 600px;">
+            <div class="w3-row" style="height: 580px;">
                 <p>Calendario</p>
                 
                 
