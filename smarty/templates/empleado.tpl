@@ -81,7 +81,7 @@ Twitter: @jmarquelladas
                     <div class="w3-panel">
                         <div class="w3-row">
                             <div class="w3-twothird">
-                                <div class="w3-row-padding ">
+                                <div class="w3-row-padding">
                                     <div class="w3-quarter">
                                         <select class="w3-select w3-border w3-round w3-small" name="tipoSolic">
                                             <option value="" disabled selected>Tipo</option>
@@ -153,8 +153,193 @@ Twitter: @jmarquelladas
         </div>
         <div id="pes_cal" class="w3-container" style="display: none;">
             <!-- Pestaña contenido Calendario -->
-            <div class="w3-row" style="height: 580px;">
-                <p>Calendario</p>
+            <div class="w3-row" style="height: 600px;">
+                <div class="w3-half">
+                    <div class="w3-quarter">
+                        <select class="w3-select w3-border w3-round" name="anioCal">
+                            <option value="" disabled selected>Seleccione el año</option>
+                            <option value="vacac">2018</option>
+                            <option value="medic">2017</option>
+                            <option value="otros">2016</option>
+                            <option value="otros">2015</option>
+                            <option value="otros">2014</option>
+                            <option value="otros">2013</option>
+                        </select>
+                    </div>
+                    <div class="w3-quarter">
+                        <select class="w3-select w3-border w3-round" name="mesCal">
+                            <option value="" disabled selected>Seleccione el mes</option>
+                            <option value="vacac">Enero</option>
+                            <option value="medic">Febrero</option>
+                            <option value="otros">...</option>
+                            <option value="otros">...</option>
+                            <option value="otros">Diciembre</option>
+                        </select>
+                    </div>
+                    <div class="w3-half">
+                        <div class="w3-threequarter">
+                            <h3>6 - 12 diciembre de 2016</h3>
+                        </div>
+                        <div class="w3-quarter">
+                            <h3> << >></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-panel">
+                    <table class="w3-table-all w3-hoverable">
+                        <thead class="">
+                            <tr class="w3-grey">
+                                <th>Lunes</th>
+                                <th>Martes</th>
+                                <th>Miércoles</th>
+                                <th>Jueves</th>
+                                <th>Viernes</th>
+                                <th>Sábado</th>
+                                <th>Domingo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr> 
+                            <tr>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr> 
+                            <tr>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr> 
+                            <tr>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr> 
+                            <tr>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr> 
+                            <tr>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr>                            
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
