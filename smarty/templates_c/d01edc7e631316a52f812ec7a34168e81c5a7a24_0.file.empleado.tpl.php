@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2018-01-18 18:21:13
+/* Smarty version 3.1.29, created on 2018-01-18 18:28:58
   from "C:\xampp\htdocs\pry\daw-presencia\smarty\templates\empleado.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5a60d78962cd96_96573351',
+  'unifunc' => 'content_5a60d95a7555a1_58765733',
   'file_dependency' => 
   array (
     'd01edc7e631316a52f812ec7a34168e81c5a7a24' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pry\\daw-presencia\\smarty\\templates\\empleado.tpl',
-      1 => 1516296070,
+      1 => 1516296532,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5a60d78962cd96_96573351 ($_smarty_tpl) {
+function content_5a60d95a7555a1_58765733 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <!--
@@ -213,157 +213,134 @@ Twitter: @jmarquelladas
                     </div>
                 </div>
                 <div class="w3-panel">
-                    <table class="w3-table-all w3-hoverable">
+                    <table class="w3-table-all w3-large w3-card-4">
                         <thead class="">
                             <tr class="w3-grey">
-                                <th>Lunes</th>
-                                <th>Martes</th>
-                                <th>Miércoles</th>
-                                <th>Jueves</th>
-                                <th>Viernes</th>
-                                <th>Sábado</th>
-                                <th>Domingo</th>
+                                <th class="w3-border w3-center">Lunes</th>
+                                <th class="w3-border w3-center">Martes</th>
+                                <th class="w3-border w3-center">Miércoles</th>
+                                <th class="w3-border w3-center">Jueves</th>
+                                <th class="w3-border w3-center">Viernes</th>
+                                <th class="w3-border w3-center">Sábado</th>
+                                <th class="w3-border w3-center">Domingo</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                            </tr> 
+                            </tr>
                             <tr>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                            </tr> 
+                            </tr>
                             <tr>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                            </tr> 
+                            </tr>
                             <tr>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                            </tr> 
+                            </tr>
                             <tr>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                                <td>
+                                <td class="w3-border">
                                     
                                 </td>
-                            </tr> 
-                            <tr>
-                                <td>
-                                    
-                                </td>
-                                <td>
-                                    
-                                </td>
-                                <td>
-                                    
-                                </td>
-                                <td>
-                                    
-                                </td>
-                                <td>
-                                    
-                                </td>
-                                <td>
-                                    
-                                </td>
-                                <td>
-                                    
-                                </td>
-                            </tr>                            
+                            </tr>                        
                         </tbody>
                     </table>
                 </div>
