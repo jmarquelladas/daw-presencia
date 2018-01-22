@@ -68,9 +68,9 @@ Twitter: @jmarquelladas
             <div class="w3-row" style="height: 600px;">
                 <div class="w3-threequarter">
                     <div class="w3-panel">
-                        <button class="w3-button w3-padding-24 w3-metro-dark-blue w3-round" style="width: 200px;">Nueva solicitud</button>
+                        <button class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">Nueva solicitud</button>
                         <div class="w3-dropdown-hover">
-                            <button class="w3-button w3-padding-24 w3-metro-dark-blue w3-round" style="width: 200px;">Más opciones</button>
+                            <button class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">Más opciones</button>
                             <div class="w3-dropdown-content w3-bar-block w3-border">
                                 <a href="#" class="w3-bar-item w3-button w3-metro-dark-blue">Modificar</a>
                                 <a href="#" class="w3-bar-item w3-button w3-metro-dark-blue">Justificar</a>

@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2018-01-22 01:54:39
+/* Smarty version 3.1.29, created on 2018-01-22 20:40:27
   from "C:\xampp\htdocs\pry\daw-presencia\smarty\templates\gestor.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5a65364f6036c9_60198198',
+  'unifunc' => 'content_5a663e2b649135_97730224',
   'file_dependency' => 
   array (
     'ed03680963cf9e1d0863a14428cf1a9a236c3905' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pry\\daw-presencia\\smarty\\templates\\gestor.tpl',
-      1 => 1516582476,
+      1 => 1516650024,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5a65364f6036c9_60198198 ($_smarty_tpl) {
+function content_5a663e2b649135_97730224 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <!--
@@ -43,59 +43,8 @@ Twitter: @jmarquelladas
  src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"><?php echo '</script'; ?>
 >
     <?php echo '<script'; ?>
- type="text/javascript">
-        $(document).ready(function() {
-            $('#menu_ini').click(function(){
-                $('.pestania').each(function(){
-                    $(this).hide();
-                });
-                $('#opc_ini').show();
-            });
-
-            $('#menu_emp').click(function(){
-                $('.pestania').each(function(){
-                    $(this).hide();
-                });
-                $('#opc_emp').show();
-            });
-            
-            $('#menu_sol').click(function(){
-                $('.pestania').each(function(){
-                    $(this).hide();
-                });
-                $('#opc_sol').show();
-            });
-            
-            $('#menu_pre').click(function(){
-                $('.pestania').each(function(){
-                    $(this).hide();
-                });
-                $('#opc_pre').show();
-            });
-            
-            $('#menu_cal').click(function(){
-                $('.pestania').each(function(){
-                    $(this).hide();
-                });
-                $('#opc_cal').show();
-            });
-            
-            $('#menu_tur_jor').click(function(){
-                $('.pestania').each(function(){
-                    $(this).hide();
-                });
-                $('#opc_tur_jor').show();
-            });
-            
-            $('#menu_par').click(function(){
-                $('.pestania').each(function(){
-                    $(this).hide();
-                });
-                $('#opc_par').show();
-            });
-        });
-    <?php echo '</script'; ?>
->
+ type="text/javascript" src="/pry/daw-presencia/js/gestor.js"><?php echo '</script'; ?>
+> <!-- Habrá que modificarlo para cuando se suba al servidor o incluir el código -->
 </head>
 <body>
     <!-- Cabecera -->
@@ -306,20 +255,54 @@ Twitter: @jmarquelladas
                 </div>
             </div>
             <div id="opc_emp" class="w3-row pestania" style="height: 600px; display: none;"> <!-- Opción mantenimiento de empleados -->
-                <h3>Empleados</h3>
-            </div>
+                <button class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">Nuevo Empleado</button>
+                <div class="w3-dropdown-hover">
+                    <button class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">Más opciones</button>
+                    <div class="w3-dropdown-content w3-bar-block w3-border">
+                        <a href="#" class="w3-bar-item w3-button w3-metro-dark-blue">Modificar</a>
+                        <a href="#" class="w3-bar-item w3-button w3-metro-dark-blue">Justificar</a>
+                        <a href="#" class="w3-bar-item w3-button w3-metro-dark-blue">Cancelar</a>
+                    </div>
+                </div>
+                <input type="text" class="w3-input w3-border w3-round" placeholder="Buscar ...">
+                
+                <!--
+                <div class="w3-panel w3-twothird">
+                    <div class="w3-third">
+                        <button class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">Nuevo Empleado</button>
+                    </div>
+                    <div class="w3-third">
+                        <div class="w3-dropdown-hover">
+                            <button class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">Más opciones</button>
+                            <div class="w3-dropdown-content w3-bar-block w3-border">
+                                <a href="#" class="w3-bar-item w3-button w3-metro-dark-blue">Modificar</a>
+                                <a href="#" class="w3-bar-item w3-button w3-metro-dark-blue">Justificar</a>
+                                <a href="#" class="w3-bar-item w3-button w3-metro-dark-blue">Cancelar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-third">
+                        <input type="text" class="w3-input w3-border w3-round" placeholder="Buscar ...">
+                    </div>
+                </div> -->
+            </div> 
+            
             <div id="opc_sol" class="w3-row pestania" style="height: 600px; display: none;"> <!-- Opción gestión de solicitudes -->
                 <h3>Solicitudes</h3>
             </div>
+            
             <div id="opc_pre" class="w3-row pestania" style="height: 600px; display: none;"> <!-- Opción control de presencia  -->
                 <h3>Presencia</h3>
             </div>
+            
             <div id="opc_cal" class="w3-row pestania" style="height: 600px; display: none;"> <!-- Opción mantenimiento de calendarios -->
                 <h3>Calendarios</h3>
             </div>
+            
             <div id="opc_tur_jor" class="w3-row pestania" style="height: 600px; display: none;"> <!-- Opción Turnos y Jornadas -->
                 <h3>Turnos y Jornadas</h3>
             </div>
+            
             <div id="opc_par" class="w3-row pestania" style="height: 600px; display: none;"> <!-- Opción parámetros generales -->
                 <h3>Parámetros</h3>
             </div>

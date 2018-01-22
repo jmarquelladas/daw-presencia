@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2018-01-18 18:28:58
+/* Smarty version 3.1.29, created on 2018-01-22 18:01:17
   from "C:\xampp\htdocs\pry\daw-presencia\smarty\templates\empleado.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5a60d95a7555a1_58765733',
+  'unifunc' => 'content_5a6618dde811b7_77754763',
   'file_dependency' => 
   array (
     'd01edc7e631316a52f812ec7a34168e81c5a7a24' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pry\\daw-presencia\\smarty\\templates\\empleado.tpl',
-      1 => 1516296532,
+      1 => 1516640450,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5a60d95a7555a1_58765733 ($_smarty_tpl) {
+function content_5a6618dde811b7_77754763 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <!--
@@ -95,9 +95,9 @@ Twitter: @jmarquelladas
             <div class="w3-row" style="height: 600px;">
                 <div class="w3-threequarter">
                     <div class="w3-panel">
-                        <button class="w3-button w3-padding-24 w3-metro-dark-blue w3-round" style="width: 200px;">Nueva solicitud</button>
+                        <button class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">Nueva solicitud</button>
                         <div class="w3-dropdown-hover">
-                            <button class="w3-button w3-padding-24 w3-metro-dark-blue w3-round" style="width: 200px;">Más opciones</button>
+                            <button class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">Más opciones</button>
                             <div class="w3-dropdown-content w3-bar-block w3-border">
                                 <a href="#" class="w3-bar-item w3-button w3-metro-dark-blue">Modificar</a>
                                 <a href="#" class="w3-bar-item w3-button w3-metro-dark-blue">Justificar</a>
