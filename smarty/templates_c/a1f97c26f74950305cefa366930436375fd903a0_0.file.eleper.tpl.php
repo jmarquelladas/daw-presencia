@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2018-01-14 10:58:48
+/* Smarty version 3.1.29, created on 2018-01-22 22:10:25
   from "C:\xampp\htdocs\pry\daw-presencia\smarty\templates\eleper.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5a5b29d836a0c2_08349471',
+  'unifunc' => 'content_5a665341e18e70_05397472',
   'file_dependency' => 
   array (
     'a1f97c26f74950305cefa366930436375fd903a0' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pry\\daw-presencia\\smarty\\templates\\eleper.tpl',
-      1 => 1515871204,
+      1 => 1516655421,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5a5b29d836a0c2_08349471 ($_smarty_tpl) {
+function content_5a665341e18e70_05397472 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <!--
@@ -43,22 +43,22 @@ Twitter: @jmarquelladas
 <body>
     <!-- Cabecera -->
     <header class="w3-container w3-metro-dark-blue">
-        <h3 class="w3-center">DAW - Presencia</h3>
+        <h4 class="w3-center">DAW - Presencia</h4>
     </header>
     <!-- Formulario de para seleccionar el perfil a elegir ( Gestor o Empleado) -->
     <div class="w3-row">
         <div class="w3-quarter w3-container"></div>
         <div class="w3-container w3-half">
             <div class="w3-center">
-                <img src="./img/logo100.png" alt="Logo Empresa" class="w3-image w3-padding-16">
+                <img src="./img/logo100.png" alt="Logo Empresa" class="w3-image w3-padding-16" style="width: 75px;">
             </div>
             <div class="w3-container w3-metro-dark-blue">
                 <div class="w3-row">
                     <div class="w3-col" style="width:60px">
-                        <i class="fa fa-user fa-4x" aria-hidden="true"></i>
+                        <i class="fa fa-user fa-3x" aria-hidden="true"></i>
                     </div>
                     <div class="w3-rest w3-container">
-                        <h3>Perfil de usuario</h3>
+                        <h4>Perfil de usuario</h4>
                     </div>
                 </div>
             </div>

@@ -35,13 +35,13 @@ Twitter: @jmarquelladas
 <body>
     <!-- Cabecera -->
     <header class="w3-container w3-metro-dark-blue">
-        <h3 class="w3-center">DAW - Presencia</h3>
+        <h4 class="w3-center">DAW - Presencia</h4>
     </header>
     <div class="w3-row">
         <div class="w3-container">
             <div class="w3-container w3-twothird">
                 <!-- Logo empresa -->
-                <img src="./img/logo100.png" alt="Logo Empresa" class="w3-image w3-padding-16">
+                <img src="./img/logo100.png" alt="Logo Empresa" class="w3-image w3-padding-16" style="width: 75px;">
             </div>
             <div class="w3-container w3-third">
                 <!-- Datos sesion -->
@@ -65,7 +65,7 @@ Twitter: @jmarquelladas
         </div>
         <div id="pes_ini" class="w3-container" style="display: block;">
             <!-- Pestaña contenido Inicio -->
-            <div class="w3-row" style="height: 600px;">
+            <div class="w3-row" style="height: 562px;">
                 <div class="w3-threequarter">
                     <div class="w3-panel">
                         <button class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">Nueva solicitud</button>
@@ -119,18 +119,18 @@ Twitter: @jmarquelladas
                     </div>
                 </div>
                 <div class="w3-quarter">
-                    <div class="w3-panel w3-border-left" style="height: 586px;">
+                    <div class="w3-panel w3-border-left" style="height: 532px;">
                         <form class="w3-container w3-card-4" action="" method="post" name="formRegPresencia">
                             <div class="w3-panel w3-metro-dark-blue w3-round w3-center">
-                                <h3>Registro de Presencia</h3>
+                                <h4>Registro de Presencia</h4>
                             </div>
                             <div class="w3-panel w3-border w3-center">
-                                <label class="w3-label">Fecha</label>
-                                <h2><b>04/03/2017</b></h2>
+                                <!-- <label class="w3-label">Fecha</label>-->
+                                <h3><b>04/03/2017</b></h3>
                             </div>
                             <div class="w3-panel w3-border w3-center">
-                                <label class="w3-label">Hora</label>
-                                <h2><b>09:58:36</b></h2>
+                                <!-- <label class="w3-label">Hora</label>-->
+                                <h3><b>09:58:36</b></h3>
                             </div>
                             <div class="w3-panel">
                                 <select class="w3-select w3-border w3-round" name="tipoSolic">
@@ -153,7 +153,7 @@ Twitter: @jmarquelladas
         </div>
         <div id="pes_cal" class="w3-container" style="display: none;">
             <!-- Pestaña contenido Calendario -->
-            <div class="w3-row" style="height: 600px;">
+            <div class="w3-row" style="height: 565px;">
                 <div class="w3-half">
                     <div class="w3-quarter">
                         <select class="w3-select w3-border w3-round" name="anioCal">

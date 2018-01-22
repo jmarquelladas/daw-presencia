@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2018-01-22 20:40:27
+/* Smarty version 3.1.29, created on 2018-01-22 22:54:36
   from "C:\xampp\htdocs\pry\daw-presencia\smarty\templates\gestor.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5a663e2b649135_97730224',
+  'unifunc' => 'content_5a665d9c154df5_68300785',
   'file_dependency' => 
   array (
     'ed03680963cf9e1d0863a14428cf1a9a236c3905' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pry\\daw-presencia\\smarty\\templates\\gestor.tpl',
-      1 => 1516650024,
+      1 => 1516658070,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5a663e2b649135_97730224 ($_smarty_tpl) {
+function content_5a665d9c154df5_68300785 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <!--
@@ -49,13 +49,13 @@ Twitter: @jmarquelladas
 <body>
     <!-- Cabecera -->
     <header class="w3-container w3-metro-dark-blue">
-        <h3 class="w3-center">DAW - Presencia</h3>
+        <h4 class="w3-center">DAW - Presencia</h4>
     </header>
     <div class="w3-row">
         <div class="w3-container">
             <div class="w3-container w3-twothird">
                 <!-- Logo empresa -->
-                <img src="./img/logo100.png" alt="Logo Empresa" class="w3-image w3-padding-16">
+                <img src="./img/logo100.png" alt="Logo Empresa" class="w3-image w3-padding-16" style="width: 75px;">
             </div>
             <div class="w3-container w3-third">
                 <!-- Datos sesion -->
@@ -84,7 +84,7 @@ Twitter: @jmarquelladas
         </div>
         <div id="cont_prin" class="w3-container">
             <!-- Contenido principal -->
-            <div id="opc_ini" class="w3-row pestania" style="height: 600px;">  <!-- Opción inicio -->
+            <div id="opc_ini" class="w3-row pestania" style="height: 550px;">  <!-- Opción inicio -->
                 <!-- Últimas Solicitudes -->
                 <div class="w3-half">
                     <div class="w3-panel">
