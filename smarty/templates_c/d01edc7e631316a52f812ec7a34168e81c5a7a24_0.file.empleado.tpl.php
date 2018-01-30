@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2018-01-22 18:01:17
+/* Smarty version 3.1.29, created on 2018-01-24 18:14:29
   from "C:\xampp\htdocs\pry\daw-presencia\smarty\templates\empleado.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5a6618dde811b7_77754763',
+  'unifunc' => 'content_5a68bef5a7e0f1_60663813',
   'file_dependency' => 
   array (
     'd01edc7e631316a52f812ec7a34168e81c5a7a24' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pry\\daw-presencia\\smarty\\templates\\empleado.tpl',
-      1 => 1516640450,
+      1 => 1516814066,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5a6618dde811b7_77754763 ($_smarty_tpl) {
+function content_5a68bef5a7e0f1_60663813 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <!--
@@ -92,6 +92,7 @@ Twitter: @jmarquelladas
         </div>
         <div id="pes_ini" class="w3-container" style="display: block;">
             <!-- Pestaña contenido Inicio -->
+            <!--
             <div class="w3-row" style="height: 600px;">
                 <div class="w3-threequarter">
                     <div class="w3-panel">
@@ -176,7 +177,7 @@ Twitter: @jmarquelladas
                         </form>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div id="pes_cal" class="w3-container" style="display: none;">
             <!-- Pestaña contenido Calendario -->

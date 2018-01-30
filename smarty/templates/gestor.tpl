@@ -46,13 +46,13 @@ Twitter: @jmarquelladas
         <div class="w3-container">
             <!-- Menú opciones generales -->
             <div class="w3-bar w3-metro-dark-blue">
-                <a id="menu_ini" class="w3-bar-item w3-button">Inicio</a>
-                <a id="menu_emp" class="w3-bar-item w3-button">Empleados</a>
-                <a id="menu_sol" class="w3-bar-item w3-button">Solicitudes</a>
-                <a id="menu_pre" class="w3-bar-item w3-button">Presencia</a>
-                <a id="menu_cal" class="w3-bar-item w3-button">Calendarios</a>
-                <a id="menu_tur_jor" class="w3-bar-item w3-button">Turnos y Jornadas</a>
-                <a id="menu_par" class="w3-bar-item w3-button">Parámetros generales</a>
+                <a id="menu_ini" class="w3-bar-item w3-button w3-mobile">Inicio</a>
+                <a id="menu_emp" class="w3-bar-item w3-button w3-mobile">Empleados</a>
+                <a id="menu_sol" class="w3-bar-item w3-button w3-mobile">Solicitudes</a>
+                <a id="menu_pre" class="w3-bar-item w3-button w3-mobile">Presencia</a>
+                <a id="menu_cal" class="w3-bar-item w3-button w3-mobile">Calendarios</a>
+                <a id="menu_tur_jor" class="w3-bar-item w3-button w3-mobile">Turnos y Jornadas</a>
+                <a id="menu_par" class="w3-bar-item w3-button w3-mobile">Parámetros generales</a>
             </div>
         </div>
         <div id="cont_prin" class="w3-container">
@@ -227,41 +227,121 @@ Twitter: @jmarquelladas
                     </div>
                 </div>
             </div>
+            
+            
+            <!-- POR AQUI VOY *************************************************
+            ****************************************************************-->
             <div id="opc_emp" class="w3-row pestania" style="height: 600px; display: none;"> <!-- Opción mantenimiento de empleados -->
-                <button class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">Nuevo Empleado</button>
-                <div class="w3-dropdown-hover">
-                    <button class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">Más opciones</button>
-                    <div class="w3-dropdown-content w3-bar-block w3-border">
-                        <a href="#" class="w3-bar-item w3-button w3-metro-dark-blue">Modificar</a>
-                        <a href="#" class="w3-bar-item w3-button w3-metro-dark-blue">Justificar</a>
-                        <a href="#" class="w3-bar-item w3-button w3-metro-dark-blue">Cancelar</a>
-                    </div>
-                </div>
-                <input type="text" class="w3-input w3-border w3-round" placeholder="Buscar ...">
-                
-                <!--
-                <div class="w3-panel w3-twothird">
-                    <div class="w3-third">
-                        <button class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">Nuevo Empleado</button>
-                    </div>
-                    <div class="w3-third">
-                        <div class="w3-dropdown-hover">
-                            <button class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">Más opciones</button>
-                            <div class="w3-dropdown-content w3-bar-block w3-border">
-                                <a href="#" class="w3-bar-item w3-button w3-metro-dark-blue">Modificar</a>
-                                <a href="#" class="w3-bar-item w3-button w3-metro-dark-blue">Justificar</a>
-                                <a href="#" class="w3-bar-item w3-button w3-metro-dark-blue">Cancelar</a>
+                <div class="w3-panel">
+                    <div class="w3-row-padding">
+                        <div class="w3-twothird">
+                            <div class="w3-half">
+                                <div class="w3-row-padding">
+                                    <div class="w3-half">
+                                        <button class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">Nuevo Empleado</button>
+                                    </div>
+                                    <div class="w3-half">
+                                        <div class="w3-dropdown-hover">
+                                            <button class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">Más opciones</button>
+                                            <div class="w3-dropdown-content w3-bar-block w3-border">
+                                                <a href="#" class="w3-bar-item w3-button w3-metro-dark-blue">Modificar</a>
+                                                <a href="#" class="w3-bar-item w3-button w3-metro-dark-blue">Justificar</a>
+                                                <a href="#" class="w3-bar-item w3-button w3-metro-dark-blue">Cancelar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w3-half">
+                                <div class="w3-row-padding">
+                                    <input type="text" class="w3-input w3-border w3-round" placeholder="Buscar ...">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="w3-third">
-                        <input type="text" class="w3-input w3-border w3-round" placeholder="Buscar ...">
-                    </div>
-                </div> -->
+                </div>
+                
+                <div class="w3-panel">
+                    <table class="w3-table-all">
+                        <thead>
+                            <tr class="w3-grey">
+                                <th>Selec</th>
+                                <th>DNI</th>
+                                <th>Apellidos y Nombre</th>
+                                <th>Antigüedad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Si/No</td>
+                                <td>74747474D</td>
+                                <td>Juan Gómez Sánchez</td>
+                                <td>05/03/1981</td>
+                            </tr>
+                            <tr>
+                                <td>Si/No</td>
+                                <td>74747474D</td>
+                                <td>Juan Gómez Sánchez</td>
+                                <td>05/03/1981</td>
+                            </tr>
+                            <tr>
+                                <td>Si/No</td>
+                                <td>74747474D</td>
+                                <td>Juan Gómez Sánchez</td>
+                                <td>05/03/1981</td>
+                            </tr>
+                            <tr>
+                                <td>Si/No</td>
+                                <td>74747474D</td>
+                                <td>Juan Gómez Sánchez</td>
+                                <td>05/03/1981</td>
+                            </tr>
+                            <tr>
+                                <td>Si/No</td>
+                                <td>74747474D</td>
+                                <td>Juan Gómez Sánchez</td>
+                                <td>05/03/1981</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div> 
             
             <div id="opc_sol" class="w3-row pestania" style="height: 600px; display: none;"> <!-- Opción gestión de solicitudes -->
-                <h3>Solicitudes</h3>
+                <div class="w3-panel">
+                    <div class="w3-row-padding">
+                        <div class="w3-twothird">
+                            <div class="w3-padding-small w3-quarter">
+                                <select class="w3-select w3-border w3-round w3-small" name="tipoSolic">
+                                    <option value="" disabled selected>Tipo</option>
+                                    <option value="vacac">Vacaciones</option>
+                                    <option value="medic">Médico</option>
+                                    <option value="otros">Otros...</option>
+                                </select>
+                            </div>
+                            <div class="w3-padding-small w3-quarter">
+                                <select class="w3-select w3-border w3-round w3-small" name="estSolic">
+                                    <option value="" disabled selected>Estado</option>
+                                    <option value="entramite">En trámite</option>
+                                    <option value="aprobada">Aprobada</option>
+                                    <option value="denegada">Denegada</option>
+                                </select>
+                            </div>
+                            <div class="w3-padding-small w3-quarter">
+                                <input type="date" class="w3-input w3-border w3-round w3-small" placeholder="Desde">
+                            </div>
+                            <div class="w3-padding-small w3-quarter">
+                                <input type="date" class="w3-input w3-border w3-round w3-small" placeholder="Hasta">
+                            </div>
+                        </div>
+                        <div class="w3-third">
+                            <div class="w3-padding-small w3-half">
+                                <input type="text" class="w3-input w3-border w3-round-large w3-small" placeholder="Buscar ...">
+                            </div>
+                            <div class="w3-padding-small w3-half"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
             
             <div id="opc_pre" class="w3-row pestania" style="height: 600px; display: none;"> <!-- Opción control de presencia  -->

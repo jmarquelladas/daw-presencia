@@ -65,6 +65,7 @@ Twitter: @jmarquelladas
         </div>
         <div id="pes_ini" class="w3-container" style="display: block;">
             <!-- Pestaña contenido Inicio -->
+            <!--
             <div class="w3-row" style="height: 600px;">
                 <div class="w3-threequarter">
                     <div class="w3-panel">
@@ -149,7 +150,7 @@ Twitter: @jmarquelladas
                         </form>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div id="pes_cal" class="w3-container" style="display: none;">
             <!-- Pestaña contenido Calendario -->
@@ -325,6 +326,7 @@ Twitter: @jmarquelladas
         <hr>
         <div class="w3-row">
             <div class="w3-container w3-third">
+            <div class="w3-container w3-t">
                 <p class="w3-opacity w3-tiny">2017-2018 José Miguel Arquelladas Ruiz</p>
             </div>
             <div class="w3-container w3-third w3-center">
