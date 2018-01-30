@@ -20,22 +20,22 @@ Twitter: @jmarquelladas
 <body>
     <!-- Cabecera -->
     <header class="w3-container w3-metro-dark-blue">
-        <h3 class="w3-center">DAW - Presencia</h3>
+        <h4 class="w3-center">DAW - Presencia</h4>
     </header>
     <!-- Formulario de para seleccionar el perfil a elegir ( Gestor o Empleado) -->
     <div class="w3-row">
         <div class="w3-quarter w3-container"></div>
         <div class="w3-container w3-half">
             <div class="w3-center">
-                <img src="./img/logo100.png" alt="Logo Empresa" class="w3-image w3-padding-16">
+                <img src="./img/logo100.png" alt="Logo Empresa" class="w3-image w3-padding-16" style="width: 75px;">
             </div>
             <div class="w3-container w3-metro-dark-blue">
                 <div class="w3-row">
                     <div class="w3-col" style="width:60px">
-                        <i class="fa fa-user fa-4x" aria-hidden="true"></i>
+                        <i class="fa fa-user fa-3x" aria-hidden="true"></i>
                     </div>
                     <div class="w3-rest w3-container">
-                        <h3>Perfil de usuario</h3>
+                        <h4>Perfil de usuario</h4>
                     </div>
                 </div>
             </div>

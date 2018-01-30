@@ -22,13 +22,13 @@ Twitter: @jmarquelladas
 <body>
     <!-- Cabecera -->
     <header class="w3-container w3-metro-dark-blue">
-        <h3 class="w3-center">DAW - Presencia</h3>
+        <h4 class="w3-center">DAW - Presencia</h4>
     </header>
     <div class="w3-row">
         <div class="w3-container">
             <div class="w3-container w3-twothird">
                 <!-- Logo empresa -->
-                <img src="./img/logo100.png" alt="Logo Empresa" class="w3-image w3-padding-16">
+                <img src="./img/logo100.png" alt="Logo Empresa" class="w3-image w3-padding-16" style="width: 75px;">
             </div>
             <div class="w3-container w3-third">
                 <!-- Datos sesion -->
@@ -57,7 +57,7 @@ Twitter: @jmarquelladas
         </div>
         <div id="cont_prin" class="w3-container">
             <!-- Contenido principal -->
-            <div id="opc_ini" class="w3-row pestania" style="height: 600px;">  <!-- Opción inicio -->
+            <div id="opc_ini" class="w3-row pestania" style="height: 550px;">  <!-- Opción inicio -->
                 <!-- Últimas Solicitudes -->
                 <div class="w3-half">
                     <div class="w3-panel">
