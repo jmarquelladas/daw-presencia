@@ -39,11 +39,11 @@ Twitter: @jmarquelladas
     </header>
     <div class="w3-row">
         <div class="w3-container">
-            <div class="w3-container w3-twothird">
-                <!-- Logo empresa -->
-                <img src="./img/logo100.png" alt="Logo Empresa" class="w3-image w3-padding-16">
+            <!-- Logo empresa -->
+            <div class="w3-container w3-half">
+                <img src="./img/logo100.png" alt="Logo Empresa" class="w3-image w3-padding-16" style="width: 75px;" >
             </div>
-            <div class="w3-container w3-third">
+            <div class="w3-container w3-half">
                 <!-- Datos sesion -->
                 <div class="w3-display-container" style="height:99px;">
                     <div class="w3-display-topright">
@@ -63,8 +63,8 @@ Twitter: @jmarquelladas
                 <button id="calendario" class="w3-bar-item w3-button">Calendario</button>
             </div>
         </div>
+        <!-- Pestaña contenido Inicio -->
         <div id="pes_ini" class="w3-container" style="display: block;">
-            <!-- Pestaña contenido Inicio -->
             <!--
             <div class="w3-row" style="height: 600px;">
                 <div class="w3-threequarter">
@@ -152,8 +152,10 @@ Twitter: @jmarquelladas
                 </div>
             </div> -->
         </div>
+        <!-- Pestaña contenido Calendario -->
         <div id="pes_cal" class="w3-container" style="display: none;">
-            <!-- Pestaña contenido Calendario -->
+            
+            <!--
             <div class="w3-row" style="height: 600px;">
                 <div class="w3-half">
                     <div class="w3-quarter">
@@ -318,7 +320,7 @@ Twitter: @jmarquelladas
                         </tbody>
                     </table>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <!-- Pié de página -->
@@ -326,7 +328,6 @@ Twitter: @jmarquelladas
         <hr>
         <div class="w3-row">
             <div class="w3-container w3-third">
-            <div class="w3-container w3-t">
                 <p class="w3-opacity w3-tiny">2017-2018 José Miguel Arquelladas Ruiz</p>
             </div>
             <div class="w3-container w3-third w3-center">

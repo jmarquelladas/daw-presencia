@@ -2,12 +2,16 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group name="examenJunio">
-            <file>file:/C:/xampp/htdocs/pry/daw-presencia/smarty/templates/empleado.tpl</file>
-            <file>file:/C:/xampp/htdocs/pry/daw-presencia/smarty/templates/gestor.tpl</file>
-        </group>
         <group>
             <file>file:/C:/xampp/htdocs/pry/daw-presencia/smarty/templates/gestor.tpl</file>
+        </group>
+        <group name="examenJunio">
+            <file>file:/C:/xampp/htdocs/pry/daw-presencia/smarty/templates/index.tpl</file>
+            <file>file:/C:/xampp/htdocs/pry/daw-presencia/smarty/templates/empleado.tpl</file>
+            <file>file:/C:/xampp/htdocs/pry/daw-presencia/smarty/templates/gestor.tpl</file>
+            <file>file:/C:/xampp/htdocs/pry/daw-presencia/gestor.html</file>
+            <file>file:/C:/xampp/htdocs/pry/daw-presencia/smarty/templates/eleper.tpl</file>
+            <file>file:/C:/xampp/htdocs/pry/daw-presencia/js/gestor.js</file>
         </group>
     </open-files>
 </project-private>

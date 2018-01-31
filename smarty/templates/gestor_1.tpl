@@ -1,26 +1,3 @@
-<?php
-/* Smarty version 3.1.29, created on 2018-01-31 17:00:32
-  from "C:\xampp\htdocs\pry\daw-presencia\smarty\templates\gestor.tpl" */
-
-if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
-  'has_nocache_code' => false,
-  'version' => '3.1.29',
-  'unifunc' => 'content_5a71e820e1e408_05735429',
-  'file_dependency' => 
-  array (
-    'ed03680963cf9e1d0863a14428cf1a9a236c3905' => 
-    array (
-      0 => 'C:\\xampp\\htdocs\\pry\\daw-presencia\\smarty\\templates\\gestor.tpl',
-      1 => 1517414426,
-      2 => 'file',
-    ),
-  ),
-  'includes' => 
-  array (
-  ),
-),false)) {
-function content_5a71e820e1e408_05735429 ($_smarty_tpl) {
-?>
 <!DOCTYPE html>
 <!--
 Descripción: Opciones de usuario Gestor
@@ -39,14 +16,33 @@ Twitter: @jmarquelladas
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <?php echo '<script'; ?>
- src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"><?php echo '</script'; ?>
->
-    <?php echo '<script'; ?>
- type="text/javascript" src="/pry/daw-presencia/js/gestor.js"><?php echo '</script'; ?>
-> <!-- Habrá que modificarlo para cuando se suba al servidor o incluir el código -->
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/pry/daw-presencia/js/gestor.js"></script> <!-- Habrá que modificarlo para cuando se suba al servidor o incluir el código -->
 </head>
 <body>
+    <!-- Cabecera -->
+    <header class="w3-container w3-metro-dark-blue">
+        <h4 class="w3-center">DAW - Presencia</h4>
+    </header>
+    <!-- opciones menu -->
+    <section>Opciones de Menu</section>
+    <!-- Contenido principal -->
+    <div>
+        <!-- opcion 1 -->
+        <div>opcion 1 menu</div>
+        <!-- opcion 2 -->
+        <div>opcion 2 menu</div>
+        <!-- opcion 3 -->
+        <div>opcion 3 menu</div>
+    </div>
+    <!-- Pié de página -->
+    <footer>Pié de página</footer>
+    
+    
+    
+    
+    
+    
     <!-- Cabecera -->
     <header class="w3-container w3-metro-dark-blue">
         <h4 class="w3-center">DAW - Presencia</h4>
@@ -405,5 +401,4 @@ Twitter: @jmarquelladas
         </div>
     </footer>
 </body>
-</html><?php }
-}
+</html>

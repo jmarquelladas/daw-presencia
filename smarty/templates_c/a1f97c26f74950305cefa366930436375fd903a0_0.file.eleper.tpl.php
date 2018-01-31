@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2018-01-22 22:10:25
+/* Smarty version 3.1.29, created on 2018-01-30 22:09:04
   from "C:\xampp\htdocs\pry\daw-presencia\smarty\templates\eleper.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5a665341e18e70_05397472',
+  'unifunc' => 'content_5a70def0a90259_82477804',
   'file_dependency' => 
   array (
     'a1f97c26f74950305cefa366930436375fd903a0' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pry\\daw-presencia\\smarty\\templates\\eleper.tpl',
-      1 => 1516655421,
+      1 => 1517346436,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5a665341e18e70_05397472 ($_smarty_tpl) {
+function content_5a70def0a90259_82477804 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <!--
@@ -50,6 +50,7 @@ Twitter: @jmarquelladas
         <div class="w3-quarter w3-container"></div>
         <div class="w3-container w3-half">
             <div class="w3-center">
+                <!-- Logo empresa -->
                 <img src="./img/logo100.png" alt="Logo Empresa" class="w3-image w3-padding-16" style="width: 75px;">
             </div>
             <div class="w3-container w3-metro-dark-blue">

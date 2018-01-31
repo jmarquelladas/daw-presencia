@@ -26,11 +26,11 @@ Twitter: @jmarquelladas
     </header>
     <div class="w3-row">
         <div class="w3-container">
-            <div class="w3-container w3-twothird">
+            <div class="w3-container w3-half">
                 <!-- Logo empresa -->
-                <img src="./img/logo100.png" alt="Logo Empresa" class="w3-image w3-padding-16" style="width: 75px;">
+                <img src="./img/logo100.png" alt="Logo Empresa" class="w3-image w3-padding-16" style="width: 75px;" >
             </div>
-            <div class="w3-container w3-third">
+            <div class="w3-container w3-half">
                 <!-- Datos sesion -->
                 <div class="w3-display-container" style="height:99px;">
                     <div class="w3-display-topright">

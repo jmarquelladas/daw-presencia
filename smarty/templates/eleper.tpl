@@ -27,6 +27,7 @@ Twitter: @jmarquelladas
         <div class="w3-quarter w3-container"></div>
         <div class="w3-container w3-half">
             <div class="w3-center">
+                <!-- Logo empresa -->
                 <img src="./img/logo100.png" alt="Logo Empresa" class="w3-image w3-padding-16" style="width: 75px;">
             </div>
             <div class="w3-container w3-metro-dark-blue">
