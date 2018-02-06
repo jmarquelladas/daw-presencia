@@ -9,49 +9,49 @@
  */
 
 $(document).ready(function() {
-    $('#menu_ini').click(function(){
+    $('#menu_ini' ).click(function(){
         $('.pestania').each(function(){
             $(this).hide();
         });
         $('#opc_ini').show();
     });
 
-    $('#menu_emp').click(function(){
+    $('#menu_emp, #menu_emp_sol').click(function(){
         $('.pestania').each(function(){
             $(this).hide();
         });
         $('#opc_emp').show();
     });
 
-    $('#menu_sol').click(function(){
+    $('#menu_sol, #menu_sol_sol').click(function(){
         $('.pestania').each(function(){
             $(this).hide();
         });
         $('#opc_sol').show();
     });
 
-    $('#menu_pre').click(function(){
+    $('#menu_pre, #menu_pre_sol').click(function(){
         $('.pestania').each(function(){
             $(this).hide();
         });
         $('#opc_pre').show();
     });
 
-    $('#menu_cal').click(function(){
+    $('#menu_cal, #menu_cal_sol').click(function(){
         $('.pestania').each(function(){
             $(this).hide();
         });
         $('#opc_cal').show();
     });
 
-    $('#menu_tur_jor').click(function(){
+    $('#menu_tur_jor, #menu_tur_jor_sol').click(function(){
         $('.pestania').each(function(){
             $(this).hide();
         });
         $('#opc_tur_jor').show();
     });
 
-    $('#menu_par').click(function(){
+    $('#menu_par, #menu_par_sol').click(function(){
         $('.pestania').each(function(){
             $(this).hide();
         });

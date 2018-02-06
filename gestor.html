@@ -17,7 +17,9 @@ Twitter: @jmarquelladas
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/pry/daw-presencia/js/gestor.js"></script> <!-- Habrá que modificarlo para cuando se suba al servidor o incluir el código -->
+    <!-- Habrá que modificar la ruta de los archivos javascript para cuando se suba al servidor o incluir el código -->
+    <script type="text/javascript" src="/pry/daw-presencia/js/funciones.js"></script>
+    <script type="text/javascript" src="/pry/daw-presencia/js/gestor.js"></script>
 </head>
 <body>
     <!-- Cabecera -->
@@ -49,14 +51,25 @@ Twitter: @jmarquelladas
     <!-- opciones menu -->
     <section>
         <!-- Menú opciones generales -->
-        <div class="w3-container w3-bar w3-metro-dark-blue w3-card-4">
-            <a id="menu_ini" class="w3-bar-item w3-button w3-mobile">Inicio</a>
-            <a id="menu_emp" class="w3-bar-item w3-button w3-mobile">Empleados</a>
-            <a id="menu_sol" class="w3-bar-item w3-button w3-mobile">Solicitudes</a>
-            <a id="menu_pre" class="w3-bar-item w3-button w3-mobile">Presencia</a>
-            <a id="menu_cal" class="w3-bar-item w3-button w3-mobile">Calendarios</a>
-            <a id="menu_tur_jor" class="w3-bar-item w3-button w3-mobile">Turnos y Jornadas</a>
-            <a id="menu_par" class="w3-bar-item w3-button w3-mobile">Parámetros generales</a>
+        <div class="w3-container w3-card-4 w3-bar w3-metro-dark-blue">
+            <a id="menu_ini" class="w3-bar-item w3-button"><i class="fa fa-home fa-lg"></i> Inicio</a>
+            <a id="menu_emp" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Empleados</a>
+            <a id="menu_sol" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Solicitudes</a>
+            <a id="menu_pre" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Presencia</a>
+            <a id="menu_cal" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Calendarios</a>
+            <a id="menu_tur_jor" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Turnos y Jornadas</a>
+            <a id="menu_par" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Parámetros generales</a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="mostrarMenu('opc_solapa')"><i class="fa fa-bars" style="font-size: 19px"></i></a>
+        </div>
+        
+        <!-- Menú opciones generales para cuando por tamaño se solapa o se colapsan las opciones -->
+        <div id="opc_solapa" class="w3-bar-block w3-metro-dark-blue w3-hide w3-hide-large">
+            <a id="menu_emp_sol" href="javascript:void(0)" class="w3-bar-item w3-button" onclick="mostrarMenu('opc_solapa')">Empleados</a>
+            <a id="menu_sol_sol" href="javascript:void(0)" class="w3-bar-item w3-button" onclick="mostrarMenu('opc_solapa')">Solicitudes</a>
+            <a id="menu_pre_sol" href="javascript:void(0)" class="w3-bar-item w3-button" onclick="mostrarMenu('opc_solapa')">Presencia</a>
+            <a id="menu_cal_sol" href="javascript:void(0)" class="w3-bar-item w3-button" onclick="mostrarMenu('opc_solapa')">Calendarios</a>
+            <a id="menu_tur_jor_sol" href="javascript:void(0)" class="w3-bar-item w3-button" onclick="mostrarMenu('opc_solapa')">Turnos y Jornadas</a>
+            <a id="menu_par_sol" href="javascript:void(0)" class="w3-bar-item w3-button" onclick="mostrarMenu('opc_solapa')">Parámetros generales</a>
         </div>
     </section>
     <!-- Contenido principal -->
@@ -235,8 +248,110 @@ Twitter: @jmarquelladas
             </div>
         </div>    
         <!-- Opción Empleados -->
-        <div id="opc_emp" class="w3-row pestania" style="height: 600px; display: none;"> <!-- Opción control de presencia  -->
-            
+        <div id="opc_emp" class="w3-row pestania" style="height: 600px; display: none;">
+            <br/>
+            <!-- Opciones de empleados -->
+            <div class="w3-row-padding w3-margin-bottom">
+                <!-- Boton Nuevo registro de empleado -->
+                <div class="w3-col" style="width: 220px">
+                    <button class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">Nuevo Empleado</button>
+                </div>
+                <!-- Boton más opciones -->
+                <div class="w3-col" style="width: 220px">
+                    <div class="w3-dropdown-click">
+                        <button onclick="mostrarMenu('masOpcEmple')" class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">Más opciones <i class="fa fa-caret-down"></i></button>
+                        <div id="masOpcEmple" class="w3-dropdown-content w3-bar-block w3-border">
+                            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcEmple')">Modificar</a>
+                            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcEmple')">Justificar</a>
+                            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcEmple')">Cancelar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Entrada para búsquedas -->
+                <div class="w3-col" style="width: 50px"><i class="w3-xxlarge fa fa-search"></i></div>
+                <div class="w3-rest">
+                    <input type="text" class="w3-padding-16 w3-input w3-border w3-round" style="width: 450px" placeholder=" Buscar ...">
+                </div>
+            </div>
+            <!-- Lista de empleados -->
+            <div class="w3-panel">
+                <h4 class="w3-center w3-metro-dark-blue w3-card-4">Empleados</h4>
+                <div class="w3-responsive w3-card-4">
+                    <!-- Tabla solicitudes -->
+                    <table class="w3-table-all w3-hoverable w3-small">
+                        <thead>
+                            <tr class="w3-grey">
+                                <th>Sel</th>
+                                <th>DNI</th>
+                                <th>Apellidos y Nombre</th>
+                                <th>Antigüedad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Si / No</td>
+                                <td>24242424Z</td>
+                                <td>Juan Gómez Sánchez</td>
+                                <td>24/05/2004</td>
+                            </tr>
+                            <tr>
+                                <td>Si / No</td>
+                                <td>24242424Z</td>
+                                <td>Juan Gómez Sánchez</td>
+                                <td>24/05/2004</td>
+                            </tr>
+                            <tr>
+                                <td>Si / No</td>
+                                <td>24242424Z</td>
+                                <td>Juan Gómez Sánchez</td>
+                                <td>24/05/2004</td>
+                            </tr>
+                            <tr>
+                                <td>Si / No</td>
+                                <td>24242424Z</td>
+                                <td>Juan Gómez Sánchez</td>
+                                <td>24/05/2004</td>
+                            </tr>
+                            <tr>
+                                <td>Si / No</td>
+                                <td>24242424Z</td>
+                                <td>Juan Gómez Sánchez</td>
+                                <td>24/05/2004</td>
+                            </tr>
+                            <tr>
+                                <td>Si / No</td>
+                                <td>24242424Z</td>
+                                <td>Juan Gómez Sánchez</td>
+                                <td>24/05/2004</td>
+                            </tr>
+                            <tr>
+                                <td>Si / No</td>
+                                <td>24242424Z</td>
+                                <td>Juan Gómez Sánchez</td>
+                                <td>24/05/2004</td>
+                            </tr>
+                            <tr>
+                                <td>Si / No</td>
+                                <td>24242424Z</td>
+                                <td>Juan Gómez Sánchez</td>
+                                <td>24/05/2004</td>
+                            </tr>
+                            <tr>
+                                <td>Si / No</td>
+                                <td>24242424Z</td>
+                                <td>Juan Gómez Sánchez</td>
+                                <td>24/05/2004</td>
+                            </tr>
+                            <tr>
+                                <td>Si / No</td>
+                                <td>24242424Z</td>
+                                <td>Juan Gómez Sánchez</td>
+                                <td>24/05/2004</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
         <!-- Opción Solicitudes -->
         <div id="opc_sol" class="w3-row pestania" style="height: 600px; display: none;"> <!-- Opción control de presencia  -->
@@ -275,6 +390,8 @@ Twitter: @jmarquelladas
             </div>
         </div>
     </footer>
+    
+    <!-- Código Javascript para menú principal
     
             
             
