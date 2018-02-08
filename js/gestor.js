@@ -13,6 +13,7 @@ $(document).ready(function() {
         $('.pestania').each(function(){
             $(this).hide();
         });
+        $('#titulo').text('Inicio')
         $('#opc_ini').show();
     });
 
@@ -20,6 +21,7 @@ $(document).ready(function() {
         $('.pestania').each(function(){
             $(this).hide();
         });
+        $('#titulo').text('Empleados')
         $('#opc_emp').show();
     });
 
@@ -27,6 +29,7 @@ $(document).ready(function() {
         $('.pestania').each(function(){
             $(this).hide();
         });
+        $('#titulo').text('Solicitudes')
         $('#opc_sol').show();
     });
 
@@ -34,6 +37,7 @@ $(document).ready(function() {
         $('.pestania').each(function(){
             $(this).hide();
         });
+        $('#titulo').text('Control de presencia')
         $('#opc_pre').show();
     });
 
@@ -41,6 +45,7 @@ $(document).ready(function() {
         $('.pestania').each(function(){
             $(this).hide();
         });
+        $('#titulo').text('Calendarios')
         $('#opc_cal').show();
     });
 
@@ -48,6 +53,7 @@ $(document).ready(function() {
         $('.pestania').each(function(){
             $(this).hide();
         });
+        $('#titulo').text('Turnos y Jornadas')
         $('#opc_tur_jor').show();
     });
 
@@ -55,6 +61,7 @@ $(document).ready(function() {
         $('.pestania').each(function(){
             $(this).hide();
         });
+        $('#titulo').text('Parámetros generales')
         $('#opc_par').show();
     });
 });

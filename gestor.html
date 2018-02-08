@@ -31,11 +31,15 @@ Twitter: @jmarquelladas
         <!-- Logo y datos sesion -->
         <div class="w3-row">
             <!-- Logo empresa -->
-            <div class="w3-container w3-half">
+            <div class="w3-container w3-third">
                 <img src="./img/logo100.png" alt="Logo Empresa" class="w3-image" style="width: 75px;" >
             </div>
+            <!-- Título de la opción -->
+            <div class="w3-container w3-third w3-center">
+                <h2 id="titulo">Inicio</h2>
+            </div>
             <!-- Datos sesion -->
-            <div class="w3-container w3-half">
+            <div class="w3-container w3-third">
                 <div class="w3-display-container" style="height:99px;">
                     <div class="w3-display-topright">
                         <buttom class="w3-button w3-metro-dark-blue w3-tiny"><i class="fa fa-user fa-lg" aria-hidden="true"></i> Mi cuenta</buttom>
@@ -51,31 +55,31 @@ Twitter: @jmarquelladas
     <!-- opciones menu -->
     <section>
         <!-- Menú opciones generales -->
-        <div class="w3-container w3-card-4 w3-bar w3-metro-dark-blue">
+        <div class="w3-container w3-small w3-card-4 w3-bar w3-metro-dark-blue">
             <a id="menu_ini" class="w3-bar-item w3-button"><i class="fa fa-home fa-lg"></i> Inicio</a>
-            <a id="menu_emp" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Empleados</a>
-            <a id="menu_sol" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Solicitudes</a>
-            <a id="menu_pre" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Presencia</a>
-            <a id="menu_cal" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Calendarios</a>
-            <a id="menu_tur_jor" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Turnos y Jornadas</a>
-            <a id="menu_par" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Parámetros generales</a>
+            <a id="menu_emp" class="w3-bar-item w3-button w3-hide-small w3-hide-medium"><i class="fa fa-id-card-o fa-lg"></i> Empleados</a>
+            <a id="menu_sol" class="w3-bar-item w3-button w3-hide-small w3-hide-medium"><i class="fa fa-keyboard-o fa-lg"></i> Solicitudes</a>
+            <a id="menu_pre" class="w3-bar-item w3-button w3-hide-small w3-hide-medium"><i class="fa fa-eye fa-lg"></i> Presencia</a>
+            <a id="menu_cal" class="w3-bar-item w3-button w3-hide-small w3-hide-medium"><i class="fa fa-calendar-o fa-lg"></i> Calendarios</a>
+            <a id="menu_tur_jor" class="w3-bar-item w3-button w3-hide-small w3-hide-medium"><i class="fa fa-calendar-check-o fa-lg"></i> Turnos y Jornadas</a>
+            <a id="menu_par" class="w3-bar-item w3-button w3-hide-small w3-hide-medium"><i class="fa fa-cogs fa-lg"></i> Parámetros generales</a>
             <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="mostrarMenu('opc_solapa')"><i class="fa fa-bars" style="font-size: 19px"></i></a>
         </div>
         
         <!-- Menú opciones generales para cuando por tamaño se solapa o se colapsan las opciones -->
-        <div id="opc_solapa" class="w3-bar-block w3-metro-dark-blue w3-hide w3-hide-large">
-            <a id="menu_emp_sol" href="javascript:void(0)" class="w3-bar-item w3-button" onclick="mostrarMenu('opc_solapa')">Empleados</a>
-            <a id="menu_sol_sol" href="javascript:void(0)" class="w3-bar-item w3-button" onclick="mostrarMenu('opc_solapa')">Solicitudes</a>
-            <a id="menu_pre_sol" href="javascript:void(0)" class="w3-bar-item w3-button" onclick="mostrarMenu('opc_solapa')">Presencia</a>
-            <a id="menu_cal_sol" href="javascript:void(0)" class="w3-bar-item w3-button" onclick="mostrarMenu('opc_solapa')">Calendarios</a>
-            <a id="menu_tur_jor_sol" href="javascript:void(0)" class="w3-bar-item w3-button" onclick="mostrarMenu('opc_solapa')">Turnos y Jornadas</a>
-            <a id="menu_par_sol" href="javascript:void(0)" class="w3-bar-item w3-button" onclick="mostrarMenu('opc_solapa')">Parámetros generales</a>
+        <div id="opc_solapa" class="w3-bar-block w3-small w3-metro-dark-blue w3-hide w3-hide-large" style="width: 200px">
+            <a id="menu_emp_sol" href="javascript:void(0)" class="w3-bar-item w3-button" onclick="mostrarMenu('opc_solapa')"><i class="fa fa-id-card-o fa-lg"></i> Empleados</a>
+            <a id="menu_sol_sol" href="javascript:void(0)" class="w3-bar-item w3-button" onclick="mostrarMenu('opc_solapa')"><i class="fa fa-keyboard-o fa-lg"></i> Solicitudes</a>
+            <a id="menu_pre_sol" href="javascript:void(0)" class="w3-bar-item w3-button" onclick="mostrarMenu('opc_solapa')"><i class="fa fa-eye fa-lg"></i> Presencia</a>
+            <a id="menu_cal_sol" href="javascript:void(0)" class="w3-bar-item w3-button" onclick="mostrarMenu('opc_solapa')"><i class="fa fa-calendar-o fa-lg"></i> Calendarios</a>
+            <a id="menu_tur_jor_sol" href="javascript:void(0)" class="w3-bar-item w3-button" onclick="mostrarMenu('opc_solapa')"><i class="fa fa-calendar-check-o fa-lg"></i> Turnos y Jornadas</a>
+            <a id="menu_par_sol" href="javascript:void(0)" class="w3-bar-item w3-button" onclick="mostrarMenu('opc_solapa')"><i class="fa fa-cogs fa-lg"></i> Parámetros generales</a>
         </div>
     </section>
     <!-- Contenido principal -->
     <div class="w3-container">
         <!-- Opción Inicio -->
-        <div id="opc_ini" class="w3-row pestania" style="height: 600px; display: block;">
+        <div id="opc_ini" class="w3-row pestania" style="display: block;">
             <!-- Últimas Solicitudes -->
             <div class="w3-half">
                 <div class="w3-panel">
@@ -158,6 +162,10 @@ Twitter: @jmarquelladas
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+                    <br/>
+                    <div class="w3-bar">
+                        <button class="w3-button w3-round w3-metro-dark-blue w3-block">Más datos</button>
                     </div>
                 </div>
             </div>
@@ -244,20 +252,26 @@ Twitter: @jmarquelladas
                             </tbody>
                         </table>
                     </div>
+                    <br/>
+                    <div class="w3-bar">
+                        <button class="w3-button w3-round w3-metro-dark-blue w3-block">Más datos</button>
+                    </div>
                 </div>
             </div>
         </div>    
+        
+        
         <!-- Opción Empleados -->
-        <div id="opc_emp" class="w3-row pestania" style="height: 600px; display: none;">
+        <div id="opc_emp" class="w3-row pestania" style="display: none;">
             <br/>
             <!-- Opciones de empleados -->
-            <div class="w3-row-padding w3-margin-bottom">
+            <div class="w3-row">
                 <!-- Boton Nuevo registro de empleado -->
-                <div class="w3-col" style="width: 220px">
+                <div class="w3-col w3-padding-small" style="width: 220px">
                     <button class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">Nuevo Empleado</button>
                 </div>
                 <!-- Boton más opciones -->
-                <div class="w3-col" style="width: 220px">
+                <div class="w3-col w3-padding-small" style="width: 220px">
                     <div class="w3-dropdown-click">
                         <button onclick="mostrarMenu('masOpcEmple')" class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">Más opciones <i class="fa fa-caret-down"></i></button>
                         <div id="masOpcEmple" class="w3-dropdown-content w3-bar-block w3-border">
@@ -268,20 +282,19 @@ Twitter: @jmarquelladas
                     </div>
                 </div>
                 <!-- Entrada para búsquedas -->
-                <div class="w3-col" style="width: 50px"><i class="w3-xxlarge fa fa-search"></i></div>
-                <div class="w3-rest">
+                <div class="w3-col w3-padding-small" style="width: 460px">
                     <input type="text" class="w3-padding-16 w3-input w3-border w3-round" style="width: 450px" placeholder=" Buscar ...">
                 </div>
+                <div class="w3-rest"></div>
             </div>
             <!-- Lista de empleados -->
             <div class="w3-panel">
-                <h4 class="w3-center w3-metro-dark-blue w3-card-4">Empleados</h4>
                 <div class="w3-responsive w3-card-4">
-                    <!-- Tabla solicitudes -->
+                    <!-- Tabla Empleados -->
                     <table class="w3-table-all w3-hoverable w3-small">
                         <thead>
                             <tr class="w3-grey">
-                                <th>Sel</th>
+                                <th>Selec</th>
                                 <th>DNI</th>
                                 <th>Apellidos y Nombre</th>
                                 <th>Antigüedad</th>
@@ -342,38 +355,302 @@ Twitter: @jmarquelladas
                                 <td>Juan Gómez Sánchez</td>
                                 <td>24/05/2004</td>
                             </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br/>
+                <div class="w3-bar">
+                    <button class="w3-button w3-round w3-metro-dark-blue w3-block">Más datos</button>
+                </div>
+                
+                
+                <!--
+                <div class="w3-bar w3-border w3-round" style="width: 240px">
+                    <a href="#" class="w3-button">&laquo;</a>
+                    <a href="#" class="w3-button w3-metro-dark-blue w3-large">1</a>
+                    <a href="#" class="w3-button">2</a>
+                    <a href="#" class="w3-button">3</a>
+                    <a href="#" class="w3-button">&raquo;</a>
+                </div>
+                -->
+            </div>
+        </div>
+        
+        
+        <!-- Opción Solicitudes -->
+        <div id="opc_sol" class="w3-row pestania" style="display: none;">
+            <br/>
+            <!-- Opciones de Solicitudes -->
+            <div class="w3-row">
+                <!-- Boton Nuevo registro de solicitud -->
+                <div class="w3-col w3-padding-small" style="width: 220px">
+                    <button class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">Nueva Solicitud</button>
+                </div>
+                <!-- Boton más opciones -->
+                <div class="w3-col w3-padding-small" style="width: 220px">
+                    <div class="w3-dropdown-click">
+                        <button onclick="mostrarMenu('masOpcSolic')" class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">Más opciones <i class="fa fa-caret-down"></i></button>
+                        <div id="masOpcEmple" class="w3-dropdown-content w3-bar-block w3-border">
+                            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcSolic')">Modificar</a>
+                            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcSolic')">Justificar</a>
+                            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcSolic')">Cancelar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Entrada para búsquedas -->
+                <div class="w3-col w3-padding-small" style="width: 460px">
+                    <input type="text" class="w3-padding-16 w3-input w3-border w3-round" style="width: 450px" placeholder=" Buscar ...">
+                </div>
+                <div class="w3-rest"></div>
+            </div>
+            <!-- Lista de solicitudes -->
+            <div class="w3-panel">
+                <div class="w3-responsive w3-card-4">
+                    <!-- Tabla Solicitudes -->
+                    <table class="w3-table-all w3-hoverable w3-small">
+                        <thead>
+                            <tr class="w3-grey">
+                                <th>Selec</th>
+                                <th>Tipo</th>
+                                <th>Estado</th>
+                                <th>Fecha solicitud</th>
+                                <th>Descripción</th>
+                                <th>Apellidos y Nombre</th>
+                            </tr>
+                        </thead>
+                        <tbody>
                             <tr>
                                 <td>Si / No</td>
-                                <td>24242424Z</td>
-                                <td>Juan Gómez Sánchez</td>
-                                <td>24/05/2004</td>
+                                <td>Vacaciones</td>
+                                <td>Proceso de aprobación</td>
+                                <td>Fecha solicitud</td>
+                                <td>Vacaciones de invierno</td>
+                                <td>Juan Gómez Ruiz</td>
+                            </tr>
+                            <tr>
+                                <td>Si / No</td>
+                                <td>Vacaciones</td>
+                                <td>Proceso de aprobación</td>
+                                <td>Fecha solicitud</td>
+                                <td>Vacaciones de invierno</td>
+                                <td>Juan Gómez Ruiz</td>
+                            </tr>
+                            <tr>
+                                <td>Si / No</td>
+                                <td>Vacaciones</td>
+                                <td>Proceso de aprobación</td>
+                                <td>Fecha solicitud</td>
+                                <td>Vacaciones de invierno</td>
+                                <td>Juan Gómez Ruiz</td>
+                            </tr>
+                            <tr>
+                                <td>Si / No</td>
+                                <td>Vacaciones</td>
+                                <td>Proceso de aprobación</td>
+                                <td>Fecha solicitud</td>
+                                <td>Vacaciones de invierno</td>
+                                <td>Juan Gómez Ruiz</td>
+                            </tr>
+                            <tr>
+                                <td>Si / No</td>
+                                <td>Vacaciones</td>
+                                <td>Proceso de aprobación</td>
+                                <td>Fecha solicitud</td>
+                                <td>Vacaciones de invierno</td>
+                                <td>Juan Gómez Ruiz</td>
+                            </tr>
+                            <tr>
+                                <td>Si / No</td>
+                                <td>Vacaciones</td>
+                                <td>Proceso de aprobación</td>
+                                <td>Fecha solicitud</td>
+                                <td>Vacaciones de invierno</td>
+                                <td>Juan Gómez Ruiz</td>
+                            </tr>
+                            <tr>
+                                <td>Si / No</td>
+                                <td>Vacaciones</td>
+                                <td>Proceso de aprobación</td>
+                                <td>Fecha solicitud</td>
+                                <td>Vacaciones de invierno</td>
+                                <td>Juan Gómez Ruiz</td>
+                            </tr>
+                            <tr>
+                                <td>Si / No</td>
+                                <td>Vacaciones</td>
+                                <td>Proceso de aprobación</td>
+                                <td>Fecha solicitud</td>
+                                <td>Vacaciones de invierno</td>
+                                <td>Juan Gómez Ruiz</td>
+                            </tr>
+                            <tr>
+                                <td>Si / No</td>
+                                <td>Vacaciones</td>
+                                <td>Proceso de aprobación</td>
+                                <td>Fecha solicitud</td>
+                                <td>Vacaciones de invierno</td>
+                                <td>Juan Gómez Ruiz</td>
+                            </tr>
+                            <tr>
+                                <td>Si / No</td>
+                                <td>Vacaciones</td>
+                                <td>Proceso de aprobación</td>
+                                <td>Fecha solicitud</td>
+                                <td>Vacaciones de invierno</td>
+                                <td>Juan Gómez Ruiz</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+                <br/>
+                <div class="w3-bar">
+                    <button class="w3-button w3-round w3-metro-dark-blue w3-block">Más datos</button>
+                </div>
             </div>
         </div>
-        <!-- Opción Solicitudes -->
-        <div id="opc_sol" class="w3-row pestania" style="height: 600px; display: none;"> <!-- Opción control de presencia  -->
-            <h3>Solicitudes</h3>
-        </div>
+        
+        
         <!-- Opción Presencia -->
-        <div id="opc_pre" class="w3-row pestania" style="height: 600px; display: none;"> <!-- Opción control de presencia  -->
-            <h3>Presencia</h3>
+        <div id="opc_pre" class="w3-row pestania" style="display: none;">
+            <br/>
+            <!-- Opciones de Solicitudes -->
+            <div class="w3-row">
+                <!-- Boton ... -->
+                <div class="w3-col w3-padding-small" style="width: 220px">
+                    <button class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">Opcion ...</button>
+                </div>
+                <!-- Boton más opciones -->
+                <div class="w3-col w3-padding-small" style="width: 220px">
+                    <div class="w3-dropdown-click">
+                        <button onclick="mostrarMenu('masOpcPre')" class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">Más opciones <i class="fa fa-caret-down"></i></button>
+                        <div id="masOpcEmple" class="w3-dropdown-content w3-bar-block w3-border">
+                            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcPre')">Modificar</a>
+                            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcPre')">Justificar</a>
+                            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcPre')">Cancelar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Entrada para búsquedas -->
+                <div class="w3-col w3-padding-small" style="width: 460px">
+                    <input type="text" class="w3-padding-16 w3-input w3-border w3-round" style="width: 450px" placeholder=" Buscar ...">
+                </div>
+                <div class="w3-rest"></div>
+            </div>
+            <!-- Lista de registro de control de presencia -->
+            <div class="w3-panel">
+                <div class="w3-responsive w3-card-4">
+                    <!-- Tabla Control de Presencia -->
+                    <table class="w3-table-all w3-hoverable w3-small">
+                        <thead>
+                            <tr class="w3-grey">
+                                <th>Selec</th>
+                                <th>Tipo</th>
+                                <th>Fecha y Hora</th>
+                                <th>Apellidos y Nombre</th>
+                                <th>DNI</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Si / No</td>
+                                <td>E/S/A</td>
+                                <td>15/05/2016 17:43</td>
+                                <td>Juan Casado Ortiz</td>
+                                <td>24242424Z</td>
+                            </tr>
+                            <tr>
+                                <td>Si / No</td>
+                                <td>E/S/A</td>
+                                <td>15/05/2016 17:43</td>
+                                <td>Juan Casado Ortiz</td>
+                                <td>24242424Z</td>
+                            </tr>
+                            <tr>
+                                <td>Si / No</td>
+                                <td>E/S/A</td>
+                                <td>15/05/2016 17:43</td>
+                                <td>Juan Casado Ortiz</td>
+                                <td>24242424Z</td>
+                            </tr>
+                            <tr>
+                                <td>Si / No</td>
+                                <td>E/S/A</td>
+                                <td>15/05/2016 17:43</td>
+                                <td>Juan Casado Ortiz</td>
+                                <td>24242424Z</td>
+                            </tr>
+                            <tr>
+                                <td>Si / No</td>
+                                <td>E/S/A</td>
+                                <td>15/05/2016 17:43</td>
+                                <td>Juan Casado Ortiz</td>
+                                <td>24242424Z</td>
+                            </tr>
+                            <tr>
+                                <td>Si / No</td>
+                                <td>E/S/A</td>
+                                <td>15/05/2016 17:43</td>
+                                <td>Juan Casado Ortiz</td>
+                                <td>24242424Z</td>
+                            </tr>
+                            <tr>
+                                <td>Si / No</td>
+                                <td>E/S/A</td>
+                                <td>15/05/2016 17:43</td>
+                                <td>Juan Casado Ortiz</td>
+                                <td>24242424Z</td>
+                            </tr>
+                            <tr>
+                                <td>Si / No</td>
+                                <td>E/S/A</td>
+                                <td>15/05/2016 17:43</td>
+                                <td>Juan Casado Ortiz</td>
+                                <td>24242424Z</td>
+                            </tr>
+                            <tr>
+                                <td>Si / No</td>
+                                <td>E/S/A</td>
+                                <td>15/05/2016 17:43</td>
+                                <td>Juan Casado Ortiz</td>
+                                <td>24242424Z</td>
+                            </tr>
+                            <tr>
+                                <td>Si / No</td>
+                                <td>E/S/A</td>
+                                <td>15/05/2016 17:43</td>
+                                <td>Juan Casado Ortiz</td>
+                                <td>24242424Z</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br/>
+                <div class="w3-bar">
+                    <button class="w3-button w3-round w3-metro-dark-blue w3-block">Más datos</button>
+                </div>
+            </div>
         </div>
+        
+        
         <!-- Opción Calendarios -->
-        <div id="opc_cal" class="w3-row pestania" style="height: 600px; display: none;"> <!-- Opción mantenimiento de calendarios -->
+        <div id="opc_cal" class="w3-row pestania" style="display: none;">
             <h3>Calendarios</h3>
         </div>
+        
+        
         <!-- Opción Turnos y Jornadas -->
-        <div id="opc_tur_jor" class="w3-row pestania" style="height: 600px; display: none;"> <!-- Opción Turnos y Jornadas -->
+        <div id="opc_tur_jor" class="w3-row pestania" style="display: none;">
             <h3>Turnos y Jornadas</h3>
         </div>
+        
+        
         <!-- Opción Parámetros generales -->
-        <div id="opc_par" class="w3-row pestania" style="height: 600px; display: none;"> <!-- Opción parámetros generales -->
+        <div id="opc_par" class="w3-row pestania" style="display: none;"> <!-- Opción parámetros generales -->
             <h3>Parámetros</h3>
         </div>
     </div>
+    
+    
     <!-- Pié de página -->
     <footer class="w3-container w3-metro-dark-blue w3-card-4">
         <!-- Datos pié de página -->
@@ -390,142 +667,5 @@ Twitter: @jmarquelladas
             </div>
         </div>
     </footer>
-    
-    <!-- Código Javascript para menú principal
-    
-            
-            
-            <!-- POR AQUI VOY *************************************************
-            ****************************************************************-->
-            <div id="opc_emp" class="w3-row pestania" style="height: 600px; display: none;"> <!-- Opción mantenimiento de empleados -->
-                <div class="w3-panel">
-                    <div class="w3-row-padding">
-                        <div class="w3-twothird">
-                            <div class="w3-half">
-                                <div class="w3-row-padding">
-                                    <div class="w3-half">
-                                        <button class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">Nuevo Empleado</button>
-                                    </div>
-                                    <div class="w3-half">
-                                        <div class="w3-dropdown-hover">
-                                            <button class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">Más opciones</button>
-                                            <div class="w3-dropdown-content w3-bar-block w3-border">
-                                                <a href="#" class="w3-bar-item w3-button w3-metro-dark-blue">Modificar</a>
-                                                <a href="#" class="w3-bar-item w3-button w3-metro-dark-blue">Justificar</a>
-                                                <a href="#" class="w3-bar-item w3-button w3-metro-dark-blue">Cancelar</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="w3-half">
-                                <div class="w3-row-padding">
-                                    <input type="text" class="w3-input w3-border w3-round" placeholder="Buscar ...">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="w3-panel">
-                    <table class="w3-table-all">
-                        <thead>
-                            <tr class="w3-grey">
-                                <th>Selec</th>
-                                <th>DNI</th>
-                                <th>Apellidos y Nombre</th>
-                                <th>Antigüedad</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Si/No</td>
-                                <td>74747474D</td>
-                                <td>Juan Gómez Sánchez</td>
-                                <td>05/03/1981</td>
-                            </tr>
-                            <tr>
-                                <td>Si/No</td>
-                                <td>74747474D</td>
-                                <td>Juan Gómez Sánchez</td>
-                                <td>05/03/1981</td>
-                            </tr>
-                            <tr>
-                                <td>Si/No</td>
-                                <td>74747474D</td>
-                                <td>Juan Gómez Sánchez</td>
-                                <td>05/03/1981</td>
-                            </tr>
-                            <tr>
-                                <td>Si/No</td>
-                                <td>74747474D</td>
-                                <td>Juan Gómez Sánchez</td>
-                                <td>05/03/1981</td>
-                            </tr>
-                            <tr>
-                                <td>Si/No</td>
-                                <td>74747474D</td>
-                                <td>Juan Gómez Sánchez</td>
-                                <td>05/03/1981</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div> 
-            
-            <div id="opc_sol" class="w3-row pestania" style="height: 600px; display: none;"> <!-- Opción gestión de solicitudes -->
-                <div class="w3-panel">
-                    <div class="w3-row-padding">
-                        <div class="w3-twothird">
-                            <div class="w3-padding-small w3-quarter">
-                                <select class="w3-select w3-border w3-round w3-small" name="tipoSolic">
-                                    <option value="" disabled selected>Tipo</option>
-                                    <option value="vacac">Vacaciones</option>
-                                    <option value="medic">Médico</option>
-                                    <option value="otros">Otros...</option>
-                                </select>
-                            </div>
-                            <div class="w3-padding-small w3-quarter">
-                                <select class="w3-select w3-border w3-round w3-small" name="estSolic">
-                                    <option value="" disabled selected>Estado</option>
-                                    <option value="entramite">En trámite</option>
-                                    <option value="aprobada">Aprobada</option>
-                                    <option value="denegada">Denegada</option>
-                                </select>
-                            </div>
-                            <div class="w3-padding-small w3-quarter">
-                                <input type="date" class="w3-input w3-border w3-round w3-small" placeholder="Desde">
-                            </div>
-                            <div class="w3-padding-small w3-quarter">
-                                <input type="date" class="w3-input w3-border w3-round w3-small" placeholder="Hasta">
-                            </div>
-                        </div>
-                        <div class="w3-third">
-                            <div class="w3-padding-small w3-half">
-                                <input type="text" class="w3-input w3-border w3-round-large w3-small" placeholder="Buscar ...">
-                            </div>
-                            <div class="w3-padding-small w3-half"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div id="opc_pre" class="w3-row pestania" style="height: 600px; display: none;"> <!-- Opción control de presencia  -->
-                <h3>Presencia</h3>
-            </div>
-            
-            <div id="opc_cal" class="w3-row pestania" style="height: 600px; display: none;"> <!-- Opción mantenimiento de calendarios -->
-                <h3>Calendarios</h3>
-            </div>
-            
-            <div id="opc_tur_jor" class="w3-row pestania" style="height: 600px; display: none;"> <!-- Opción Turnos y Jornadas -->
-                <h3>Turnos y Jornadas</h3>
-            </div>
-            
-            <div id="opc_par" class="w3-row pestania" style="height: 600px; display: none;"> <!-- Opción parámetros generales -->
-                <h3>Parámetros</h3>
-            </div>
-        </div>
-    </div>
 </body>
 </html>
