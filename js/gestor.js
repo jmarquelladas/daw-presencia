@@ -53,7 +53,7 @@ $(document).ready(function() {
         $('.pestania').each(function(){
             $(this).hide();
         });
-        $('#titulo').text('Turnos y Jornadas')
+        $('#titulo').text('Jornadas y Turnos')
         $('#opc_tur_jor').show();
     });
 
@@ -63,5 +63,25 @@ $(document).ready(function() {
         });
         $('#titulo').text('Parámetros generales')
         $('#opc_par').show();
+    });
+    
+    $('#camPosiV_cal').click(function(){
+        $('#calHoriz').hide();
+        $('#calVerti').show();
+    });
+    
+    $('#camPosiH_cal').click(function(){
+        $('#calVerti').hide();
+        $('#calHoriz').show();
+    });
+    
+    $('#camPosiV_tur_jor').click(function(){
+        $('#jor_turHoriz').hide();
+        $('#jor_turVerti').show();
+    });
+    
+    $('#camPosiH_tur_jor').click(function(){
+        $('#jor_turVerti').hide();
+        $('#jor_turHoriz').show();
     });
 });
