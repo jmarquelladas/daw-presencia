@@ -42,8 +42,8 @@ Twitter: @jmarquelladas
             <div class="w3-container w3-third">
                 <div class="w3-display-container" style="height:99px;">
                     <div class="w3-display-topright">
-                        <buttom class="w3-button w3-metro-dark-blue w3-tiny"><i class="fa fa-user fa-lg" aria-hidden="true"></i> Mi cuenta</buttom>
-                        <buttom class="w3-button w3-metro-dark-blue w3-tiny"><i class="fa fa-sign-out fa-lg" aria-hidden="true"></i> Salir</buttom>
+                        <button class="w3-button w3-metro-dark-blue w3-tiny"><i class="fa fa-user fa-lg" aria-hidden="true"></i> Mi cuenta</button>
+                        <button class="w3-button w3-metro-dark-blue w3-tiny"><i class="fa fa-sign-out fa-lg" aria-hidden="true"></i> Salir</button>
                     </div>
                     <div class="w3-display-bottomright w3-tiny">
                         <p><b>Fecha y hora oficial:</b> 14/01/2018 - 11:57<br/><b>Usuario:</b> José Miguel Arquelladas Ruiz<br/><b>Telf. Soporte:</b> 967304866</p>
@@ -61,9 +61,9 @@ Twitter: @jmarquelladas
             <a id="menu_sol" class="w3-bar-item w3-button w3-hide-small w3-hide-medium"><i class="fa fa-keyboard-o fa-lg"></i> Solicitudes</a>
             <a id="menu_pre" class="w3-bar-item w3-button w3-hide-small w3-hide-medium"><i class="fa fa-eye fa-lg"></i> Presencia</a>
             <a id="menu_cal" class="w3-bar-item w3-button w3-hide-small w3-hide-medium"><i class="fa fa-calendar-o fa-lg"></i> Calendarios</a>
-            <a id="menu_tur_jor" class="w3-bar-item w3-button w3-hide-small w3-hide-medium"><i class="fa fa-calendar-check-o fa-lg"></i> Turnos y Jornadas</a>
+            <a id="menu_tur_jor" class="w3-bar-item w3-button w3-hide-small w3-hide-medium"><i class="fa fa-calendar-check-o fa-lg"></i> Jornadas y Turnos</a>
             <a id="menu_par" class="w3-bar-item w3-button w3-hide-small w3-hide-medium"><i class="fa fa-cogs fa-lg"></i> Parámetros generales</a>
-            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="mostrarMenu('opc_solapa')"><i class="fa fa-bars" style="font-size: 19px"></i></a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="mostrarMenu('opc_solapa')"><i class="fa fa-navicon" style="font-size: 17px"></i></a>
         </div>
         
         <!-- Menú opciones generales para cuando por tamaño se solapa o se colapsan las opciones -->
@@ -72,7 +72,7 @@ Twitter: @jmarquelladas
             <a id="menu_sol_sol" href="javascript:void(0)" class="w3-bar-item w3-button" onclick="mostrarMenu('opc_solapa')"><i class="fa fa-keyboard-o fa-lg"></i> Solicitudes</a>
             <a id="menu_pre_sol" href="javascript:void(0)" class="w3-bar-item w3-button" onclick="mostrarMenu('opc_solapa')"><i class="fa fa-eye fa-lg"></i> Presencia</a>
             <a id="menu_cal_sol" href="javascript:void(0)" class="w3-bar-item w3-button" onclick="mostrarMenu('opc_solapa')"><i class="fa fa-calendar-o fa-lg"></i> Calendarios</a>
-            <a id="menu_tur_jor_sol" href="javascript:void(0)" class="w3-bar-item w3-button" onclick="mostrarMenu('opc_solapa')"><i class="fa fa-calendar-check-o fa-lg"></i> Turnos y Jornadas</a>
+            <a id="menu_tur_jor_sol" href="javascript:void(0)" class="w3-bar-item w3-button" onclick="mostrarMenu('opc_solapa')"><i class="fa fa-calendar-check-o fa-lg"></i> Jornadas y Turnos</a>
             <a id="menu_par_sol" href="javascript:void(0)" class="w3-bar-item w3-button" onclick="mostrarMenu('opc_solapa')"><i class="fa fa-cogs fa-lg"></i> Parámetros generales</a>
         </div>
     </section>
@@ -282,8 +282,9 @@ Twitter: @jmarquelladas
                     </div>
                 </div>
                 <!-- Entrada para búsquedas -->
-                <div class="w3-col w3-padding-small" style="width: 460px">
-                    <input type="text" class="w3-padding-16 w3-input w3-border w3-round" style="width: 450px" placeholder=" Buscar ...">
+                <div class="w3-col w3-padding-small w3-display-container" style="width: 460px">
+                    <span onclick="document.getElementById('bus_empl').value = '';" class="w3-button w3-display-right w3-padding-16 w3-round" title="Reiniciar búsqueda"><i class="fa fa-remove fa-lg"></i></span>
+                    <input id="bus_empl" type="text" class="w3-padding-16 w3-input w3-border w3-round" style="width: 450px" placeholder=" Buscar ...">
                 </div>
                 <div class="w3-rest"></div>
             </div>
@@ -362,17 +363,6 @@ Twitter: @jmarquelladas
                 <div class="w3-bar">
                     <button class="w3-button w3-round w3-metro-dark-blue w3-block">Más datos</button>
                 </div>
-                
-                
-                <!--
-                <div class="w3-bar w3-border w3-round" style="width: 240px">
-                    <a href="#" class="w3-button">&laquo;</a>
-                    <a href="#" class="w3-button w3-metro-dark-blue w3-large">1</a>
-                    <a href="#" class="w3-button">2</a>
-                    <a href="#" class="w3-button">3</a>
-                    <a href="#" class="w3-button">&raquo;</a>
-                </div>
-                -->
             </div>
         </div>
         
@@ -398,8 +388,9 @@ Twitter: @jmarquelladas
                     </div>
                 </div>
                 <!-- Entrada para búsquedas -->
-                <div class="w3-col w3-padding-small" style="width: 460px">
-                    <input type="text" class="w3-padding-16 w3-input w3-border w3-round" style="width: 450px" placeholder=" Buscar ...">
+                <div class="w3-col w3-padding-small w3-display-container" style="width: 460px">
+                    <span onclick="document.getElementById('bus_sol').value = '';" class="w3-button w3-display-right w3-padding-16 w3-round" title="Reiniciar búsqueda"><i class="fa fa-remove fa-lg"></i></span>
+                    <input id="bus_sol" type="text" class="w3-padding-16 w3-input w3-border w3-round" style="width: 450px" placeholder=" Buscar ...">
                 </div>
                 <div class="w3-rest"></div>
             </div>
@@ -531,8 +522,9 @@ Twitter: @jmarquelladas
                     </div>
                 </div>
                 <!-- Entrada para búsquedas -->
-                <div class="w3-col w3-padding-small" style="width: 460px">
-                    <input type="text" class="w3-padding-16 w3-input w3-border w3-round" style="width: 450px" placeholder=" Buscar ...">
+                <div class="w3-col w3-padding-small w3-display-container" style="width: 460px">
+                    <span onclick="document.getElementById('bus_pre').value = '';" class="w3-button w3-display-right w3-padding-16 w3-round" title="Reiniciar búsqueda"><i class="fa fa-remove fa-lg"></i></span>
+                    <input id="bus_pre" type="text" class="w3-padding-16 w3-input w3-border w3-round" style="width: 450px" placeholder=" Buscar ...">
                 </div>
                 <div class="w3-rest"></div>
             </div>
@@ -634,19 +626,847 @@ Twitter: @jmarquelladas
         
         <!-- Opción Calendarios -->
         <div id="opc_cal" class="w3-row pestania" style="display: none;">
-            <h3>Calendarios</h3>
+            <br/>
+            <!-- Version horizontal -->
+            <div id="calHoriz" style="display: block;">
+                <!-- Opciones de Calendario -->
+                <div class="w3-row w3-display-container">
+                    <div class="w3-col" style="width: 250px">
+                        <h2>Calendarios</h2>
+                    </div>
+                    <!-- Boton ... -->
+                    <div class="w3-col w3-padding-small" style="width: 220px">
+                        <button class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">Opcion ...</button>
+                    </div>
+                    <!-- Boton más opciones -->
+                    <div class="w3-col w3-padding-small" style="width: 220px">
+                        <div class="w3-dropdown-click">
+                            <button onclick="mostrarMenu('masOpcPre')" class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">Más opciones <i class="fa fa-caret-down"></i></button>
+                            <div id="masOpcEmple" class="w3-dropdown-content w3-bar-block w3-border">
+                                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcPre')">Modificar</a>
+                                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcPre')">Justificar</a>
+                                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcPre')">Cancelar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Entrada para búsquedas -->
+                    <div class="w3-col w3-padding-small w3-display-container" style="width: 460px">
+                        <span onclick="document.getElementById('bus_pre').value = '';" class="w3-button w3-display-right w3-padding-16 w3-round" title="Reiniciar búsqueda"><i class="fa fa-remove fa-lg"></i></span>
+                        <input id="bus_pre" type="text" class="w3-padding-16 w3-input w3-border w3-round" style="width: 450px" placeholder=" Buscar ...">
+                    </div>
+                    <div class="w3-display-topright">
+                        <a href="#" id="camPosiV_cal"><i class="fa fa-columns" title="Cambia a formato vertical"></i></a>
+                    </div>
+                </div>
+
+                <!-- Lista de Calendarios -->
+                <div class="w3-panel">
+                    <div class="w3-responsive w3-card-4">
+                        <!-- Tabla de Calendarios -->
+                        <table class="w3-table-all w3-hoverable w3-small">
+                            <thead>
+                                <tr class="w3-grey">
+                                    <th>Selec</th>
+                                    <th>Año</th>
+                                    <th>Descripción Calendario Laboral</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Si / No</td>
+                                    <td>2017</td>
+                                    <td>Calendario Laboral Oficinas Administrativas</td>
+                                </tr>
+                                <tr>
+                                    <td>Si / No</td>
+                                    <td>2017</td>
+                                    <td>Calendario Laboral Oficinas Administrativas</td>
+                                </tr>
+                                <tr>
+                                    <td>Si / No</td>
+                                    <td>2017</td>
+                                    <td>Calendario Laboral Oficinas Administrativas</td>
+                                </tr>
+                                <tr>
+                                    <td>Si / No</td>
+                                    <td>2017</td>
+                                    <td>Calendario Laboral Oficinas Administrativas</td>
+                                </tr>
+                                <tr>
+                                    <td>Si / No</td>
+                                    <td>2017</td>
+                                    <td>Calendario Laboral Oficinas Administrativas</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br/>
+                    <div class="w3-bar">
+                        <button class="w3-button w3-round w3-metro-dark-blue w3-block">Más datos</button>
+                    </div>
+                </div>
+
+
+                <!-- Opciones de Festivos Calendario -->
+                <br/>
+                <div class="w3-row">
+                    <div class="w3-col" style="width: 250px">
+                        <h2>Calendario 2017</h2>
+                    </div>
+                    <!-- Boton ... -->
+                    <div class="w3-col w3-padding-small" style="width: 220px">
+                        <button class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">Opcion ...</button>
+                    </div>
+                    <!-- Boton más opciones -->
+                    <div class="w3-col w3-padding-small" style="width: 220px">
+                        <div class="w3-dropdown-click">
+                            <button onclick="mostrarMenu('masOpcPre')" class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">Más opciones <i class="fa fa-caret-down"></i></button>
+                            <div id="masOpcEmple" class="w3-dropdown-content w3-bar-block w3-border">
+                                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcPre')">Modificar</a>
+                                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcPre')">Justificar</a>
+                                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcPre')">Cancelar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Entrada para búsquedas -->
+                    <div class="w3-col w3-padding-small w3-display-container" style="width: 460px">
+                        <span onclick="document.getElementById('bus_fes').value = '';" class="w3-button w3-display-right w3-padding-16 w3-round" title="Reiniciar búsqueda"><i class="fa fa-remove fa-lg"></i></span>
+                        <input id="bus_fes" type="text" class="w3-padding-16 w3-input w3-border w3-round" style="width: 450px" placeholder=" Buscar ...">
+                    </div>
+                    <div class="w3-rest"></div>
+                </div>
+
+
+                <!-- Lista de Festivos Calendario -->
+                <div class="w3-panel">
+                    <div class="w3-responsive w3-card-4">
+                        <!-- Tabla de Calendarios -->
+                        <table class="w3-table-all w3-hoverable w3-small">
+                            <thead>
+                                <tr class="w3-grey">
+                                    <th>Selec</th>
+                                    <th>Fecha</th>
+                                    <th>Tipo de Festivo</th>
+                                    <th>Descripción Festivo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Si / No</td>
+                                    <td>01/01/2107</td>
+                                    <td>Nacional</td>
+                                    <td>Año nuevo</td>
+                                </tr>
+                                <tr>
+                                    <td>Si / No</td>
+                                    <td>01/01/2107</td>
+                                    <td>Nacional</td>
+                                    <td>Año nuevo</td>
+                                </tr>
+                                <tr>
+                                    <td>Si / No</td>
+                                    <td>01/01/2107</td>
+                                    <td>Nacional</td>
+                                    <td>Año nuevo</td>
+                                </tr>
+                                <tr>
+                                    <td>Si / No</td>
+                                    <td>01/01/2107</td>
+                                    <td>Nacional</td>
+                                    <td>Año nuevo</td>
+                                </tr>
+                                <tr>
+                                    <td>Si / No</td>
+                                    <td>01/01/2107</td>
+                                    <td>Nacional</td>
+                                    <td>Año nuevo</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br/>
+                    <div class="w3-bar">
+                        <button class="w3-button w3-round w3-metro-dark-blue w3-block">Más datos</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Version vertical -->
+            <div id="calVerti" class="w3-row" style="display: none;">
+                <!-- Calendarios -->
+                <div class="w3-half">
+                    <!-- Opciones de Calendario -->
+                    <div class="w3-row">
+                        <h3>Calendarios laborales</h3>
+                        <!-- Boton ... -->
+                        <div class="w3-col w3-padding-small" style="width: 160px">
+                            <button class="w3-button w3-padding-small w3-metro-dark-blue w3-round" style="width: 150px;">Nuevo</button>
+                        </div>
+                        <!-- Boton Opciones -->
+                        <div class="w3-col w3-padding-small" style="width: 160px">
+                            <div class="w3-dropdown-click">
+                                <button onclick="mostrarMenu('masOpcPre')" class="w3-button w3-padding-small w3-metro-dark-blue w3-round" style="width: 150px;">Más opciones <i class="fa fa-caret-down"></i></button>
+                                <div id="masOpcEmple" class="w3-dropdown-content w3-bar-block w3-border">
+                                    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcPre')">Modificar</a>
+                                    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcPre')">Justificar</a>
+                                    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcPre')">Cancelar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Entrada para búsquedas -->
+                        <div class="w3-col w3-padding-small w3-display-container" style="width: 270px">
+                            <span onclick="document.getElementById('bus_cal_v').value = '';" class="w3-button w3-display-right w3-padding-small w3-round" title="Reiniciar búsqueda"><i class="fa fa-remove fa-lg"></i></span>
+                            <input id="bus_cal_v" type="text" class="w3-padding-small w3-input w3-border w3-round" style="width: 260px" placeholder=" Buscar ...">
+                        </div>
+                        <div class="w3-rest"></div>
+                    </div>
+                    
+                    <!-- Lista de Calendarios -->
+                    <div class="w3-panel">
+                        <div class="w3-responsive w3-card-4">
+                            <!-- Tabla de Calendarios -->
+                            <table class="w3-table-all w3-hoverable w3-small">
+                                <thead>
+                                    <tr class="w3-grey">
+                                        <th>Selec</th>
+                                        <th>Año</th>
+                                        <th>Descripción Calendario Laboral</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Si / No</td>
+                                        <td>2017</td>
+                                        <td>Calendario Laboral Oficinas Administrativas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Si / No</td>
+                                        <td>2017</td>
+                                        <td>Calendario Laboral Oficinas Administrativas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Si / No</td>
+                                        <td>2017</td>
+                                        <td>Calendario Laboral Oficinas Administrativas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Si / No</td>
+                                        <td>2017</td>
+                                        <td>Calendario Laboral Oficinas Administrativas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Si / No</td>
+                                        <td>2017</td>
+                                        <td>Calendario Laboral Oficinas Administrativas</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <br/>
+                        <div class="w3-bar">
+                            <button class="w3-button w3-round w3-metro-dark-blue w3-block">Más datos</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Festivos -->
+                <div class="w3-half">
+                    <!-- Opciones de Festivos -->
+                    <div class="w3-row w3-display-container">
+                        <h3>Calendario 2017</h3>
+                        <!-- Boton ... -->
+                        <div class="w3-col w3-padding-small" style="width: 160px">
+                            <button class="w3-button w3-padding-small w3-metro-dark-blue w3-round" style="width: 150px;">Nuevo</button>
+                        </div>
+                        <!-- Boton Opciones -->
+                        <div class="w3-col w3-padding-small" style="width: 160px">
+                            <div class="w3-dropdown-click">
+                                <button onclick="mostrarMenu('masOpcPre')" class="w3-button w3-padding-small w3-metro-dark-blue w3-round" style="width: 150px;">Más opciones <i class="fa fa-caret-down"></i></button>
+                                <div id="masOpcEmple" class="w3-dropdown-content w3-bar-block w3-border">
+                                    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcPre')">Modificar</a>
+                                    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcPre')">Justificar</a>
+                                    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcPre')">Cancelar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Entrada para búsquedas -->
+                        <div class="w3-col w3-padding-small w3-display-container" style="width: 270px">
+                            <span onclick="document.getElementById('bus_fes_v').value = '';" class="w3-button w3-display-right w3-padding-small w3-round" title="Reiniciar búsqueda"><i class="fa fa-remove fa-lg"></i></span>
+                            <input id="bus_fes_v" type="text" class="w3-padding-small w3-input w3-border w3-round" style="width: 260px" placeholder=" Buscar ...">
+                        </div>
+                        <div class="w3-display-topright">
+                            <a id="camPosiH_cal" href="#"><i class="fa fa-columns" title="Cambia a formato horizontal"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Lista de Festivos Calendario -->
+                    <div class="w3-panel">
+                        <div class="w3-responsive w3-card-4">
+                            <!-- Tabla de Calendarios -->
+                            <table class="w3-table-all w3-hoverable w3-small">
+                                <thead>
+                                    <tr class="w3-grey">
+                                        <th>Selec</th>
+                                        <th>Fecha</th>
+                                        <th>Tipo de Festivo</th>
+                                        <th>Descripción Festivo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Si / No</td>
+                                        <td>01/01/2107</td>
+                                        <td>Nacional</td>
+                                        <td>Año nuevo</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Si / No</td>
+                                        <td>01/01/2107</td>
+                                        <td>Nacional</td>
+                                        <td>Año nuevo</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Si / No</td>
+                                        <td>01/01/2107</td>
+                                        <td>Nacional</td>
+                                        <td>Año nuevo</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Si / No</td>
+                                        <td>01/01/2107</td>
+                                        <td>Nacional</td>
+                                        <td>Año nuevo</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Si / No</td>
+                                        <td>01/01/2107</td>
+                                        <td>Nacional</td>
+                                        <td>Año nuevo</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <br/>
+                        <div class="w3-bar">
+                            <button class="w3-button w3-round w3-metro-dark-blue w3-block">Más datos</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         
         
-        <!-- Opción Turnos y Jornadas -->
+        <!-- Opción Jornadas y Turnos -->
         <div id="opc_tur_jor" class="w3-row pestania" style="display: none;">
-            <h3>Turnos y Jornadas</h3>
+            <br/>
+            <!-- Version horizontal -->
+            <div id="jor_turHoriz" style="display: block;">
+                <!-- Opciones de Jornadas -->
+                <div class="w3-row w3-display-container">
+                    <div class="w3-col" style="width: 250px">
+                        <h2>Jornadas</h2>
+                    </div>
+                    <!-- Boton ... -->
+                    <div class="w3-col w3-padding-small" style="width: 220px">
+                        <button class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">Opcion ...</button>
+                    </div>
+                    <!-- Boton más opciones -->
+                    <div class="w3-col w3-padding-small" style="width: 220px">
+                        <div class="w3-dropdown-click">
+                            <button onclick="mostrarMenu('masOpcPre')" class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">Más opciones <i class="fa fa-caret-down"></i></button>
+                            <div id="masOpcEmple" class="w3-dropdown-content w3-bar-block w3-border">
+                                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcPre')">Modificar</a>
+                                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcPre')">Justificar</a>
+                                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcPre')">Cancelar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Entrada para búsquedas -->
+                    <div class="w3-col w3-padding-small w3-display-container" style="width: 460px">
+                    <span onclick="document.getElementById('bus_jor').value = '';" class="w3-button w3-display-right w3-padding-16 w3-round" title="Reiniciar búsqueda"><i class="fa fa-remove fa-lg"></i></span>
+                        <input id="bus_jor" type="text" class="w3-padding-16 w3-input w3-border w3-round" style="width: 450px" placeholder=" Buscar ...">
+                    </div>
+                    <div class="w3-display-topright">
+                        <a href="#" id="camPosiV_tur_jor"><i class="fa fa-columns" title="Cambia a formato vertical"></i></a>
+                    </div>
+                </div>
+
+                <!-- Lista de Jornadas -->
+                <div class="w3-panel">
+                    <div class="w3-responsive w3-card-4">
+                        <!-- Tabla de Jornadas -->
+                        <table class="w3-table-all w3-hoverable w3-small">
+                            <thead>
+                                <tr class="w3-grey">
+                                    <th>Selec</th>
+                                    <th>Id. Grupo</th>
+                                    <th>Nombre Grupo</th>
+                                    <th>Descripción</th>
+                                    <th>Centro Trabajo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Si / No</td>
+                                    <td>0001</td>
+                                    <td>Conserjes Pabellón</td>
+                                    <td>Mes de Enero 2017</td>
+                                    <td>Pabellón La Libertad</td>
+                                </tr>
+                                <tr>
+                                    <td>Si / No</td>
+                                    <td>0001</td>
+                                    <td>Conserjes Pabellón</td>
+                                    <td>Mes de Enero 2017</td>
+                                    <td>Pabellón La Libertad</td>
+                                </tr>
+                                <tr>
+                                    <td>Si / No</td>
+                                    <td>0001</td>
+                                    <td>Conserjes Pabellón</td>
+                                    <td>Mes de Enero 2017</td>
+                                    <td>Pabellón La Libertad</td>
+                                </tr>
+                                <tr>
+                                    <td>Si / No</td>
+                                    <td>0001</td>
+                                    <td>Conserjes Pabellón</td>
+                                    <td>Mes de Enero 2017</td>
+                                    <td>Pabellón La Libertad</td>
+                                </tr>
+                                <tr>
+                                    <td>Si / No</td>
+                                    <td>0001</td>
+                                    <td>Conserjes Pabellón</td>
+                                    <td>Mes de Enero 2017</td>
+                                    <td>Pabellón La Libertad</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br/>
+                    <div class="w3-bar">
+                        <button class="w3-button w3-round w3-metro-dark-blue w3-block">Más datos</button>
+                    </div>
+                </div>
+
+
+                <!-- Opciones de Turnos -->
+                <br/>
+                <div class="w3-row">
+                    <div class="w3-col" style="width: 250px">
+                        <h2>Turnos</h2>
+                    </div>
+                    <!-- Boton ... -->
+                    <div class="w3-col w3-padding-small" style="width: 220px">
+                        <button class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">Opcion ...</button>
+                    </div>
+                    <!-- Boton más opciones -->
+                    <div class="w3-col w3-padding-small" style="width: 220px">
+                        <div class="w3-dropdown-click">
+                            <button onclick="mostrarMenu('masOpcPre')" class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">Más opciones <i class="fa fa-caret-down"></i></button>
+                            <div id="masOpcEmple" class="w3-dropdown-content w3-bar-block w3-border">
+                                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcPre')">Modificar</a>
+                                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcPre')">Justificar</a>
+                                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcPre')">Cancelar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Entrada para búsquedas -->
+                    <div class="w3-col w3-padding-small w3-display-container" style="width: 460px">
+                    <span onclick="document.getElementById('bus_tur').value = '';" class="w3-button w3-display-right w3-padding-16 w3-round" title="Reiniciar búsqueda"><i class="fa fa-remove fa-lg"></i></span>
+                        <input id="bus_tur" type="text" class="w3-padding-16 w3-input w3-border w3-round" style="width: 450px" placeholder=" Buscar ...">
+                    </div>
+                    <div class="w3-rest"></div>
+                </div>
+
+
+                <!-- Lista de Turnos -->
+                <div class="w3-panel">
+                    <div class="w3-responsive w3-card-4">
+                        <!-- Tabla de Turnos -->
+                        <table class="w3-table-all w3-hoverable w3-small">
+                            <thead>
+                                <tr class="w3-grey">
+                                    <th>Selec</th>
+                                    <th>Descripción</th>
+                                    <th>Hora inicio</th>
+                                    <th>Hora final</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Si / No</td>
+                                    <td>Mañanas</td>
+                                    <td>08:00</td>
+                                    <td>15:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Si / No</td>
+                                    <td>Mañanas</td>
+                                    <td>08:00</td>
+                                    <td>15:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Si / No</td>
+                                    <td>Mañanas</td>
+                                    <td>08:00</td>
+                                    <td>15:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Si / No</td>
+                                    <td>Mañanas</td>
+                                    <td>08:00</td>
+                                    <td>15:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Si / No</td>
+                                    <td>Mañanas</td>
+                                    <td>08:00</td>
+                                    <td>15:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br/>
+                    <div class="w3-bar">
+                        <button class="w3-button w3-round w3-metro-dark-blue w3-block">Más datos</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Version vertical -->
+            <div id="jor_turVerti" class="w3-row" style="display: none;">
+                <!-- Jornadas -->
+                <div class="w3-half">
+                    <!-- Opciones de Jornadas -->
+                    <div class="w3-row">
+                        <h3>Jornadas</h3>
+                        <!-- Boton ... -->
+                        <div class="w3-col w3-padding-small" style="width: 160px">
+                            <button class="w3-button w3-padding-small w3-metro-dark-blue w3-round" style="width: 150px;">Nuevo</button>
+                        </div>
+                        <!-- Boton Opciones -->
+                        <div class="w3-col w3-padding-small" style="width: 160px">
+                            <div class="w3-dropdown-click">
+                                <button onclick="mostrarMenu('masOpcPre')" class="w3-button w3-padding-small w3-metro-dark-blue w3-round" style="width: 150px;">Más opciones <i class="fa fa-caret-down"></i></button>
+                                <div id="masOpcEmple" class="w3-dropdown-content w3-bar-block w3-border">
+                                    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcPre')">Modificar</a>
+                                    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcPre')">Justificar</a>
+                                    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcPre')">Cancelar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Entrada para búsquedas -->
+                        <div class="w3-col w3-padding-small w3-display-container" style="width: 270px">
+                            <span onclick="document.getElementById('bus_jor_v').value = '';" class="w3-button w3-display-right w3-padding-small w3-round" title="Reiniciar búsqueda"><i class="fa fa-remove fa-lg"></i></span>
+                            <input id="bus_jor_v" type="text" class="w3-padding-small w3-input w3-border w3-round" style="width: 260px" placeholder=" Buscar ...">
+                        </div>
+                        <div class="w3-rest"></div>
+                    </div>
+                    
+                    <!-- Lista de Jornadas -->
+                    <div class="w3-panel">
+                        <div class="w3-responsive w3-card-4">
+                            <!-- Tabla de Jornadas -->
+                            <table class="w3-table-all w3-hoverable w3-small">
+                                <thead>
+                                    <tr class="w3-grey">
+                                        <th>Selec</th>
+                                        <th>Id. Grupo</th>
+                                        <th>Nombre Grupo</th>
+                                        <th>Descripción</th>
+                                        <th>Centro Trabajo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Si / No</td>
+                                        <td>0001</td>
+                                        <td>Conserjes Pabellón</td>
+                                        <td>Mes de Enero 2017</td>
+                                        <td>Pabellón La Libertad</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Si / No</td>
+                                        <td>0001</td>
+                                        <td>Conserjes Pabellón</td>
+                                        <td>Mes de Enero 2017</td>
+                                        <td>Pabellón La Libertad</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Si / No</td>
+                                        <td>0001</td>
+                                        <td>Conserjes Pabellón</td>
+                                        <td>Mes de Enero 2017</td>
+                                        <td>Pabellón La Libertad</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Si / No</td>
+                                        <td>0001</td>
+                                        <td>Conserjes Pabellón</td>
+                                        <td>Mes de Enero 2017</td>
+                                        <td>Pabellón La Libertad</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Si / No</td>
+                                        <td>0001</td>
+                                        <td>Conserjes Pabellón</td>
+                                        <td>Mes de Enero 2017</td>
+                                        <td>Pabellón La Libertad</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <br/>
+                        <div class="w3-bar">
+                            <button class="w3-button w3-round w3-metro-dark-blue w3-block">Más datos</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Turnos -->
+                <div class="w3-half">
+                    <!-- Opciones de Turnos -->
+                    <div class="w3-row w3-display-container">
+                        <h3>Turnos</h3>
+                        <!-- Boton ... -->
+                        <div class="w3-col w3-padding-small" style="width: 160px">
+                            <button class="w3-button w3-padding-small w3-metro-dark-blue w3-round" style="width: 150px;">Nuevo</button>
+                        </div>
+                        <!-- Boton Opciones -->
+                        <div class="w3-col w3-padding-small" style="width: 160px">
+                            <div class="w3-dropdown-click">
+                                <button onclick="mostrarMenu('masOpcPre')" class="w3-button w3-padding-small w3-metro-dark-blue w3-round" style="width: 150px;">Más opciones <i class="fa fa-caret-down"></i></button>
+                                <div id="masOpcEmple" class="w3-dropdown-content w3-bar-block w3-border">
+                                    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcPre')">Modificar</a>
+                                    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcPre')">Justificar</a>
+                                    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcPre')">Cancelar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Entrada para búsquedas -->
+                        <div class="w3-col w3-padding-small w3-display-container" style="width: 270px">
+                            <span onclick="document.getElementById('bus_tur_v').value = '';" class="w3-button w3-display-right w3-padding-small w3-round" title="Reiniciar búsqueda"><i class="fa fa-remove fa-lg"></i></span>
+                            <input id="bus_tur_v" type="text" class="w3-padding-small w3-input w3-border w3-round" style="width: 260px" placeholder=" Buscar ...">
+                        </div>
+                        <div class="w3-display-topright">
+                            <a id="camPosiH_tur_jor" href="#"><i class="fa fa-columns" title="Cambia a formato horizontal"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Lista de Turnos -->
+                    <div class="w3-panel">
+                        <div class="w3-responsive w3-card-4">
+                            <!-- Tabla de Turnos -->
+                            <table class="w3-table-all w3-hoverable w3-small">
+                                <thead>
+                                    <tr class="w3-grey">
+                                        <th>Selec</th>
+                                        <th>Descripción</th>
+                                        <th>Hora inicio</th>
+                                        <th>Hora final</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Si / No</td>
+                                        <td>Mañanas</td>
+                                        <td>08:00</td>
+                                        <td>15:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Si / No</td>
+                                        <td>Mañanas</td>
+                                        <td>08:00</td>
+                                        <td>15:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Si / No</td>
+                                        <td>Mañanas</td>
+                                        <td>08:00</td>
+                                        <td>15:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Si / No</td>
+                                        <td>Mañanas</td>
+                                        <td>08:00</td>
+                                        <td>15:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Si / No</td>
+                                        <td>Mañanas</td>
+                                        <td>08:00</td>
+                                        <td>15:00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <br/>
+                        <div class="w3-bar">
+                            <button class="w3-button w3-round w3-metro-dark-blue w3-block">Más datos</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         
         
         <!-- Opción Parámetros generales -->
         <div id="opc_par" class="w3-row pestania" style="display: none;"> <!-- Opción parámetros generales -->
-            <h3>Parámetros</h3>
+            <br/>
+            <!-- Datos de la entidad -->
+            <div class="w3-card-4">
+                <div class="w3-padding w3-display-container w3-metro-dark-blue">
+                    <h3>Datos de la entidad</h3>
+                </div>
+                <form id="datEntidad" name="datEntidad" class="w3-container" action="#" method="post">
+                    <div class="w3-row-padding">
+                        <div class="w3-twothird">
+                            <p>
+                                <label><b>Razón social</b></label>
+                                <input type="text" name="razSocial" class="w3-input w3-border w3-round">
+                            </p>
+                        </div>
+                        <div class="w3-rest">
+                            <p>
+                                <label><b>NIF</b></label>
+                                <input type="text" name="nif" class="w3-input w3-border w3-round">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w3-row-padding">
+                        <div class="w3-half">
+                            <p>
+                                <label><b>Nombre comercial</b></label>
+                                <input type="text" name="nomCom" class="w3-input w3-border w3-round">
+                            </p>
+                        </div>
+                        <div class="w3-half">
+                            <p>
+                                <label><b>Teléfonos</b></label>
+                                <input type="text" name="tel" class="w3-input w3-border w3-round">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w3-row-padding">
+                        <div class="w3-half">
+                            <p>
+                                <label><b>Dirección</b></label>
+                                <input type="text" name="dir" class="w3-input w3-border w3-round">
+                            </p>
+                        </div>
+                        <div class="w3-half">
+                            <p>
+                                <label><b>Email</b></label>
+                                <input type="text" name="ema" class="w3-input w3-border w3-round">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w3-row-padding">
+                        <div class="w3-twothird">
+                            <p>
+                                <label><b>Página Web</b></label>
+                                <input type="text" name="pagWeb" class="w3-input w3-border w3-round">
+                            </p>
+                        </div>
+                        <div class="w3-rest">
+                            <p>
+                                <label><b>Población</b></label>
+                                <input type="text" name="pob" class="w3-input w3-border w3-round">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w3-row-padding">
+                        <div class="w3-quarter">
+                            <p>
+                                <label><b>Código Postal</b></label>
+                                <input type="text" name="codPos" class="w3-input w3-border w3-round">
+                            </p>
+                        </div>
+                        <div class="w3-third">
+                            <p>
+                                <label><b>Provincia</b></label>
+                                <input type="text" name="pro" class="w3-input w3-border w3-round">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w3-row-padding w3-center">
+                        <input type="submit" name="guardar_datos_entidad" value="Guardar" class="w3-button w3-padding-16 w3-metro-dark-blue w3-round" style="width: 200px;">
+                    </div>                        
+                </form>
+                <br/>
+            </div>
+            <br/>
+            <!-- Configuraciones -->
+            <div class="w3-card-4">
+                <div class="w3-padding w3-display-container w3-metro-dark-blue">
+                    <h3>Configuraciones</h3>
+                </div>
+                
+                <!-- Áreas del Personal -->
+                <div class="w3-container">
+                    <h4 id="are_apar" class="w3-button w3-border w3-round w3-block w3-left-align w3-light-grey">Áreas del Personal</h4>
+                    <div id="con_are" class="w3-hide configuraciones">
+                        <div class="w3-container">
+                            <p>Contenido de áreas</p>
+                            <p>Contenido de áreas</p>
+                            <p>Contenido de áreas</p>
+                            <p>Contenido de áreas</p>
+                            <p>Contenido de áreas</p>
+                            <p>Contenido de áreas</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mantenimiento de permisos -->
+                <div class="w3-container">
+                    <h4 id="per_apar" class="w3-button w3-border w3-round w3-block w3-left-align w3-light-grey">Permisos</h4>
+                    <div id="con_per" class="w3-hide configuraciones">
+                        <div class="w3-container">
+                            <p>Contenido de permisos</p>
+                            <p>Contenido de permisos</p>
+                            <p>Contenido de permisos</p>
+                            <p>Contenido de permisos</p>
+                            <p>Contenido de permisos</p>
+                            <p>Contenido de permisos</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Configurar roles -->
+                <div class="w3-container">
+                    <h4 id="rol_apar" class="w3-button w3-border w3-round w3-block w3-left-align w3-light-grey">Roles Entidad</h4>
+                    <div id="con_rol" class="w3-hide configuraciones">
+                        <div class="w3-container">
+                            <p>Contenido de entidad</p>
+                            <p>Contenido de entidad</p>
+                            <p>Contenido de entidad</p>
+                            <p>Contenido de entidad</p>
+                            <p>Contenido de entidad</p>
+                            <p>Contenido de entidad</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Configurar logotipo -->
+                <div class="w3-container">
+                    <h4 id="log_apar" class="w3-button w3-border w3-round w3-block w3-left-align w3-light-grey">Logotipo</h4>
+                    <div id="con_log" class="w3-hide configuraciones">
+                        <div class="w3-container">
+                            <p>Contenido de logotipo</p>
+                            <p>Contenido de logotipo</p>
+                            <p>Contenido de logotipo</p>
+                            <p>Contenido de logotipo</p>
+                            <p>Contenido de logotipo</p>
+                            <p>Contenido de logotipo</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <br/>
         </div>
     </div>
     
@@ -656,6 +1476,7 @@ Twitter: @jmarquelladas
         <!-- Datos pié de página -->
         <div class="w3-row">
             <div class="w3-container w3-third">
+                <p class="w3-opacity w3-tiny">Última conexión: 09/02/2017 13:53</p>
                 <p class="w3-opacity w3-tiny">2017-2018 José Miguel Arquelladas Ruiz</p>
             </div>
             <div class="w3-container w3-third w3-center">
