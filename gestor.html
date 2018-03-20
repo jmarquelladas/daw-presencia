@@ -814,7 +814,7 @@ Twitter: @jmarquelladas
                             </div>
                         </div>
                         <!-- Entrada para búsquedas -->
-                        <div class="w3-col w3-padding-small w3-display-container" style="width: 270px">
+                        <div class="w3-col w3-padding-small w3-display-container" style="width: 268px">
                             <span onclick="document.getElementById('bus_cal_v').value = '';" class="w3-button w3-display-right w3-padding-small w3-round" title="Reiniciar búsqueda"><i class="fa fa-remove fa-lg"></i></span>
                             <input id="bus_cal_v" type="text" class="w3-padding-small w3-input w3-border w3-round" style="width: 260px" placeholder=" Buscar ...">
                         </div>
@@ -890,7 +890,7 @@ Twitter: @jmarquelladas
                             </div>
                         </div>
                         <!-- Entrada para búsquedas -->
-                        <div class="w3-col w3-padding-small w3-display-container" style="width: 270px">
+                        <div class="w3-col w3-padding-small w3-display-container" style="width: 268px">
                             <span onclick="document.getElementById('bus_fes_v').value = '';" class="w3-button w3-display-right w3-padding-small w3-round" title="Reiniciar búsqueda"><i class="fa fa-remove fa-lg"></i></span>
                             <input id="bus_fes_v" type="text" class="w3-padding-small w3-input w3-border w3-round" style="width: 260px" placeholder=" Buscar ...">
                         </div>
@@ -1158,7 +1158,7 @@ Twitter: @jmarquelladas
                             </div>
                         </div>
                         <!-- Entrada para búsquedas -->
-                        <div class="w3-col w3-padding-small w3-display-container" style="width: 270px">
+                        <div class="w3-col w3-padding-small w3-display-container" style="width: 268px">
                             <span onclick="document.getElementById('bus_jor_v').value = '';" class="w3-button w3-display-right w3-padding-small w3-round" title="Reiniciar búsqueda"><i class="fa fa-remove fa-lg"></i></span>
                             <input id="bus_jor_v" type="text" class="w3-padding-small w3-input w3-border w3-round" style="width: 260px" placeholder=" Buscar ...">
                         </div>
@@ -1246,7 +1246,7 @@ Twitter: @jmarquelladas
                             </div>
                         </div>
                         <!-- Entrada para búsquedas -->
-                        <div class="w3-col w3-padding-small w3-display-container" style="width: 270px">
+                        <div class="w3-col w3-padding-small w3-display-container" style="width: 268px">
                             <span onclick="document.getElementById('bus_tur_v').value = '';" class="w3-button w3-display-right w3-padding-small w3-round" title="Reiniciar búsqueda"><i class="fa fa-remove fa-lg"></i></span>
                             <input id="bus_tur_v" type="text" class="w3-padding-small w3-input w3-border w3-round" style="width: 260px" placeholder=" Buscar ...">
                         </div>
@@ -1318,9 +1318,9 @@ Twitter: @jmarquelladas
             <!-- Datos de la entidad -->
             <div class="w3-card-4">
                 <div class="w3-padding w3-display-container w3-metro-dark-blue">
-                    <h3>Datos de la entidad</h3>
+                    <h4>Datos de la entidad</h4>
                 </div>
-                <form id="datEntidad" name="datEntidad" class="w3-container" action="#" method="post">
+                <form id="datEntidad" name="datEntidad" class="w3-container w3-small" action="#" method="post">
                     <div class="w3-row-padding">
                         <div class="w3-twothird">
                             <p>
@@ -1401,42 +1401,200 @@ Twitter: @jmarquelladas
             <!-- Configuraciones -->
             <div class="w3-card-4">
                 <div class="w3-padding w3-display-container w3-metro-dark-blue">
-                    <h3>Configuraciones</h3>
+                    <h4>Configuraciones</h4>
                 </div>
                 
                 <!-- Áreas del Personal -->
                 <div class="w3-container">
-                    <h4 id="are_apar" class="w3-button w3-border w3-round w3-block w3-left-align w3-light-grey">Áreas del Personal</h4>
+                    <h6 id="are_apar" class="w3-button w3-border w3-round w3-block w3-left-align w3-light-grey">Áreas del Personal</h6>
                     <div id="con_are" class="w3-hide configuraciones">
-                        <div class="w3-container">
-                            <p>Contenido de áreas</p>
-                            <p>Contenido de áreas</p>
-                            <p>Contenido de áreas</p>
-                            <p>Contenido de áreas</p>
-                            <p>Contenido de áreas</p>
-                            <p>Contenido de áreas</p>
+                        <!-- Opciones de Área -->
+                        <div class="w3-row">
+                            <!-- Boton Nuevo registro de área -->
+                            <div class="w3-col w3-padding-small" style="width: 220px">
+                                <button class="w3-button w3-padding-small w3-metro-dark-blue w3-round" style="width: 200px;">Nueva Área</button>
+                            </div>
+                            <!-- Boton más opciones -->
+                            <div class="w3-col w3-padding-small" style="width: 220px">
+                                <div class="w3-dropdown-click">
+                                    <button onclick="mostrarMenu('masOpcEmple')" class="w3-button w3-padding-small w3-metro-dark-blue w3-round" style="width: 200px;">Más opciones <i class="fa fa-caret-down"></i></button>
+                                    <div id="masOpcArea" class="w3-dropdown-content w3-bar-block w3-border">
+                                        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcArea')">Modificar</a>
+                                        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcArea')">Dar de baja</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Entrada para búsquedas -->
+                            <div class="w3-col w3-padding-small w3-display-container" style="width: 258px">
+                                <span onclick="document.getElementById('bus_area').value = '';" class="w3-button w3-display-right w3-padding-small w3-round" title="Reiniciar búsqueda"><i class="fa fa-remove fa-lg"></i></span>
+                                <input id="bus_area" type="text" class="w3-padding-small w3-input w3-border w3-round" style="width: 250px" placeholder=" Buscar ...">
+                            </div>
+                            <div class="w3-rest"></div>
+                        </div>
+                        
+                        <!-- Lista de Áreas -->
+                        <div class="w3-panel">
+                            <div class="w3-responsive w3-card-4">
+                                <!-- Tabla de Áreas -->
+                                <table class="w3-table-all w3-hoverable w3-small">
+                                    <!-- Encabezado -->
+                                    <thead>
+                                        <tr class="w3-grey">
+                                            <th>Selec</th>
+                                            <th>Área</th>
+                                            <th>Pertenece</th>
+                                            <th>Estado</th>
+                                            <th>Observaciones</th>
+                                        </tr>
+                                    </thead>
+                                    <!-- Datos -->
+                                    <tbody>
+                                        <tr>
+                                            <td>Si / No</td>
+                                            <td>ADMINISTRACION</td>
+                                            <td>DIRECCION</td>
+                                            <td>ACTIVO</td>
+                                            <td>Lorem Ipsum Dolor ...</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Si / No</td>
+                                            <td>ADMINISTRACION</td>
+                                            <td>DIRECCION</td>
+                                            <td>ACTIVO</td>
+                                            <td>Lorem Ipsum Dolor ...</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Si / No</td>
+                                            <td>ADMINISTRACION</td>
+                                            <td>DIRECCION</td>
+                                            <td>ACTIVO</td>
+                                            <td>Lorem Ipsum Dolor ...</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Si / No</td>
+                                            <td>ADMINISTRACION</td>
+                                            <td>DIRECCION</td>
+                                            <td>ACTIVO</td>
+                                            <td>Lorem Ipsum Dolor ...</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Si / No</td>
+                                            <td>ADMINISTRACION</td>
+                                            <td>DIRECCION</td>
+                                            <td>ACTIVO</td>
+                                            <td>Lorem Ipsum Dolor ...</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <br/>
+                            <div class="w3-bar">
+                                <button class="w3-button w3-round w3-metro-dark-blue w3-block">Más datos</button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Mantenimiento de permisos -->
                 <div class="w3-container">
-                    <h4 id="per_apar" class="w3-button w3-border w3-round w3-block w3-left-align w3-light-grey">Permisos</h4>
+                    <h6 id="per_apar" class="w3-button w3-border w3-round w3-block w3-left-align w3-light-grey">Permisos</h6>
                     <div id="con_per" class="w3-hide configuraciones">
-                        <div class="w3-container">
-                            <p>Contenido de permisos</p>
-                            <p>Contenido de permisos</p>
-                            <p>Contenido de permisos</p>
-                            <p>Contenido de permisos</p>
-                            <p>Contenido de permisos</p>
-                            <p>Contenido de permisos</p>
+                        <!-- Opciones de Permisos -->
+                        <div class="w3-row">
+                            <!-- Boton Nuevo registro de permiso -->
+                            <div class="w3-col w3-padding-small" style="width: 220px">
+                                <button class="w3-button w3-padding-small w3-metro-dark-blue w3-round" style="width: 200px;">Nuevo permiso</button>
+                            </div>
+                            <!-- Boton más opciones -->
+                            <div class="w3-col w3-padding-small" style="width: 220px">
+                                <div class="w3-dropdown-click">
+                                    <button onclick="mostrarMenu('masOpcPermiso')" class="w3-button w3-padding-small w3-metro-dark-blue w3-round" style="width: 200px;">Más opciones <i class="fa fa-caret-down"></i></button>
+                                    <div id="masOpcArea" class="w3-dropdown-content w3-bar-block w3-border">
+                                        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcPermiso')">Modificar</a>
+                                        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-metro-dark-blue" onclick="mostrarMenu('masOpcPermiso')">Dar de baja</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Entrada para búsquedas -->
+                            <div class="w3-col w3-padding-small w3-display-container" style="width: 258px">
+                                <span onclick="document.getElementById('bus_permiso').value = '';" class="w3-button w3-display-right w3-padding-small w3-round" title="Reiniciar búsqueda"><i class="fa fa-remove fa-lg"></i></span>
+                                <input id="bus_area" type="text" class="w3-padding-small w3-input w3-border w3-round" style="width: 250px" placeholder=" Buscar ...">
+                            </div>
+                            <div class="w3-rest"></div>
+                        </div>
+                        
+                        <!-- Lista de Permisos -->
+                        <div class="w3-panel">
+                            <div class="w3-responsive w3-card-4">
+                                <!-- Tabla de Áreas -->
+                                <table class="w3-table-all w3-hoverable w3-small">
+                                    <!-- Encabezado -->
+                                    <thead>
+                                        <tr class="w3-grey">
+                                            <th>Selec</th>
+                                            <th>Permiso</th>
+                                            <th>Normativa</th>
+                                            <th>Artículo</th>
+                                            <th>Tiempo</th>
+                                            <th>Tiempo permiso</th>
+                                        </tr>
+                                    </thead>
+                                    <!-- Datos -->
+                                    <tbody>
+                                        <tr>
+                                            <td>Si / No</td>
+                                            <td>VACACIONES</td>
+                                            <td>CONVENIO</td>
+                                            <td>15</td>
+                                            <td>22 días hábiles</td>
+                                            <td>Antes del 30 mayo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Si / No</td>
+                                            <td>VACACIONES</td>
+                                            <td>CONVENIO</td>
+                                            <td>15</td>
+                                            <td>22 días hábiles</td>
+                                            <td>Antes del 30 mayo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Si / No</td>
+                                            <td>VACACIONES</td>
+                                            <td>CONVENIO</td>
+                                            <td>15</td>
+                                            <td>22 días hábiles</td>
+                                            <td>Antes del 30 mayo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Si / No</td>
+                                            <td>VACACIONES</td>
+                                            <td>CONVENIO</td>
+                                            <td>15</td>
+                                            <td>22 días hábiles</td>
+                                            <td>Antes del 30 mayo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Si / No</td>
+                                            <td>VACACIONES</td>
+                                            <td>CONVENIO</td>
+                                            <td>15</td>
+                                            <td>22 días hábiles</td>
+                                            <td>Antes del 30 mayo</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <br/>
+                            <div class="w3-bar">
+                                <button class="w3-button w3-round w3-metro-dark-blue w3-block">Más datos</button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Configurar roles -->
                 <div class="w3-container">
-                    <h4 id="rol_apar" class="w3-button w3-border w3-round w3-block w3-left-align w3-light-grey">Roles Entidad</h4>
+                    <h6 id="rol_apar" class="w3-button w3-border w3-round w3-block w3-left-align w3-light-grey">Roles Entidad</h6>
                     <div id="con_rol" class="w3-hide configuraciones">
                         <div class="w3-container">
                             <p>Contenido de entidad</p>
@@ -1451,7 +1609,7 @@ Twitter: @jmarquelladas
                 
                 <!-- Configurar logotipo -->
                 <div class="w3-container">
-                    <h4 id="log_apar" class="w3-button w3-border w3-round w3-block w3-left-align w3-light-grey">Logotipo</h4>
+                    <h6 id="log_apar" class="w3-button w3-border w3-round w3-block w3-left-align w3-light-grey">Logotipo</h6>
                     <div id="con_log" class="w3-hide configuraciones">
                         <div class="w3-container">
                             <p>Contenido de logotipo</p>

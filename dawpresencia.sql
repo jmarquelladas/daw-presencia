@@ -16,7 +16,10 @@
 
 CREATE TABLE IF NOT EXISTS area (
 nombre VARCHAR(50) NOT NULL COMMENT 'Clave primaria para tabla AREA',
-observaciones TEXT,
+observaciones TEXT COMMENT 'Comentario del registro',
+baja BOOLEAN COMMENT 'Para dar de baja el Área y no utilizarla',
+fechabaja DATE,
+motivobaja TEXT COMMENT 'Justificación por la que se ha dado de baja el registro del Área',
 
 CONSTRAINT are_nom_PK PRIMARY KEY (nombre)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
@@ -25,15 +28,15 @@ CONSTRAINT are_nom_PK PRIMARY KEY (nombre)
 -- Creación de datos de ejemplo para tabla AREA
 --
 
-INSERT INTO `area` (`nombre`,`observaciones`) VALUES
-('MANTENIMIENTO',NULL),
-('INFORMÁTICA',NULL),
-('ADMINISTRACIÓN','Área de administración general'),
-('CONTABILIDAD',NULL),
-('TESORERIA',NULL),
-('GESTION COMERCIAL',NULL),
-('FACTURACION',NULL),
-('DIRECCION',NULL);
+INSERT INTO `area` (`nombre`,`observaciones`, `baja`, `fechabaja`, `motivobaja`) VALUES
+('MANTENIMIENTO',NULL,0,NULL,NULL),
+('INFORMÁTICA',NULL,0,NULL,NULL),
+('ADMINISTRACIÓN','Área de administración general',0,NULL,NULL),
+('CONTABILIDAD',NULL,0,NULL,NULL),
+('TESORERIA',NULL,0,NULL,NULL),
+('GESTION COMERCIAL',NULL,0,NULL,NULL),
+('FACTURACION',NULL,0,NULL,NULL),
+('DIRECCION',NULL,0,NULL,NULL);
 
 -- -----------------------------------------------------------------------------
 
