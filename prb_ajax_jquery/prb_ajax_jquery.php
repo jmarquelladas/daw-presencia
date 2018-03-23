@@ -29,19 +29,24 @@
     </div>
     <div class="w3-container">
         <p id="parrafo">Ejemplo de párrafo</p>
-        <button>Pulsar para cambiar el texto con el contenido del fichero a sustituir después de pulsar en botón.</button>
+        <button id="cargarFichero">Pulsar para cambiar el texto con el contenido del fichero a sustituir después de pulsar en botón.</button>
+    </div>
+    <div class="w3-container">
+        <p>Suma de 2 valores</p>
+        <button id="sumar">Sumar valores</button>
+        <p id="resultado">El resultado es: </p>
     </div>
     <footer></footer>
     <!-- Script JQuery para AJAX -->
     <script type="text/javascript">
         $(document).ready(function(){
             // Ejemplo 1: Carga el contenido del fichero demotest.txt en el elemento con id="parrafo"
-            $("button").click(function(){
+            $("#cargarFichero").click(function(){
                 $("#parrafo").load("demotest.txt");
             });
             
             // Ejemplo 2:
-            $("#resultadoSuma").click(function(){
+            $("#sumar").click(function(){
                 
             });
             
