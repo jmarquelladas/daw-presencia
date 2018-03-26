@@ -16,7 +16,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Prueba Ajax-JQuery en PHP</title>
+    <title>Prueba de envío de datos con Ajax-JQuery en PHP</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
@@ -25,7 +25,7 @@
 </head>
 <body>
     <div class="w3-container">
-        <h3>Pruebas Ajax-JQuery en PHP</h3>
+        <h3>Prueba de envío de datos con Ajax-JQuery en PHP</h3>
     </div>
     <div class="w3-container">
         <p id="parrafo">Ejemplo de párrafo</p>
@@ -45,11 +45,39 @@
                 $("#parrafo").load("demotest.txt");
             });
             
-            // Ejemplo 2:
+            // Ejemplo 2: Sumar números (no acabado)
             $("#sumar").click(function(){
                 
             });
             
+            // Ejemplo 3: Enviar datos con AJAX
+            // Realizamos el proceso si pulsamos algún botón SUBMIT del formulario con id="entrapp"
+            $('#entrapp').submit(function(e) {
+                e.preventDefault(); // Para procesar sólo por jQuery
+                
+                var datosFormulario = $(this).serializeArray(); // Recojemos los datos del formulario
+                datosFormulario.push({name: 'tag', value: 'login'});
+                // Inicio de cabecera Ajax - datos necesarios para ejecución
+                $.ajax({
+                    url: './proceso.php',
+                    type: 'post',
+                    dataType: 'json',
+                    data: datosFormulario,
+                    beforeSend: function() {
+                        $('.fa').css('display','inline');
+                    }
+                })
+                // Opciones y operaciones según resultado del request
+                    .done(function(){
+                        $('#mensajeDatos').html("Correcto");
+                    })
+                    .fail(function(){
+                        $('#mensajeDatos').html("No correcto");
+                    })
+                    .always(function(){
+                        $('.fa').hide();
+                });
+            });
         });
     </script>
 </body>

@@ -25,30 +25,33 @@ $smarty->cache_dir = "./smarty/cache";
 
 // Inicio de formulario de inicio de aplicación - Registro entrada de usuario y otras opciones
 // Comprobaciones
-if(isset($_REQUEST['aceptar']) && !(empty($_REQUEST['usuario']))) { // Se ha pulsado el boton de aceptar entrada de usuario y el campo no está vacío
-    // Volcamos campos a variables para comprobar credenciales
-    $usuario = $_REQUEST['usuario'];
-    $contras = $_REQUEST['contras'];
-    // Comprobación de credenciales en la BD
-    $datosAutenticacion = DB::verificaUsuario($usuario, $contras);
-    if(is_array($datosAutenticacion)) { // El resultado de la comprobación es correcto.
-        session_start(); // Iniciamos la sesion de usuario
-        $_SESSION['usuarios']['usuario'] = $_REQUEST['usuario'];
-        $_SESSION['usuarios']['inicio'] = time();
-        // Comprobamos también qué tipo de usuario habrá entrado a la aplicación
-        if($datosAutenticacion['esgestor'] == 1) { // El usuario es Gestor General
-            $smarty->display('eleper.tpl'); // Plantilla de elección de perfil
-        } else { // El usuario es del tipo Empleado
-            $smarty->display('empleado.tpl');
-        }
-    } else if(!($datosAutenticacion)){ // Las credenciales no son correctas, volvemos a realizar petición.
-        $smarty->display('index.tpl');
-    }
-} else { // No se ha pulsado aún ninguna opción, mostramos página inicial.
+if(!isset($_REQUEST['aceptar'])) { // No se ha pulsado aún ninguna opción, mostramos página inicial.
     session_start();
     unset($_SESSION['usuarios']['usuario']);
     unset($_SESSION['usuarios']['inicio']);
     session_destroy();
     $smarty->display('index.tpl');
+} else {
+    $proceso = $_REQUEST['etiq'];
+    if($proceso == 'login') {
+        // Volcamos campos a variables para comprobar credenciales
+        $usuario = $_REQUEST['usuario'];
+        $contras = $_REQUEST['contras'];
+        // Comprobación de credenciales en la BD
+        $datosAutenticacion = DB::verificaUsuario($usuario, $contras);
+        if(is_array($datosAutenticacion)) { // El resultado de la comprobación es correcto.
+            session_start(); // Iniciamos la sesion de usuario
+            $_SESSION['usuarios']['usuario'] = $_REQUEST['usuario'];
+            $_SESSION['usuarios']['inicio'] = time();
+            // Comprobamos también qué tipo de usuario habrá entrado a la aplicación
+            if($datosAutenticacion['esgestor'] == 1) { // El usuario es Gestor General
+                $smarty->display('eleper.tpl'); // Plantilla de elección de perfil
+            } else { // El usuario es del tipo Empleado
+                $smarty->display('empleado.tpl');
+            }
+        } else if(!($datosAutenticacion)){ // Las credenciales no son correctas, volvemos a realizar petición.
+            $smarty->display('index.tpl');
+        }
+    }
 }
 ?>

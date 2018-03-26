@@ -1,0 +1,12 @@
+{
+    "correcto": TRUE|FALSE,
+    "datos": {
+        "mensaje": "",
+        "usuarios": [{
+           "ID"             : "",
+           "nombre_usuario" : "",
+           "email"          : "",
+           "url"            : ""
+        }, {...}]
+    }
+}
