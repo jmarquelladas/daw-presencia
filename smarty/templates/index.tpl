@@ -16,7 +16,7 @@ Twitter: @jmarquelladas
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Habrá que modificar la ruta de los archivos javascript para cuando se suba al servidor o incluir el código -->
     <script type="text/javascript" src="/pry/daw-presencia/js/funciones.js"></script>
 </head>
@@ -53,7 +53,7 @@ Twitter: @jmarquelladas
                     <input type="password" name="contras" class="w3-input" required>
                     <label>Contraseña</label></p>
                 <p>
-                    <input type="checkbox" name="no_cerrar_sesion" class="w3-check" checked="checked">
+                    <input type="checkbox" name="sesion" class="w3-check" checked="checked">
                     <label>No cerrar la sesión</label></p>
                 <p>
                     <input id="aceptar" type="submit" name="aceptar" value=" Aceptar " class="w3-button w3-section w3-metro-dark-blue w3-ripple">
