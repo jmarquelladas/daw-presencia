@@ -35,6 +35,23 @@ $(document).ready(function() {
         
         // Nueva programación: 1/04/2018 a las 23:26
         // Revisar info de: https://www.w3schools.com/jquery/jquery_ajax_intro.asp
+        // Ejemplo de este método: https://www.codigonexo.com/blog/programacion/javascript/formulario-con-ajax-y-jquery/
+        $.post("index.php", datosFormulario, function(resul) {
+            $('#aceptar').prop("disabled", true);
+            $('.fa-spinner').css('display','');
+            
+            if(resul == -1) { // El usuario existe y la contraseña es correcta
+                alert("Usuario correcto");
+            } else {
+                alert("Usuario incorrecto");
+            }
+        })
+        .always(function() {
+            setTimeout(function(){
+            $('.fa-spinner').hide();
+            $('#aceptar').prop("disabled", false);
+            },500);
+        });
         // Fin de la nueva programación
         
         
