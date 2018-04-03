@@ -45,7 +45,7 @@ Twitter: @jmarquelladas
             <!--
             <form id="entrapp" name="entrapp" action="index.php" method="post" class="w3-container w3-card-4">
             -->
-            <form id="entrapp" name="entrapp" class="w3-container w3-card-4">
+            <form method="post" id="form_entrada" class="w3-container w3-card-4">
                 <p>
                     <input type="text" name="usuario" class="w3-input" required>
                     <label>Nombre de usuario</label></p>

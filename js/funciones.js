@@ -22,28 +22,57 @@ function mostrarMenu(identificador) {
 $(document).ready(function() {
     // Ejemplo: Envio de datos con AJAX
     // Realizamos el proceso si pulsamos algún botón SUBMIT del formulario con id="entrapp"
-    $('form#entrapp').submit(function(evento) {
-        evento.preventDefault(); // Para procesar sólo por jQuery
-        var datosFormulario = $(this).serializeArray(); // Recojemos los datos del formulario en formato Array
-        datosFormulario.push({name: 'etiq', value: 'login'}); // Añadimos la identificación del proceso: login (entrada al sistema)
-        console.log("Datos nativos traspasados del formulario:");
-        console.log((datosFormulario));
-        //console.log("Datos nativos pasados a string");
-        //console.log(JSON.stringify(datosFormulario));
-        
-        
-        
+    $('#form_entrada').submit(function(evento) {        
         // Nueva programación: 1/04/2018 a las 23:26
         // Revisar info de: https://www.w3schools.com/jquery/jquery_ajax_intro.asp
         // Ejemplo de este método: https://www.codigonexo.com/blog/programacion/javascript/formulario-con-ajax-y-jquery/
-        $.post("index.php", datosFormulario, function(resul) {
-            $('#aceptar').prop("disabled", true);
-            $('.fa-spinner').css('display','');
-            
-            if(resul == -1) { // El usuario existe y la contraseña es correcta
-                alert("Usuario correcto");
+        evento.preventDefault();
+        var formulario = this;
+        console.log("Objeto de formulario");
+        console.log(formulario);
+        arrayFormulario = $(formulario).serializeArray();
+        arrayFormulario.push({name: 'etiq', value: 'login'}); // Añadimos la identificación del proceso: login (entrada al sistema)
+        console.log("Array de formulario");
+        console.log(arrayFormulario);
+        var jsonDatos = {};
+        $.each(arrayFormulario, function(){
+            if(typeof jsonDatos[this.name] == 'undefined') {
+                jsonDatos[this.name] = this.value || '';
             } else {
-                alert("Usuario incorrecto");
+                jsonDatos[this.name] += ',' + this.value;
+            }
+        });
+        console.log("Datos de jsonDatos:");
+        console.log(jsonDatos);
+        
+        
+        /**
+        var datosFormulario = $(this).serializeArray(); // Recojemos los datos del formulario en formato Array
+        datosFormulario.push({name: 'etiq', value: 'login'}); // Añadimos la identificación del proceso: login (entrada al sistema)
+        console.log("Datos nativos pasados a Array");
+        console.log(datosFormulario); // datos del formulario en Array
+        console.log("Datos analizados (parser)");
+        datosJson = {};
+        $.each(datosFormulario, function(indice, valor) {
+            //console.log(indice);
+            objetoJson = '';
+            $.each(valor, function(indice, valor) {
+                objetoJson += '"' + valor + '"';
+            });
+            console.log(objetoJson);
+        });
+        
+        //console.log(datosJson);
+        */
+        
+        $.post('index.php', jsonDatos, function(resul) {
+            $('#aceptar').prop('disabled', true);
+            $('.fa-spinner').css('display', '');
+            console.log(resul);
+            if(resul == -1) {
+                console.log('Correcto');
+            } else {
+                console.log('Error');
             }
         })
         .always(function() {

@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2018-03-31 11:24:53
+/* Smarty version 3.1.29, created on 2018-04-03 18:23:39
   from "C:\xampp\htdocs\pry\daw-presencia\smarty\templates\index.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5abf53e57ee3c8_51826034',
+  'unifunc' => 'content_5ac3aa8b63c081_91368343',
   'file_dependency' => 
   array (
     '389fff2c0395fd77d348e575f42176a5f0770dbc' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pry\\daw-presencia\\smarty\\templates\\index.tpl',
-      1 => 1522488290,
+      1 => 1522772126,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5abf53e57ee3c8_51826034 ($_smarty_tpl) {
+function content_5ac3aa8b63c081_91368343 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <!--
@@ -72,7 +72,7 @@ Twitter: @jmarquelladas
             <!--
             <form id="entrapp" name="entrapp" action="index.php" method="post" class="w3-container w3-card-4">
             -->
-            <form id="entrapp" name="entrapp" class="w3-container w3-card-4">
+            <form method="post" id="form_entrada" class="w3-container w3-card-4">
                 <p>
                     <input type="text" name="usuario" class="w3-input" required>
                     <label>Nombre de usuario</label></p>

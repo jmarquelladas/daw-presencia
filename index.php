@@ -23,6 +23,10 @@ $smarty->compile_dir = "./smarty/templates_c";
 $smarty->config_dir = "./smarty/configs";
 $smarty->cache_dir = "./smarty/cache";
 
+//echo 'Nombre usuario: '. $_REQUEST['usuario'];
+//return -1;
+
+
 // Inicio de formulario de inicio de aplicación - Registro entrada de usuario y otras opciones
 // Comprobaciones
 if(!isset($_REQUEST['aceptar'])) { // No se ha pulsado aún ninguna opción, mostramos página inicial.
@@ -32,6 +36,12 @@ if(!isset($_REQUEST['aceptar'])) { // No se ha pulsado aún ninguna opción, mos
     session_destroy();
     $smarty->display('index.tpl');
 } else {
+    
+    if(isset($_REQUEST['usuario'])) var_dump($_REQUEST['usuario']);
+    
+    return -1;
+    
+    /** Quitado por el momento
     $proceso = $_REQUEST['etiq'];
     if($proceso == 'login') {
         // Volcamos campos a variables para comprobar credenciales
@@ -52,6 +62,6 @@ if(!isset($_REQUEST['aceptar'])) { // No se ha pulsado aún ninguna opción, mos
         } else if(!($datosAutenticacion)){ // Las credenciales no son correctas, volvemos a realizar petición.
             $smarty->display('index.tpl');
         }
-    }
+    } Fin de quitado por el momento */
 }
 ?>
