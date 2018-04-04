@@ -22,19 +22,48 @@ function mostrarMenu(identificador) {
 $(document).ready(function() {
     // Ejemplo: Envio de datos con AJAX
     // Realizamos el proceso si pulsamos algún botón SUBMIT del formulario con id="entrapp"
+    $('#form_entrada').submit(function(evento) {
+        evento.preventDefault();
+        //console.log(evento);
+        var formulario = this;
+        //console.log(formulario);
+        $('#mensajeDatos').load('index.php', function(responseTxt, statusTxt, xhr){
+           console.log("Respuesta");
+           console.log(responseTxt);
+           console.log("Estado");
+           console.log(statusTxt);
+           console.log("Objeto XMLHttpRequest");
+           console.log(xhr); 
+        });
+    });
+});
+
+
+
+// ANULADO ANULADO ANULADO ANULADO ANULADO ANULADO ANULADO ANULADO ANULADO 
+// ANULADO ANULADO ANULADO ANULADO ANULADO ANULADO ANULADO ANULADO ANULADO 
+// ANULADO ANULADO ANULADO ANULADO ANULADO ANULADO ANULADO ANULADO ANULADO 
+/**
+ * Esta parte está anulada después de 15 días de investigar o de equivocarme
+$(document).ready(function() {
+    // Ejemplo: Envio de datos con AJAX
+    // Realizamos el proceso si pulsamos algún botón SUBMIT del formulario con id="entrapp"
     $('#form_entrada').submit(function(evento) {        
         // Nueva programación: 1/04/2018 a las 23:26
         // Revisar info de: https://www.w3schools.com/jquery/jquery_ajax_intro.asp
         // Ejemplo de este método: https://www.codigonexo.com/blog/programacion/javascript/formulario-con-ajax-y-jquery/
         evento.preventDefault();
         var formulario = this;
-        console.log("Objeto de formulario");
-        console.log(formulario);
+        //console.log("Objeto de formulario");
+        //console.log(formulario);
         arrayFormulario = $(formulario).serializeArray();
         arrayFormulario.push({name: 'etiq', value: 'login'}); // Añadimos la identificación del proceso: login (entrada al sistema)
-        console.log("Array de formulario");
-        console.log(arrayFormulario);
+        //console.log("Array de formulario");
+        //console.log(arrayFormulario);
+        
+        // Creamos objeto json
         var jsonDatos = {};
+        // Recorremos el array para guardarlo en json
         $.each(arrayFormulario, function(){
             if(typeof jsonDatos[this.name] == 'undefined') {
                 jsonDatos[this.name] = this.value || '';
@@ -44,27 +73,9 @@ $(document).ready(function() {
         });
         console.log("Datos de jsonDatos:");
         console.log(jsonDatos);
-        
-        
-        /**
-        var datosFormulario = $(this).serializeArray(); // Recojemos los datos del formulario en formato Array
-        datosFormulario.push({name: 'etiq', value: 'login'}); // Añadimos la identificación del proceso: login (entrada al sistema)
-        console.log("Datos nativos pasados a Array");
-        console.log(datosFormulario); // datos del formulario en Array
-        console.log("Datos analizados (parser)");
-        datosJson = {};
-        $.each(datosFormulario, function(indice, valor) {
-            //console.log(indice);
-            objetoJson = '';
-            $.each(valor, function(indice, valor) {
-                objetoJson += '"' + valor + '"';
-            });
-            console.log(objetoJson);
-        });
-        
-        //console.log(datosJson);
         */
-        
+        /**
+        // Enviamos datos por ajax (método 2)
         $.post('index.php', jsonDatos, function(resul) {
             $('#aceptar').prop('disabled', true);
             $('.fa-spinner').css('display', '');
@@ -80,54 +91,16 @@ $(document).ready(function() {
             $('.fa-spinner').hide();
             $('#aceptar').prop("disabled", false);
             },500);
-        });
+        }); // Fin método 2
         // Fin de la nueva programación
-        
-        
-        
-        /** Domingo 1 de abril 2018 a las 23:24 joras: Por ahora con esto no adelanto nada, por lo que voy a probar alguna otra opción para continuar con el proyecto.
-        // Nuevo método según: http://www.developerdrive.com/2013/04/turning-a-form-element-into-json-and-submiting-it-via-jquery/
-        // Creamos variable json
-        var datosJson = {};
-        // Realizamos el recorrido del array para añadir datos a nuestro json
-        $.each(datosFormulario, function(){
-            //datosJson[this.name] = this.value;
-            if(typeof datosJson[this.name] === 'undefined') {
-                datosJson[this.name] = this.value || '';
-            } else {
-                datosJson[this.name] += ',' + this.value;
-            }
-        });
-       
-       
-        // Mostramos el resultado
-        console.log("Datos del paso a json:");
-        console.log(datosJson);
         */
-       
-        /**          
-        console.log("Datos con metodo stringify y substrayendo corchetes de inicio y final del string");
-        // Pasar array de datos del formulario a string
-        datosFormulario = JSON.stringify(datosFormulario);
-        // eliminamos los corchetes de inicio y final
-        datosFormulario = datosFormulario.substr(1, datosFormulario.length-1);
-        datosFormulario = datosFormulario.substr(0, datosFormulario.length-1);
-        console.log(datosFormulario);
         
-        console.log("Cambiar los datos a formato Json");
-        // Hay que quitar las comillas o algo así
-        // Pruebas
-        
-                
-        */
-       
-       
-        /** Domingo 1 de abril 2018 a las 23:24 joras: Por ahora con esto no adelanto nada, por lo que voy a probar alguna otra opción para continuar con el proyecto.
-        // Inicio de cabecera Ajax - datos necesarios para ejecución
+        /**
+        // Enviamos los datos por ajax (método 1)
         $.ajax({
             type: 'POST',
             url: 'index.php',
-            data: datosJson,
+            data: jsonDatos,
             dataType: 'json',
             beforeSend: function() {
                 $('#aceptar').prop("disabled", true);
@@ -154,6 +127,9 @@ $(document).ready(function() {
             $('#aceptar').prop("disabled", false);
             },500);
         });
-        */
     });
 });
+*/
+// FIN ANULADO FIN ANULADO FIN ANULADO FIN ANULADO FIN ANULADO FIN ANULADO 
+// FIN ANULADO FIN ANULADO FIN ANULADO FIN ANULADO FIN ANULADO FIN ANULADO 
+// FIN ANULADO FIN ANULADO FIN ANULADO FIN ANULADO FIN ANULADO FIN ANULADO 

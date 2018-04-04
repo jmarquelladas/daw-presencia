@@ -37,7 +37,7 @@ if(!isset($_REQUEST['aceptar'])) { // No se ha pulsado aún ninguna opción, mos
     $smarty->display('index.tpl');
 } else {
     
-    if(isset($_REQUEST['usuario'])) var_dump($_REQUEST['usuario']);
+    //if(isset($_REQUEST['usuario'])) var_dump($_REQUEST['usuario']);
     
     return -1;
     
