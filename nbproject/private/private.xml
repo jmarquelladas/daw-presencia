@@ -10,6 +10,7 @@
         </group>
         <group name="examenJunio">
             <file>file:/C:/xampp/htdocs/pry/daw-presencia/js/funciones.js</file>
+            <file>file:/C:/xampp/htdocs/pry/daw-presencia/smarty/templates/index.tpl</file>
             <file>file:/C:/xampp/htdocs/pry/daw-presencia/index.php</file>
         </group>
     </open-files>
