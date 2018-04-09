@@ -24,16 +24,33 @@ $(document).ready(function() {
     // Realizamos el proceso si pulsamos algún botón SUBMIT del formulario con id="entrapp"
     $('#form_entrada').submit(function(evento) {
         evento.preventDefault();
-        //console.log(evento);
-        var formulario = this;
-        //console.log(formulario);
-        $('#mensajeDatos').load('index.php', function(responseTxt, statusTxt, xhr){
-           console.log("Respuesta");
-           console.log(responseTxt);
-           console.log("Estado");
-           console.log(statusTxt);
-           console.log("Objeto XMLHttpRequest");
-           console.log(xhr); 
+        
+        // Deshabilitamos boton y mostramos efecto de espera
+        $('#aceptar').prop('disabled', true);
+        $('.fa-spinner').css('display', '');
+        
+        // Pasamos los datos a array 
+        datosFormulario = $(this).serializeArray();
+        
+        // Creamos objeto json para pasar el array a json
+        var jsonDatos = {};
+        // Recorremos el array para guardarlo en json
+        $.each(datosFormulario, function(){
+            if(typeof jsonDatos[this.name] == 'undefined') {
+                jsonDatos[this.name] = this.value || '';
+            } else {
+                jsonDatos[this.name] += ',' + this.value;
+            }
+        });
+        
+        // Hacemos la petición Ajax con load(). Enviamos datos de jsonDatos para procesarlos en index.php
+        $('#mensajeDatos').load('index.php', jsonDatos, function(responseTxt, statusTxt, xhr){
+            if(statusTxt == 'success') {
+                setTimeout(function(){
+                $('.fa-spinner').hide();
+                $('#aceptar').prop("disabled", false);
+                },500);
+            }
         });
     });
 });
