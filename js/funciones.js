@@ -31,6 +31,8 @@ $(document).ready(function() {
         
         // Pasamos los datos a array 
         datosFormulario = $(this).serializeArray();
+        // Incluimos en el array la información del tipo de proceso
+        datosFormulario.push({"name": "proceso", "value": "login"});
         
         // Creamos objeto json para pasar el array a json
         var jsonDatos = {};
