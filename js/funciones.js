@@ -24,7 +24,6 @@ $(document).ready(function() {
     // Realizamos el proceso si pulsamos algún botón SUBMIT del formulario con id="entrapp"
     $('#form_entrada').submit(function(evento) {
         evento.preventDefault();
-        
         // Deshabilitamos boton y mostramos efecto de espera
         $('#aceptar').prop('disabled', true);
         $('.fa-spinner').css('display', '');
@@ -46,13 +45,31 @@ $(document).ready(function() {
         });
         
         // Hacemos la petición Ajax con load(). Enviamos datos de jsonDatos para procesarlos en index.php
-        $('#mensajeDatos').load('index.php', jsonDatos, function(responseTxt, statusTxt, xhr){
+        $('#formulario_entrada').load('index.php', jsonDatos, function(responseTxt, statusTxt, xhr){
             if(statusTxt == 'success') {
                 setTimeout(function(){
                 $('.fa-spinner').hide();
                 $('#aceptar').prop("disabled", false);
                 },500);
             }
+        });
+    });
+    
+    $('#olv_contras').click(function(){
+        
+        // Deshabilitamos el formulario
+        // $('#formulario_entrada').hide();
+        
+        // Creamos json
+        var jsonDatos = {"name": "proceso", "value": "olvido"};
+        
+        console.log(jsonDatos);
+        
+        // Hacemos la petición Ajax con load(). Enviamos datos de jsonDatos para procesarlos en index.php
+        $('#formulario_entrada').load('index.php', jsonDatos, function(responseTxt, statusTxt, xhr) {
+           if(statusTxt == 'success') {
+               console.log("Correctoooo");
+           }
         });
     });
 });

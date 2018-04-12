@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <!--
-Descripción: Opciones de usuario Empleado
+Descripción: Formulario de olvido de clave
 Versión: 1.0
-Fecha inicio: 08/01/2018
-Fecha final: 10/04/2018
+Fecha inicio: 11/04/2018
+Fecha final: 
 Autor: José Miguel Arquelladas
 Email: jmaruiz@gmail.com
 Twitter: @jmarquelladas
 -->
 
-<!-- Formulario de para seleccionar el perfil a elegir ( Gestor o Empleado) -->
+<!-- Formulario de para introducir la dirección de correo electrónico del usuario y enviar mensaje con usuario y clave. -->
 <div class="w3-row">
     <div class="w3-container w3-metro-dark-blue">
         <div class="w3-row">
+            <!--
             <div class="w3-col" style="width:60px">
                 <i class="fa fa-user fa-3x" aria-hidden="true"></i>
             </div>
-            <div class="w3-rest w3-container">
-                <h4>Perfil de usuario</h4>
+            -->
+            <div class="w3-rest w3-container w3-center">
+                <h4>¿ Olvidó su clave ?</h4>
             </div>
         </div>
     </div>
