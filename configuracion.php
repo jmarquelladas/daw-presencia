@@ -22,7 +22,7 @@ class Configuracion {
     public $desarrolla = 'José Miguel Arquelladas Ruiz';
     public $nom_twitter = '@JMArquelladas';
     public $web_desarrolla = 'www.huetic.es';
-    public $tel_soporte = "900654321";
+    public $tel_soporte = '900654321';
     public $nombreEmpresa = 'EMPRESA DE EJEMPLO I';
     public $nifCif = '12345678A';
     public $host = 'localhost';
@@ -30,4 +30,8 @@ class Configuracion {
     public $usuBDatos = 'root';
     public $passwd = 'gr8814am';
     public $rutaLogo = './img/logo100.png';
+    public $emailEmpresa = 'info@huetic.es';
+    public $smtpServer = 'smtp.huetic.es';
+    public $usuarioSmtp = 'ed582@huetic.es';
+    public $pasUsuSmtp = 'Edc,.357';
 }

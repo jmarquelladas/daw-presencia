@@ -24,8 +24,8 @@ $smarty->config_dir = "./smarty/configs";
 $smarty->cache_dir = "./smarty/cache";
 
 // Inicio de formulario de inicio de aplicación - Registro entrada de usuario y otras opciones
-// Comprobaciones
 if(isset($_REQUEST['proceso'])) {
+    // Realizar el proceso de entrada a la aplicación
     if($_REQUEST['proceso'] == 'login') {
         if($_REQUEST['usuario'] !== '') {
             // Comprobamos si el usuario es correcto
@@ -50,12 +50,14 @@ if(isset($_REQUEST['proceso'])) {
                 $smarty->display('index.tpl');
             }
         }
+    // Realizamos el proceso al hacer click en el mensaje "¿olvidó clave?"
     } else if($_REQUEST['proceso'] == 'olvido') {
         // El usuario ha olvidado su contraseña
         // Pedir en formulario el nombre de usuario o la cuenta de correo asociada
-        echo 'Entrada en opcion OLVIDO';
-        $smarty->display('olvcon.tpl'); // Plantilla formulario 
-        // Consultar la BD y enviar mensaje si no existe usuario o contraseña o enviado correo para restablecer contraseña
+        $smarty->display('olvcon.tpl'); // Plantilla formulario
+    // Consultar la BD y enviar mensaje si no existe usuario o contraseña o enviado mostrar formulario para restablecer clave
+    } else if($_REQUEST['proceso'] == 'comprobarEmail') {
+        echo 'ComprobarEmail';
     }
 } else { // No se ha pulsado aún ninguna opción, mostramos página inicial ya que estamos iniciando la aplicación.
     session_start();

@@ -1,3 +1,26 @@
+<?php
+/* Smarty version 3.1.29, created on 2018-04-13 20:50:46
+  from "C:\xampp\htdocs\pry\daw-presencia\smarty\templates\olvcon.tpl" */
+
+if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
+  'has_nocache_code' => false,
+  'version' => '3.1.29',
+  'unifunc' => 'content_5ad0fc065bc280_04301340',
+  'file_dependency' => 
+  array (
+    '41afea14e738153c4dbf11b745d0a8c011f2d6fc' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\pry\\daw-presencia\\smarty\\templates\\olvcon.tpl',
+      1 => 1523645435,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5ad0fc065bc280_04301340 ($_smarty_tpl) {
+?>
 <!DOCTYPE html>
 <!--
 Descripción: Formulario de olvido de clave
@@ -32,4 +55,5 @@ Twitter: @jmarquelladas
             </p>
         </div>
     </form>
-</div>
+</div><?php }
+}

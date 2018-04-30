@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-Descripción: Opciones de usuario Empleado
+Descripción: Formulario para elegir el perfil de entrada
 Versión: 1.0
 Fecha inicio: 08/01/2018
 Fecha final: 10/04/2018

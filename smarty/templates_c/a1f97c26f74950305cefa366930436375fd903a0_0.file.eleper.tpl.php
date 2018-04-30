@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2018-04-10 17:39:02
+/* Smarty version 3.1.29, created on 2018-04-12 22:46:44
   from "C:\xampp\htdocs\pry\daw-presencia\smarty\templates\eleper.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5accda965aebf2_96732169',
+  'unifunc' => 'content_5acfc5b463b087_86336742',
   'file_dependency' => 
   array (
     'a1f97c26f74950305cefa366930436375fd903a0' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pry\\daw-presencia\\smarty\\templates\\eleper.tpl',
-      1 => 1523374232,
+      1 => 1523565427,
       2 => 'file',
     ),
   ),
@@ -19,11 +19,11 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5accda965aebf2_96732169 ($_smarty_tpl) {
+function content_5acfc5b463b087_86336742 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <!--
-Descripción: Opciones de usuario Empleado
+Descripción: Formulario para elegir el perfil de entrada
 Versión: 1.0
 Fecha inicio: 08/01/2018
 Fecha final: 10/04/2018

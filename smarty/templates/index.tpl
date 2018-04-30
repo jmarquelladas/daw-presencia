@@ -18,7 +18,8 @@ Twitter: @jmarquelladas
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Habrá que modificar la ruta de los archivos javascript para cuando se suba al servidor o incluir el código -->
-    <script type="text/javascript" src="/pry/daw-presencia/js/funciones.js"></script>
+    <!-- <script type="text/javascript" src="/pry/daw-presencia/js/funciones.js"></script> -->
+    <script type="text/javascript" src="/pry/daw-presencia/js/jm.js"></script>
 </head>
 <body>
     <!-- Cabecera -->
@@ -44,19 +45,15 @@ Twitter: @jmarquelladas
                     </div>
                 </div>
                 <form id="form_entrada" method="post" class="w3-container w3-card-4">
-                    <p>
-                        <input type="text" name="usuario" class="w3-input" required>
-                        <label>Nombre de usuario</label></p>
-                    <p>
-                        <input type="password" name="contras" class="w3-input" required>
-                        <label>Contraseña</label></p>
-                    <p>
-                        <input type="checkbox" name="sesion" class="w3-check" checked="checked">
-                        <label>No cerrar la sesión</label></p>
-                    <p>
-                        <input id="aceptar" type="submit" name="aceptar" value=" Aceptar " class="w3-button w3-section w3-metro-dark-blue w3-ripple">
-                        <i class="fa fa-spinner fa-spin" style="font-size:24px; display: none;"></i><br/>
-                        <a id="olv_contras" class="help-block" href="javascript:void(0)">¿Olvidó su clave?</a></p> <!-- Falta redireccionar para resetear contraseña -->
+                    <p><input type="text" name="usuario" class="w3-input" required>
+                    <label>Nombre de usuario</label></p>
+                    <p><input type="password" name="contras" class="w3-input" required>
+                    <label>Contraseña</label></p>
+                    <p><input type="checkbox" name="sesion" class="w3-check" checked="checked">
+                    <label>No cerrar la sesión</label></p>
+                    <p><input type="submit" name="aceptar" value=" Aceptar " class="w3-button w3-section w3-metro-dark-blue w3-ripple">
+                    <i class="fa fa-spinner fa-spin" style="font-size:24px; display: none;"></i><br/>
+                    <a id="olv_contras" class="help-block" href="javascript:void(0);">¿Olvidó su clave?</a></p>
                 </form>
             </div>
             <br/>

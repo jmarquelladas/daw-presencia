@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2018-04-12 01:22:57
+/* Smarty version 3.1.29, created on 2018-04-16 22:11:33
   from "C:\xampp\htdocs\pry\daw-presencia\smarty\templates\index.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5ace98d138ec61_25026351',
+  'unifunc' => 'content_5ad503758a2ed0_71793720',
   'file_dependency' => 
   array (
     '389fff2c0395fd77d348e575f42176a5f0770dbc' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pry\\daw-presencia\\smarty\\templates\\index.tpl',
-      1 => 1523488939,
+      1 => 1523909486,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5ace98d138ec61_25026351 ($_smarty_tpl) {
+function content_5ad503758a2ed0_71793720 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <!--
@@ -43,8 +43,11 @@ Twitter: @jmarquelladas
  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"><?php echo '</script'; ?>
 >
     <!-- Habrá que modificar la ruta de los archivos javascript para cuando se suba al servidor o incluir el código -->
-    <?php echo '<script'; ?>
+    <!-- <?php echo '<script'; ?>
  type="text/javascript" src="/pry/daw-presencia/js/funciones.js"><?php echo '</script'; ?>
+> -->
+    <?php echo '<script'; ?>
+ type="text/javascript" src="/pry/daw-presencia/js/jm.js"><?php echo '</script'; ?>
 >
 </head>
 <body>
@@ -71,19 +74,15 @@ Twitter: @jmarquelladas
                     </div>
                 </div>
                 <form id="form_entrada" method="post" class="w3-container w3-card-4">
-                    <p>
-                        <input type="text" name="usuario" class="w3-input" required>
-                        <label>Nombre de usuario</label></p>
-                    <p>
-                        <input type="password" name="contras" class="w3-input" required>
-                        <label>Contraseña</label></p>
-                    <p>
-                        <input type="checkbox" name="sesion" class="w3-check" checked="checked">
-                        <label>No cerrar la sesión</label></p>
-                    <p>
-                        <input id="aceptar" type="submit" name="aceptar" value=" Aceptar " class="w3-button w3-section w3-metro-dark-blue w3-ripple">
-                        <i class="fa fa-spinner fa-spin" style="font-size:24px; display: none;"></i><br/>
-                        <a id="olv_contras" class="help-block" href="javascript:void(0)">¿Olvidó su clave?</a></p> <!-- Falta redireccionar para resetear contraseña -->
+                    <p><input type="text" name="usuario" class="w3-input" required>
+                    <label>Nombre de usuario</label></p>
+                    <p><input type="password" name="contras" class="w3-input" required>
+                    <label>Contraseña</label></p>
+                    <p><input type="checkbox" name="sesion" class="w3-check" checked="checked">
+                    <label>No cerrar la sesión</label></p>
+                    <p><input type="submit" name="aceptar" value=" Aceptar " class="w3-button w3-section w3-metro-dark-blue w3-ripple">
+                    <i class="fa fa-spinner fa-spin" style="font-size:24px; display: none;"></i><br/>
+                    <a id="olv_contras" class="help-block" href="javascript:void(0);">¿Olvidó su clave?</a></p>
                 </form>
             </div>
             <br/>

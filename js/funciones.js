@@ -20,10 +20,9 @@ function mostrarMenu(identificador) {
 
 // jQuery
 $(document).ready(function() {
-    // Ejemplo: Envio de datos con AJAX
-    // Realizamos el proceso si pulsamos algún botón SUBMIT del formulario con id="entrapp"
+    // Realizamos el proceso si pulsamos el botón SUBMIT del formulario con id="entrapp"
     $('#form_entrada').submit(function(evento) {
-        evento.preventDefault();
+        // evento.preventDefault();
         // Deshabilitamos boton y mostramos efecto de espera
         $('#aceptar').prop('disabled', true);
         $('.fa-spinner').css('display', '');
@@ -32,6 +31,67 @@ $(document).ready(function() {
         datosFormulario = $(this).serializeArray();
         // Incluimos en el array la información del tipo de proceso
         datosFormulario.push({"name": "proceso", "value": "login"});
+        
+        // Creamos objeto json para pasar el array a json
+        var jsonDatos = {};
+        // Recorremos el array para guardarlo en json
+        $.each(datosFormulario, function(){
+            if(typeof jsonDatos[this.name] == 'undefined') {
+                jsonDatos[this.name] = this.value || '';
+            } else {
+                jsonDatos[this.name] += ',' + this.value;
+            }
+        });
+        // Hacemos la petición Ajax con load(). Enviamos datos de jsonDatos para procesarlos en index.php
+        $('#formulario_entrada').load('index.php', jsonDatos, function(responseTxt, statusTxt, xhr){
+            if(statusTxt == 'success') {
+                setTimeout(function(){
+                    $('.fa-spinner').hide();
+                    $('#aceptar').prop("disabled", false);
+                },500);
+            }
+        });
+    });
+    
+    // Realizamos el proceso si hacemos click en enlace ¿Olvidó su clave? del formulario con id="olv_contras"
+    $('#olv_contras').click(function(){
+        // Creamos json con la info del tipo de proceso
+        var jsonDatos = {"proceso": "olvido"};
+        
+        // Hacemos la petición Ajax con load(). Enviamos datos de jsonDatos para procesarlos en index.php
+        $('#formulario_entrada').load('index.php', jsonDatos, function(responseTxt, statusTxt, xhr) {
+           if(statusTxt == 'success') {
+               return false;
+           }
+        });
+    });
+    
+    $('#form_comprobar_correo').submit(function() {
+        alert("Pulsado Enviar");
+    });
+    
+    $("input[name='volver']").click(function(){
+        console.log("Holaaaaaaaaa a volver !!!!!!");
+    });
+    
+    
+    
+    
+    /**
+    // Realizamos el proceso si pulsamos el botón SUBMIT del formulario con id="form_comprobar_correo"
+    $('#form_comprobar_correo').submit(function(evento) {
+        console.log("En proceso verificar email");
+        evento.preventDefault();
+        // Deshabilitamos los botones y mostramos efecto de espera
+        $('#enviar').prop('disabled', true);
+        $('.fa-spinner').css('display', '');
+        
+        // Pasamos los datos a array 
+        datosFormulario = $(this).serializeArray();
+        console.log(datosFormulario);
+        // Incluimos en el array la información del tipo de proceso
+        //if(datosFormulario[] )
+        datosFormulario.push({"name": "proceso", "value": "comprobarEmail"});
         
         // Creamos objeto json para pasar el array a json
         var jsonDatos = {};
@@ -55,26 +115,12 @@ $(document).ready(function() {
         });
     });
     
-    $('#olv_contras').click(function(){
-        
-        // Deshabilitamos el formulario
-        // $('#formulario_entrada').hide();
-        
-        // Creamos json
-        var jsonDatos = {"name": "proceso", "value": "olvido"};
-        
-        console.log(jsonDatos);
-        
-        // Hacemos la petición Ajax con load(). Enviamos datos de jsonDatos para procesarlos en index.php
-        $('#formulario_entrada').load('index.php', jsonDatos, function(responseTxt, statusTxt, xhr) {
-           if(statusTxt == 'success') {
-               console.log("Correctoooo");
-           }
-        });
-    });
+    // Volvemos al formulario de entrada al pulsar el botón "Atrás" del formulario de petición de correo por olvido de clave
+    $("input[name='atras']").click(function(evento){
+        evento.preventDefault();
+        console.log("Dentro de volver ATRAS");
+    }); */
 });
-
-
 
 // ANULADO ANULADO ANULADO ANULADO ANULADO ANULADO ANULADO ANULADO ANULADO 
 // ANULADO ANULADO ANULADO ANULADO ANULADO ANULADO ANULADO ANULADO ANULADO 
